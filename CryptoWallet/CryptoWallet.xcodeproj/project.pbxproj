@@ -10,9 +10,21 @@
 		CE280C8329C45167002B4DEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280C8229C45167002B4DEC /* AppDelegate.swift */; };
 		CE280C8529C45167002B4DEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280C8429C45167002B4DEC /* SceneDelegate.swift */; };
 		CE280C8729C45167002B4DEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280C8629C45167002B4DEC /* ViewController.swift */; };
-		CE280C8A29C45167002B4DEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE280C8829C45167002B4DEC /* Main.storyboard */; };
 		CE280C8C29C45168002B4DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE280C8B29C45168002B4DEC /* Assets.xcassets */; };
 		CE280C8F29C45168002B4DEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE280C8D29C45168002B4DEC /* LaunchScreen.storyboard */; };
+		CE280C9A29C4731A002B4DEC /* XCoordinator in Frameworks */ = {isa = PBXBuildFile; productRef = CE280C9929C4731A002B4DEC /* XCoordinator */; };
+		CE280C9F29C4772A002B4DEC /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280C9E29C4772A002B4DEC /* AppCoordinator.swift */; };
+		CE280CA229C47D74002B4DEC /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280CA129C47D74002B4DEC /* WalletViewController.swift */; };
+		CE280CA629C47EA6002B4DEC /* WalletPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280CA529C47EA6002B4DEC /* WalletPresenter.swift */; };
+		CE280CA829C47F49002B4DEC /* WalletPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280CA729C47F49002B4DEC /* WalletPresenterProtocol.swift */; };
+		CE280CAB29C4813A002B4DEC /* WalletViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280CAA29C4813A002B4DEC /* WalletViewProtocol.swift */; };
+		CE280CAD29C4850A002B4DEC /* WalletTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280CAC29C4850A002B4DEC /* WalletTabBarCoordinator.swift */; };
+		CE280CB029C4868E002B4DEC /* WalletCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280CAF29C4868E002B4DEC /* WalletCoordinator.swift */; };
+		CE280CB629C49045002B4DEC /* SettingsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280CB529C49045002B4DEC /* SettingsPresenterProtocol.swift */; };
+		CE280CB829C49057002B4DEC /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280CB729C49057002B4DEC /* SettingsPresenter.swift */; };
+		CE280CBA29C4919C002B4DEC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280CB929C4919C002B4DEC /* SettingsViewController.swift */; };
+		CE280CBC29C491A9002B4DEC /* SettingsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280CBB29C491A9002B4DEC /* SettingsViewProtocol.swift */; };
+		CE280CBE29C49214002B4DEC /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280CBD29C49214002B4DEC /* SettingsCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +32,21 @@
 		CE280C8229C45167002B4DEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE280C8429C45167002B4DEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CE280C8629C45167002B4DEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE280C8929C45167002B4DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE280C8B29C45168002B4DEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE280C8E29C45168002B4DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE280C9029C45168002B4DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE280C9E29C4772A002B4DEC /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		CE280CA129C47D74002B4DEC /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		CE280CA529C47EA6002B4DEC /* WalletPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletPresenter.swift; sourceTree = "<group>"; };
+		CE280CA729C47F49002B4DEC /* WalletPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletPresenterProtocol.swift; sourceTree = "<group>"; };
+		CE280CAA29C4813A002B4DEC /* WalletViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewProtocol.swift; sourceTree = "<group>"; };
+		CE280CAC29C4850A002B4DEC /* WalletTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTabBarCoordinator.swift; sourceTree = "<group>"; };
+		CE280CAF29C4868E002B4DEC /* WalletCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCoordinator.swift; sourceTree = "<group>"; };
+		CE280CB529C49045002B4DEC /* SettingsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenterProtocol.swift; sourceTree = "<group>"; };
+		CE280CB729C49057002B4DEC /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		CE280CB929C4919C002B4DEC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CE280CBB29C491A9002B4DEC /* SettingsViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewProtocol.swift; sourceTree = "<group>"; };
+		CE280CBD29C49214002B4DEC /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE280C9A29C4731A002B4DEC /* XCoordinator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +80,138 @@
 		CE280C8129C45167002B4DEC /* CryptoWallet */ = {
 			isa = PBXGroup;
 			children = (
-				CE280C8229C45167002B4DEC /* AppDelegate.swift */,
-				CE280C8429C45167002B4DEC /* SceneDelegate.swift */,
-				CE280C8629C45167002B4DEC /* ViewController.swift */,
-				CE280C8829C45167002B4DEC /* Main.storyboard */,
-				CE280C8B29C45168002B4DEC /* Assets.xcassets */,
-				CE280C8D29C45168002B4DEC /* LaunchScreen.storyboard */,
+				CE280C9B29C475E6002B4DEC /* Modules */,
 				CE280C9029C45168002B4DEC /* Info.plist */,
+				CE280C8629C45167002B4DEC /* ViewController.swift */,
+				CE280C9629C454A7002B4DEC /* Application */,
+				CE280C8D29C45168002B4DEC /* LaunchScreen.storyboard */,
+				CE280C9729C45AB0002B4DEC /* Resources */,
 			);
 			path = CryptoWallet;
+			sourceTree = "<group>";
+		};
+		CE280C9629C454A7002B4DEC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CE280C8229C45167002B4DEC /* AppDelegate.swift */,
+				CE280C8429C45167002B4DEC /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CE280C9729C45AB0002B4DEC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE280C8B29C45168002B4DEC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE280C9B29C475E6002B4DEC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CE280CB129C48FCC002B4DEC /* Settings */,
+				CE280CA029C47CF5002B4DEC /* Wallet */,
+				CE280C9C29C475FA002B4DEC /* Root */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CE280C9C29C475FA002B4DEC /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				CE280C9D29C4770E002B4DEC /* Router */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		CE280C9D29C4770E002B4DEC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CE280C9E29C4772A002B4DEC /* AppCoordinator.swift */,
+				CE280CAC29C4850A002B4DEC /* WalletTabBarCoordinator.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CE280CA029C47CF5002B4DEC /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				CE280CAE29C4853F002B4DEC /* Router */,
+				CE280CA429C47D8B002B4DEC /* Presenter */,
+				CE280CA329C47D77002B4DEC /* View */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		CE280CA329C47D77002B4DEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE280CA929C48126002B4DEC /* Protocol */,
+				CE280CA129C47D74002B4DEC /* WalletViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE280CA429C47D8B002B4DEC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CE280CA529C47EA6002B4DEC /* WalletPresenter.swift */,
+				CE280CA729C47F49002B4DEC /* WalletPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CE280CA929C48126002B4DEC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CE280CAA29C4813A002B4DEC /* WalletViewProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		CE280CAE29C4853F002B4DEC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CE280CAF29C4868E002B4DEC /* WalletCoordinator.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CE280CB129C48FCC002B4DEC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CE280CB429C4902A002B4DEC /* Presenter */,
+				CE280CB329C49026002B4DEC /* View */,
+				CE280CB229C49021002B4DEC /* Router */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CE280CB229C49021002B4DEC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CE280CBD29C49214002B4DEC /* SettingsCoordinator.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CE280CB329C49026002B4DEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE280CB929C4919C002B4DEC /* SettingsViewController.swift */,
+				CE280CBB29C491A9002B4DEC /* SettingsViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE280CB429C4902A002B4DEC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CE280CB529C49045002B4DEC /* SettingsPresenterProtocol.swift */,
+				CE280CB729C49057002B4DEC /* SettingsPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +221,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE280C9329C45168002B4DEC /* Build configuration list for PBXNativeTarget "CryptoWallet" */;
 			buildPhases = (
+				CE6E65BE29C835210024D978 /* ShellScript */,
 				CE280C7B29C45167002B4DEC /* Sources */,
 				CE280C7C29C45167002B4DEC /* Frameworks */,
 				CE280C7D29C45167002B4DEC /* Resources */,
@@ -83,6 +231,9 @@
 			dependencies = (
 			);
 			name = CryptoWallet;
+			packageProductDependencies = (
+				CE280C9929C4731A002B4DEC /* XCoordinator */,
+			);
 			productName = CryptoWallet;
 			productReference = CE280C7F29C45167002B4DEC /* CryptoWallet.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +262,11 @@
 				Base,
 			);
 			mainGroup = CE280C7629C45166002B4DEC;
+			packageReferences = (
+				CE280C9829C4731A002B4DEC /* XCRemoteSwiftPackageReference "XCoordinator" */,
+				CE6E65BD29C834FD0024D978 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+				CE6E65BF29C8539F0024D978 /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */,
+			);
 			productRefGroup = CE280C8029C45167002B4DEC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,34 +283,57 @@
 			files = (
 				CE280C8F29C45168002B4DEC /* LaunchScreen.storyboard in Resources */,
 				CE280C8C29C45168002B4DEC /* Assets.xcassets in Resources */,
-				CE280C8A29C45167002B4DEC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CE6E65BE29C835210024D978 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE280C7B29C45167002B4DEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE280CB629C49045002B4DEC /* SettingsPresenterProtocol.swift in Sources */,
+				CE280CA829C47F49002B4DEC /* WalletPresenterProtocol.swift in Sources */,
+				CE280CAB29C4813A002B4DEC /* WalletViewProtocol.swift in Sources */,
+				CE280C9F29C4772A002B4DEC /* AppCoordinator.swift in Sources */,
 				CE280C8729C45167002B4DEC /* ViewController.swift in Sources */,
 				CE280C8329C45167002B4DEC /* AppDelegate.swift in Sources */,
+				CE280CAD29C4850A002B4DEC /* WalletTabBarCoordinator.swift in Sources */,
 				CE280C8529C45167002B4DEC /* SceneDelegate.swift in Sources */,
+				CE280CA229C47D74002B4DEC /* WalletViewController.swift in Sources */,
+				CE280CA629C47EA6002B4DEC /* WalletPresenter.swift in Sources */,
+				CE280CBE29C49214002B4DEC /* SettingsCoordinator.swift in Sources */,
+				CE280CBA29C4919C002B4DEC /* SettingsViewController.swift in Sources */,
+				CE280CB029C4868E002B4DEC /* WalletCoordinator.swift in Sources */,
+				CE280CB829C49057002B4DEC /* SettingsPresenter.swift in Sources */,
+				CE280CBC29C491A9002B4DEC /* SettingsViewProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CE280C8829C45167002B4DEC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE280C8929C45167002B4DEC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE280C8D29C45168002B4DEC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,9 +471,9 @@
 				INFOPLIST_FILE = CryptoWallet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +481,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.boltromyuk.cryptoWallet.CryptoWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,9 +502,9 @@
 				INFOPLIST_FILE = CryptoWallet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +512,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.boltromyuk.cryptoWallet.CryptoWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +543,41 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE280C9829C4731A002B4DEC /* XCRemoteSwiftPackageReference "XCoordinator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/quickbirdstudios/XCoordinator.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		CE6E65BD29C834FD0024D978 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.2;
+			};
+		};
+		CE6E65BF29C8539F0024D978 /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MetaMask/metamask-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE280C9929C4731A002B4DEC /* XCoordinator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE280C9829C4731A002B4DEC /* XCRemoteSwiftPackageReference "XCoordinator" */;
+			productName = XCoordinator;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE280C7729C45166002B4DEC /* Project object */;
 }
