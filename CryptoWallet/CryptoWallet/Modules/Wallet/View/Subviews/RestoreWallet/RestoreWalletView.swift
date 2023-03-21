@@ -7,7 +7,15 @@
 
 import UIKit
 
+protocol RestoreWalletViewDelegate: AnyObject {
+    func didTapRestoreButton()
+}
+
 class RestoreWalletView: UIView {
+
+    // MARK: - Public properties
+
+    weak var delegate: RestoreWalletViewDelegate?
 
     // MARK: - Private properties
 
@@ -22,6 +30,7 @@ class RestoreWalletView: UIView {
     private lazy var restoreButton: UIButton = {
         let button = UIButton()
         button.setTitle("RESTORE", for: .normal)
+        button.titleLabel?.textColor = R.color.portfolioTitleColor()
         button.titleLabel?.font = R.font.notoSansSemiBold(size: 14)
         return button
     }()
@@ -30,6 +39,7 @@ class RestoreWalletView: UIView {
 
     init() {
         super.init(frame: .zero)
+        setupUI()
     }
 
     required init?(coder: NSCoder) {
@@ -43,9 +53,25 @@ class RestoreWalletView: UIView {
             titleLabel,
             restoreButton
         ])
+        configureConstraints()
+        restoreButton.addTarget(self, action: #selector(tappedRestoreButton), for: .touchUpInside)
     }
 
     private func configureConstraints() {
-        
+        titleLabel.snp.makeConstraints { make in
+            make.leading.top.bottom.equalToSuperview()
+        }
+
+        restoreButton.snp.makeConstraints { make in
+            make.top.equalToSuperview()
+            make.centerY.equalTo(titleLabel.snp.centerY)
+            make.trailing.equalToSuperview()
+        }
+    }
+
+    // MARK: - Actions
+
+    @objc private func tappedRestoreButton() {
+        delegate?.didTapRestoreButton()
     }
 }

@@ -42,6 +42,7 @@ class WalletViewController: UIViewController {
         walletCardView.configure(viewModel: .init(title: "Create a free wallet",
                                                   subtitle: "You will need a wallet to buy some\ncryptocurrency and other value.",
                                                   backgroundImage: R.image.walletCardImage()))
+        restoreWalletView.delegate = self
     }
 
     private func setupScrollView() {
@@ -51,7 +52,10 @@ class WalletViewController: UIViewController {
         mainStackView.addArrangedSubviews([
             walletTitleLabel,
             portfolioView,
-            walletCardView
+            walletCardView,
+            restoreWalletView,
+            sharkImageView,
+            cardImageView
         ])
     }
 
@@ -74,6 +78,14 @@ class WalletViewController: UIViewController {
         }
 
         walletCardView.snp.makeConstraints { make in
+            make.height.equalTo(210)
+        }
+
+        sharkImageView.snp.makeConstraints { make in
+            make.height.equalTo(175)
+        }
+
+        cardImageView.snp.makeConstraints { make in
             make.height.equalTo(210)
         }
     }
@@ -99,12 +111,35 @@ class WalletViewController: UIViewController {
         return label
     }()
 
+    private lazy var sharkImageView: UIImageView = {
+        let sharkImageView = UIImageView()
+        sharkImageView.image = R.image.sharkCreateImage()
+        sharkImageView.contentMode = .scaleAspectFit
+        return sharkImageView
+    }()
+
+    private lazy var cardImageView: UIImageView = {
+        let sharkImageView = UIImageView()
+        sharkImageView.image = R.image.cardImage()
+        sharkImageView.contentMode = .scaleAspectFit
+        return sharkImageView
+    }()
+
     private lazy var portfolioView = PortfolioValueView()
     private lazy var walletCardView = WalletCardView()
+    private lazy var restoreWalletView = RestoreWalletView()
 
 }
 // MARK: WalletViewProtocol
 
 extension WalletViewController: WalletViewProtocol {
 
+}
+
+// MARK: - RestoreWalletViewDelegate
+
+extension WalletViewController: RestoreWalletViewDelegate {
+    func didTapRestoreButton() {
+        print("/n MY LOG: didTapRestoreButton")
+    }
 }

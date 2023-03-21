@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1403347B29C9F0A800305CA3 /* MoreThingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1403347A29C9F0A800305CA3 /* MoreThingsView.swift */; };
 		BCDFDEE3CB09A90B1455D233 /* Pods_CryptoWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F2A865BD33FFF60E4466D2 /* Pods_CryptoWallet.framework */; };
 		CE280C8329C45167002B4DEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280C8229C45167002B4DEC /* AppDelegate.swift */; };
 		CE280C8529C45167002B4DEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280C8429C45167002B4DEC /* SceneDelegate.swift */; };
@@ -70,6 +71,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1403347A29C9F0A800305CA3 /* MoreThingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreThingsView.swift; sourceTree = "<group>"; };
 		27555644CAEC2AA42143F11A /* Pods-CryptoWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWallet.release.xcconfig"; path = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.release.xcconfig"; sourceTree = "<group>"; };
 		67F2A865BD33FFF60E4466D2 /* Pods_CryptoWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA888EAC28A4DDECC2BCE442 /* Pods-CryptoWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWallet.debug.xcconfig"; path = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +132,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1403347929C9EF9800305CA3 /* MoreThings */ = {
+			isa = PBXGroup;
+			children = (
+				1403347A29C9F0A800305CA3 /* MoreThingsView.swift */,
+			);
+			path = MoreThings;
+			sourceTree = "<group>";
+		};
 		2E309B1AD5AAED97235C80F8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +351,7 @@
 		CEC0FAA729C98B8B00ECB025 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				1403347929C9EF9800305CA3 /* MoreThings */,
 				CEC0FAC629C9C58900ECB025 /* RestoreWallet */,
 				CEC0FAC329C99EE000ECB025 /* WalletCard */,
 				CEC0FAA829C98B9200ECB025 /* PortfolioValueView */,
@@ -585,6 +596,7 @@
 				CEC0FAC229C99C9E00ECB025 /* NotoSans-Italic.ttf in Sources */,
 				CE280CB629C49045002B4DEC /* SettingsPresenterProtocol.swift in Sources */,
 				CE280CA829C47F49002B4DEC /* WalletPresenterProtocol.swift in Sources */,
+				1403347B29C9F0A800305CA3 /* MoreThingsView.swift in Sources */,
 				CE280CAB29C4813A002B4DEC /* WalletViewProtocol.swift in Sources */,
 				CE280C9F29C4772A002B4DEC /* AppCoordinator.swift in Sources */,
 				CEC0FAC829C9C59D00ECB025 /* RestoreWalletView.swift in Sources */,
