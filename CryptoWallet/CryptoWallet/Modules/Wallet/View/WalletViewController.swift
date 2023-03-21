@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class WalletViewController: UIViewController {
 
@@ -28,10 +29,80 @@ class WalletViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
+        setupUI()
     }
-}
 
+    // MARK: - SetupUI
+
+    private func setupUI() {
+        view.backgroundColor = R.color.backgroundColor()
+        setupScrollView()
+        configureConstraints()
+
+        walletCardView.configure(viewModel: .init(title: "Create a free wallet",
+                                                  subtitle: "You will need a wallet to buy some\ncryptocurrency and other value.",
+                                                  backgroundImage: R.image.walletCardImage()))
+    }
+
+    private func setupScrollView() {
+        view.addSubview(scrollView)
+        scrollView.addSubview(contentView)
+        contentView.addSubview(mainStackView)
+        mainStackView.addArrangedSubviews([
+            walletTitleLabel,
+            portfolioView,
+            walletCardView
+        ])
+    }
+
+    private func configureConstraints() {
+        scrollView.snp.makeConstraints { make in
+            make.edges.equalTo(view)
+        }
+
+        contentView.snp.makeConstraints { make in
+            make.top.bottom.equalTo(scrollView)
+            make.width.equalTo(scrollView)
+            make.centerX.equalTo(scrollView)
+        }
+
+        mainStackView.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(24)
+            make.leading.equalToSuperview().offset(16)
+            make.trailing.equalToSuperview().offset(-16)
+            make.bottom.equalToSuperview()
+        }
+
+        walletCardView.snp.makeConstraints { make in
+            make.height.equalTo(210)
+        }
+    }
+
+    // MARK: - UIElements
+
+    private lazy var scrollView = UIScrollView()
+    private lazy var contentView = UIView()
+    private lazy var mainStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.spacing = 10
+        stackView.alignment = .fill
+        stackView.distribution = .equalSpacing
+        return stackView
+    }()
+
+    private lazy var walletTitleLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Wallet"
+        label.font = R.font.notoSansSemiBold(size: 24)
+        label.textColor = R.color.walletTitleColor()
+        return label
+    }()
+
+    private lazy var portfolioView = PortfolioValueView()
+    private lazy var walletCardView = WalletCardView()
+
+}
 // MARK: WalletViewProtocol
 
 extension WalletViewController: WalletViewProtocol {

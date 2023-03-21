@@ -1,0 +1,30 @@
+PODS:
+  - R.swift (7.2.4)
+  - SnapKit (5.6.0)
+  - SwiftLint (0.50.3)
+  - XCoordinator (2.2.0):
+    - XCoordinator/Core (= 2.2.0)
+  - XCoordinator/Core (2.2.0)
+
+DEPENDENCIES:
+  - R.swift
+  - SnapKit (~> 5.6.0)
+  - SwiftLint
+  - XCoordinator (~> 2.0)
+
+SPEC REPOS:
+  trunk:
+    - R.swift
+    - SnapKit
+    - SwiftLint
+    - XCoordinator
+
+SPEC CHECKSUMS:
+  R.swift: 681bb9135f482e7a81d9d27445b837fef5467e11
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftLint: 77f7cb2b9bb81ab4a12fcc86448ba3f11afa50c6
+  XCoordinator: a5f91e43ee944f508529763921165697d3211629
+
+PODFILE CHECKSUM: faa31dea91762bcc178dc8fdd4dac0bbc10b3dd5
+
+COCOAPODS: 1.11.3

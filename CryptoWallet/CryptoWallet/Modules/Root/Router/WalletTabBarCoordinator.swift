@@ -23,10 +23,14 @@ class WalletTabBarCoordinator: TabBarCoordinator<WalletTabBarRoute> {
     // MARK: Initialization
     convenience init() {
         let walletCoordinator = WalletCoordinator()
-        walletCoordinator.rootViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .recents, tag: 0)
+        walletCoordinator.rootViewController.tabBarItem = UITabBarItem(title: nil,
+                                                                       image: R.image.walletTab(),
+                                                                       selectedImage: R.image.selectedWalletTab())
 
         let settingCoordinator = SettingsCoordinator()
-        settingCoordinator.rootViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 1)
+        settingCoordinator.rootViewController.tabBarItem = UITabBarItem(title: nil,
+                                                                        image: R.image.settingsTab(),
+                                                                        selectedImage: R.image.selectedSettingsTab())
 
         self.init(walletRouter: walletCoordinator.strongRouter,
                   settingsRouter: settingCoordinator.strongRouter)

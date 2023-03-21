@@ -8,9 +8,7 @@
 import UIKit
 
 class WalletPresenter {
-
 }
 
 extension WalletPresenter: WalletPresenterProtocol {
-    
 }

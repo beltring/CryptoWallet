@@ -3,16 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BCDFDEE3CB09A90B1455D233 /* Pods_CryptoWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F2A865BD33FFF60E4466D2 /* Pods_CryptoWallet.framework */; };
 		CE280C8329C45167002B4DEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280C8229C45167002B4DEC /* AppDelegate.swift */; };
 		CE280C8529C45167002B4DEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280C8429C45167002B4DEC /* SceneDelegate.swift */; };
-		CE280C8729C45167002B4DEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280C8629C45167002B4DEC /* ViewController.swift */; };
 		CE280C8C29C45168002B4DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE280C8B29C45168002B4DEC /* Assets.xcassets */; };
 		CE280C8F29C45168002B4DEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE280C8D29C45168002B4DEC /* LaunchScreen.storyboard */; };
-		CE280C9A29C4731A002B4DEC /* XCoordinator in Frameworks */ = {isa = PBXBuildFile; productRef = CE280C9929C4731A002B4DEC /* XCoordinator */; };
 		CE280C9F29C4772A002B4DEC /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280C9E29C4772A002B4DEC /* AppCoordinator.swift */; };
 		CE280CA229C47D74002B4DEC /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280CA129C47D74002B4DEC /* WalletViewController.swift */; };
 		CE280CA629C47EA6002B4DEC /* WalletPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280CA529C47EA6002B4DEC /* WalletPresenter.swift */; };
@@ -25,13 +24,58 @@
 		CE280CBA29C4919C002B4DEC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280CB929C4919C002B4DEC /* SettingsViewController.swift */; };
 		CE280CBC29C491A9002B4DEC /* SettingsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280CBB29C491A9002B4DEC /* SettingsViewProtocol.swift */; };
 		CE280CBE29C49214002B4DEC /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280CBD29C49214002B4DEC /* SettingsCoordinator.swift */; };
+		CE6A9B8D29C97BAD00E1077E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A9B8C29C97BAD00E1077E /* R.generated.swift */; };
+		CE6A9B9029C97EF600E1077E /* OneInchKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE6A9B8F29C97EF600E1077E /* OneInchKit */; };
+		CEC0FA9429C9897000ECB025 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA8129C9897000ECB025 /* NotoSans-Regular.ttf */; };
+		CEC0FA9529C9897000ECB025 /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA8229C9897000ECB025 /* NotoSans-Medium.ttf */; };
+		CEC0FA9629C9897000ECB025 /* NotoSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA8329C9897000ECB025 /* NotoSans-MediumItalic.ttf */; };
+		CEC0FA9729C9897000ECB025 /* NotoSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA8429C9897000ECB025 /* NotoSans-Black.ttf */; };
+		CEC0FA9829C9897000ECB025 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA8529C9897000ECB025 /* NotoSans-Bold.ttf */; };
+		CEC0FA9929C9897000ECB025 /* NotoSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA8629C9897000ECB025 /* NotoSans-Thin.ttf */; };
+		CEC0FA9A29C9897000ECB025 /* NotoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA8729C9897000ECB025 /* NotoSans-SemiBold.ttf */; };
+		CEC0FA9B29C9897000ECB025 /* NotoSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA8829C9897000ECB025 /* NotoSans-SemiBoldItalic.ttf */; };
+		CEC0FA9D29C9897000ECB025 /* NotoSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA8A29C9897000ECB025 /* NotoSans-LightItalic.ttf */; };
+		CEC0FA9E29C9897000ECB025 /* NotoSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA8B29C9897000ECB025 /* NotoSans-Light.ttf */; };
+		CEC0FA9F29C9897000ECB025 /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA8C29C9897000ECB025 /* NotoSans-BoldItalic.ttf */; };
+		CEC0FAA029C9897000ECB025 /* NotoSans-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA8D29C9897000ECB025 /* NotoSans-BlackItalic.ttf */; };
+		CEC0FAA129C9897000ECB025 /* NotoSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA8E29C9897000ECB025 /* NotoSans-ExtraBoldItalic.ttf */; };
+		CEC0FAA229C9897000ECB025 /* NotoSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA8F29C9897000ECB025 /* NotoSans-ExtraLight.ttf */; };
+		CEC0FAA329C9897000ECB025 /* NotoSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA9029C9897000ECB025 /* NotoSans-ThinItalic.ttf */; };
+		CEC0FAA429C9897000ECB025 /* NotoSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA9129C9897000ECB025 /* NotoSans-ExtraLightItalic.ttf */; };
+		CEC0FAA529C9897000ECB025 /* NotoSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA9229C9897000ECB025 /* NotoSans-ExtraBold.ttf */; };
+		CEC0FAA629C9897000ECB025 /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA9329C9897000ECB025 /* NotoSans-Italic.ttf */; };
+		CEC0FAAA29C98BBB00ECB025 /* PortfolioValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FAA929C98BBB00ECB025 /* PortfolioValueView.swift */; };
+		CEC0FAAE29C98F6100ECB025 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FAAD29C98F6100ECB025 /* UIViewExtensions.swift */; };
+		CEC0FAB029C9925700ECB025 /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FAAF29C9925700ECB025 /* UIStackViewExtension.swift */; };
+		CEC0FAB129C99C9E00ECB025 /* NotoSans-Regular.ttf in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FA8129C9897000ECB025 /* NotoSans-Regular.ttf */; };
+		CEC0FAB229C99C9E00ECB025 /* NotoSans-Medium.ttf in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FA8229C9897000ECB025 /* NotoSans-Medium.ttf */; };
+		CEC0FAB329C99C9E00ECB025 /* NotoSans-MediumItalic.ttf in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FA8329C9897000ECB025 /* NotoSans-MediumItalic.ttf */; };
+		CEC0FAB429C99C9E00ECB025 /* NotoSans-Black.ttf in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FA8429C9897000ECB025 /* NotoSans-Black.ttf */; };
+		CEC0FAB529C99C9E00ECB025 /* NotoSans-Bold.ttf in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FA8529C9897000ECB025 /* NotoSans-Bold.ttf */; };
+		CEC0FAB629C99C9E00ECB025 /* NotoSans-Thin.ttf in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FA8629C9897000ECB025 /* NotoSans-Thin.ttf */; };
+		CEC0FAB729C99C9E00ECB025 /* NotoSans-SemiBold.ttf in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FA8729C9897000ECB025 /* NotoSans-SemiBold.ttf */; };
+		CEC0FAB829C99C9E00ECB025 /* NotoSans-SemiBoldItalic.ttf in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FA8829C9897000ECB025 /* NotoSans-SemiBoldItalic.ttf */; };
+		CEC0FAB929C99C9E00ECB025 /* NotoSans-LightItalic.ttf in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FA8A29C9897000ECB025 /* NotoSans-LightItalic.ttf */; };
+		CEC0FABA29C99C9E00ECB025 /* NotoSans-Light.ttf in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FA8B29C9897000ECB025 /* NotoSans-Light.ttf */; };
+		CEC0FABB29C99C9E00ECB025 /* NotoSans-BoldItalic.ttf in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FA8C29C9897000ECB025 /* NotoSans-BoldItalic.ttf */; };
+		CEC0FABC29C99C9E00ECB025 /* NotoSans-BlackItalic.ttf in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FA8D29C9897000ECB025 /* NotoSans-BlackItalic.ttf */; };
+		CEC0FABD29C99C9E00ECB025 /* NotoSans-ExtraBoldItalic.ttf in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FA8E29C9897000ECB025 /* NotoSans-ExtraBoldItalic.ttf */; };
+		CEC0FABE29C99C9E00ECB025 /* NotoSans-ExtraLight.ttf in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FA8F29C9897000ECB025 /* NotoSans-ExtraLight.ttf */; };
+		CEC0FABF29C99C9E00ECB025 /* NotoSans-ThinItalic.ttf in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FA9029C9897000ECB025 /* NotoSans-ThinItalic.ttf */; };
+		CEC0FAC029C99C9E00ECB025 /* NotoSans-ExtraLightItalic.ttf in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FA9129C9897000ECB025 /* NotoSans-ExtraLightItalic.ttf */; };
+		CEC0FAC129C99C9E00ECB025 /* NotoSans-ExtraBold.ttf in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FA9229C9897000ECB025 /* NotoSans-ExtraBold.ttf */; };
+		CEC0FAC229C99C9E00ECB025 /* NotoSans-Italic.ttf in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FA9329C9897000ECB025 /* NotoSans-Italic.ttf */; };
+		CEC0FAC529C99EF100ECB025 /* WalletCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FAC429C99EF000ECB025 /* WalletCardView.swift */; };
+		CEC0FAC829C9C59D00ECB025 /* RestoreWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FAC729C9C59D00ECB025 /* RestoreWalletView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27555644CAEC2AA42143F11A /* Pods-CryptoWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWallet.release.xcconfig"; path = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.release.xcconfig"; sourceTree = "<group>"; };
+		67F2A865BD33FFF60E4466D2 /* Pods_CryptoWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA888EAC28A4DDECC2BCE442 /* Pods-CryptoWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWallet.debug.xcconfig"; path = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.debug.xcconfig"; sourceTree = "<group>"; };
 		CE280C7F29C45167002B4DEC /* CryptoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE280C8229C45167002B4DEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE280C8429C45167002B4DEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE280C8629C45167002B4DEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE280C8B29C45168002B4DEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE280C8E29C45168002B4DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE280C9029C45168002B4DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +91,30 @@
 		CE280CB929C4919C002B4DEC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CE280CBB29C491A9002B4DEC /* SettingsViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewProtocol.swift; sourceTree = "<group>"; };
 		CE280CBD29C49214002B4DEC /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		CE6A9B8C29C97BAD00E1077E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		CEC0FA8129C9897000ECB025 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		CEC0FA8229C9897000ECB025 /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
+		CEC0FA8329C9897000ECB025 /* NotoSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-MediumItalic.ttf"; sourceTree = "<group>"; };
+		CEC0FA8429C9897000ECB025 /* NotoSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Black.ttf"; sourceTree = "<group>"; };
+		CEC0FA8529C9897000ECB025 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		CEC0FA8629C9897000ECB025 /* NotoSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Thin.ttf"; sourceTree = "<group>"; };
+		CEC0FA8729C9897000ECB025 /* NotoSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		CEC0FA8829C9897000ECB025 /* NotoSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		CEC0FA8A29C9897000ECB025 /* NotoSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		CEC0FA8B29C9897000ECB025 /* NotoSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Light.ttf"; sourceTree = "<group>"; };
+		CEC0FA8C29C9897000ECB025 /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		CEC0FA8D29C9897000ECB025 /* NotoSans-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BlackItalic.ttf"; sourceTree = "<group>"; };
+		CEC0FA8E29C9897000ECB025 /* NotoSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		CEC0FA8F29C9897000ECB025 /* NotoSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		CEC0FA9029C9897000ECB025 /* NotoSans-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-ThinItalic.ttf"; sourceTree = "<group>"; };
+		CEC0FA9129C9897000ECB025 /* NotoSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		CEC0FA9229C9897000ECB025 /* NotoSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		CEC0FA9329C9897000ECB025 /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		CEC0FAA929C98BBB00ECB025 /* PortfolioValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioValueView.swift; sourceTree = "<group>"; };
+		CEC0FAAD29C98F6100ECB025 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		CEC0FAAF29C9925700ECB025 /* UIStackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
+		CEC0FAC429C99EF000ECB025 /* WalletCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardView.swift; sourceTree = "<group>"; };
+		CEC0FAC729C9C59D00ECB025 /* RestoreWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreWalletView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,18 +122,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE280C9A29C4731A002B4DEC /* XCoordinator in Frameworks */,
+				CE6A9B9029C97EF600E1077E /* OneInchKit in Frameworks */,
+				BCDFDEE3CB09A90B1455D233 /* Pods_CryptoWallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E309B1AD5AAED97235C80F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA888EAC28A4DDECC2BCE442 /* Pods-CryptoWallet.debug.xcconfig */,
+				27555644CAEC2AA42143F11A /* Pods-CryptoWallet.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		77BCF77E1896D022244B5FD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67F2A865BD33FFF60E4466D2 /* Pods_CryptoWallet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE280C7629C45166002B4DEC = {
 			isa = PBXGroup;
 			children = (
 				CE280C8129C45167002B4DEC /* CryptoWallet */,
 				CE280C8029C45167002B4DEC /* Products */,
+				2E309B1AD5AAED97235C80F8 /* Pods */,
+				77BCF77E1896D022244B5FD3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,12 +168,13 @@
 		CE280C8129C45167002B4DEC /* CryptoWallet */ = {
 			isa = PBXGroup;
 			children = (
-				CE280C9B29C475E6002B4DEC /* Modules */,
 				CE280C9029C45168002B4DEC /* Info.plist */,
-				CE280C8629C45167002B4DEC /* ViewController.swift */,
+				CE6A9B8C29C97BAD00E1077E /* R.generated.swift */,
 				CE280C9629C454A7002B4DEC /* Application */,
 				CE280C8D29C45168002B4DEC /* LaunchScreen.storyboard */,
+				CE280C9B29C475E6002B4DEC /* Modules */,
 				CE280C9729C45AB0002B4DEC /* Resources */,
+				CEC0FAAB29C98F4300ECB025 /* Utils */,
 			);
 			path = CryptoWallet;
 			sourceTree = "<group>";
@@ -102,6 +191,7 @@
 		CE280C9729C45AB0002B4DEC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CEC0FA7F29C9895D00ECB025 /* Fonts */,
 				CE280C8B29C45168002B4DEC /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -147,6 +237,7 @@
 		CE280CA329C47D77002B4DEC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CEC0FAA729C98B8B00ECB025 /* Subviews */,
 				CE280CA929C48126002B4DEC /* Protocol */,
 				CE280CA129C47D74002B4DEC /* WalletViewController.swift */,
 			);
@@ -214,6 +305,90 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		CEC0FA7F29C9895D00ECB025 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CEC0FA8029C9897000ECB025 /* Noto_Sans */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CEC0FA8029C9897000ECB025 /* Noto_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				CEC0FA8129C9897000ECB025 /* NotoSans-Regular.ttf */,
+				CEC0FA8229C9897000ECB025 /* NotoSans-Medium.ttf */,
+				CEC0FA8329C9897000ECB025 /* NotoSans-MediumItalic.ttf */,
+				CEC0FA8429C9897000ECB025 /* NotoSans-Black.ttf */,
+				CEC0FA8529C9897000ECB025 /* NotoSans-Bold.ttf */,
+				CEC0FA8629C9897000ECB025 /* NotoSans-Thin.ttf */,
+				CEC0FA8729C9897000ECB025 /* NotoSans-SemiBold.ttf */,
+				CEC0FA8829C9897000ECB025 /* NotoSans-SemiBoldItalic.ttf */,
+				CEC0FA8A29C9897000ECB025 /* NotoSans-LightItalic.ttf */,
+				CEC0FA8B29C9897000ECB025 /* NotoSans-Light.ttf */,
+				CEC0FA8C29C9897000ECB025 /* NotoSans-BoldItalic.ttf */,
+				CEC0FA8D29C9897000ECB025 /* NotoSans-BlackItalic.ttf */,
+				CEC0FA8E29C9897000ECB025 /* NotoSans-ExtraBoldItalic.ttf */,
+				CEC0FA8F29C9897000ECB025 /* NotoSans-ExtraLight.ttf */,
+				CEC0FA9029C9897000ECB025 /* NotoSans-ThinItalic.ttf */,
+				CEC0FA9129C9897000ECB025 /* NotoSans-ExtraLightItalic.ttf */,
+				CEC0FA9229C9897000ECB025 /* NotoSans-ExtraBold.ttf */,
+				CEC0FA9329C9897000ECB025 /* NotoSans-Italic.ttf */,
+			);
+			path = Noto_Sans;
+			sourceTree = "<group>";
+		};
+		CEC0FAA729C98B8B00ECB025 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				CEC0FAC629C9C58900ECB025 /* RestoreWallet */,
+				CEC0FAC329C99EE000ECB025 /* WalletCard */,
+				CEC0FAA829C98B9200ECB025 /* PortfolioValueView */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		CEC0FAA829C98B9200ECB025 /* PortfolioValueView */ = {
+			isa = PBXGroup;
+			children = (
+				CEC0FAA929C98BBB00ECB025 /* PortfolioValueView.swift */,
+			);
+			path = PortfolioValueView;
+			sourceTree = "<group>";
+		};
+		CEC0FAAB29C98F4300ECB025 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CEC0FAAC29C98F5000ECB025 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CEC0FAAC29C98F5000ECB025 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEC0FAAD29C98F6100ECB025 /* UIViewExtensions.swift */,
+				CEC0FAAF29C9925700ECB025 /* UIStackViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CEC0FAC329C99EE000ECB025 /* WalletCard */ = {
+			isa = PBXGroup;
+			children = (
+				CEC0FAC429C99EF000ECB025 /* WalletCardView.swift */,
+			);
+			path = WalletCard;
+			sourceTree = "<group>";
+		};
+		CEC0FAC629C9C58900ECB025 /* RestoreWallet */ = {
+			isa = PBXGroup;
+			children = (
+				CEC0FAC729C9C59D00ECB025 /* RestoreWalletView.swift */,
+			);
+			path = RestoreWallet;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -221,10 +396,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE280C9329C45168002B4DEC /* Build configuration list for PBXNativeTarget "CryptoWallet" */;
 			buildPhases = (
-				CE6E65BE29C835210024D978 /* ShellScript */,
+				5514A201D0D8B2F3BDC4A899 /* [CP] Check Pods Manifest.lock */,
+				CEA5145F29C873AC0036CD9A /* ShellScript */,
+				CEA5146029C891FE0036CD9A /* ShellScript */,
 				CE280C7B29C45167002B4DEC /* Sources */,
 				CE280C7C29C45167002B4DEC /* Frameworks */,
 				CE280C7D29C45167002B4DEC /* Resources */,
+				746B3FFF4FE897E9FE721917 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,7 +410,7 @@
 			);
 			name = CryptoWallet;
 			packageProductDependencies = (
-				CE280C9929C4731A002B4DEC /* XCoordinator */,
+				CE6A9B8F29C97EF600E1077E /* OneInchKit */,
 			);
 			productName = CryptoWallet;
 			productReference = CE280C7F29C45167002B4DEC /* CryptoWallet.app */;
@@ -254,7 +432,7 @@
 				};
 			};
 			buildConfigurationList = CE280C7A29C45166002B4DEC /* Build configuration list for PBXProject "CryptoWallet" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -263,9 +441,7 @@
 			);
 			mainGroup = CE280C7629C45166002B4DEC;
 			packageReferences = (
-				CE280C9829C4731A002B4DEC /* XCRemoteSwiftPackageReference "XCoordinator" */,
-				CE6E65BD29C834FD0024D978 /* XCRemoteSwiftPackageReference "SwiftLint" */,
-				CE6E65BF29C8539F0024D978 /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */,
+				CE6A9B8E29C97EF600E1077E /* XCRemoteSwiftPackageReference "OneInchKit.Swift" */,
 			);
 			productRefGroup = CE280C8029C45167002B4DEC /* Products */;
 			projectDirPath = "";
@@ -281,7 +457,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC0FA9D29C9897000ECB025 /* NotoSans-LightItalic.ttf in Resources */,
+				CEC0FA9429C9897000ECB025 /* NotoSans-Regular.ttf in Resources */,
+				CEC0FA9729C9897000ECB025 /* NotoSans-Black.ttf in Resources */,
+				CEC0FA9B29C9897000ECB025 /* NotoSans-SemiBoldItalic.ttf in Resources */,
+				CEC0FAA229C9897000ECB025 /* NotoSans-ExtraLight.ttf in Resources */,
+				CEC0FAA129C9897000ECB025 /* NotoSans-ExtraBoldItalic.ttf in Resources */,
+				CEC0FAA029C9897000ECB025 /* NotoSans-BlackItalic.ttf in Resources */,
+				CEC0FA9A29C9897000ECB025 /* NotoSans-SemiBold.ttf in Resources */,
+				CEC0FA9929C9897000ECB025 /* NotoSans-Thin.ttf in Resources */,
 				CE280C8F29C45168002B4DEC /* LaunchScreen.storyboard in Resources */,
+				CEC0FA9829C9897000ECB025 /* NotoSans-Bold.ttf in Resources */,
+				CEC0FA9629C9897000ECB025 /* NotoSans-MediumItalic.ttf in Resources */,
+				CEC0FAA529C9897000ECB025 /* NotoSans-ExtraBold.ttf in Resources */,
+				CEC0FA9F29C9897000ECB025 /* NotoSans-BoldItalic.ttf in Resources */,
+				CEC0FAA429C9897000ECB025 /* NotoSans-ExtraLightItalic.ttf in Resources */,
+				CEC0FA9529C9897000ECB025 /* NotoSans-Medium.ttf in Resources */,
+				CEC0FA9E29C9897000ECB025 /* NotoSans-Light.ttf in Resources */,
+				CEC0FAA629C9897000ECB025 /* NotoSans-Italic.ttf in Resources */,
+				CEC0FAA329C9897000ECB025 /* NotoSans-ThinItalic.ttf in Resources */,
 				CE280C8C29C45168002B4DEC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +483,46 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		CE6E65BE29C835210024D978 /* ShellScript */ = {
+		5514A201D0D8B2F3BDC4A899 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoWallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		746B3FFF4FE897E9FE721917 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEA5145F29C873AC0036CD9A /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -304,7 +537,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		CEA5146029C891FE0036CD9A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -313,19 +565,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC0FAB129C99C9E00ECB025 /* NotoSans-Regular.ttf in Sources */,
+				CEC0FAB229C99C9E00ECB025 /* NotoSans-Medium.ttf in Sources */,
+				CEC0FAB329C99C9E00ECB025 /* NotoSans-MediumItalic.ttf in Sources */,
+				CEC0FAB429C99C9E00ECB025 /* NotoSans-Black.ttf in Sources */,
+				CEC0FAB529C99C9E00ECB025 /* NotoSans-Bold.ttf in Sources */,
+				CEC0FAB629C99C9E00ECB025 /* NotoSans-Thin.ttf in Sources */,
+				CEC0FAB729C99C9E00ECB025 /* NotoSans-SemiBold.ttf in Sources */,
+				CEC0FAB829C99C9E00ECB025 /* NotoSans-SemiBoldItalic.ttf in Sources */,
+				CEC0FAB929C99C9E00ECB025 /* NotoSans-LightItalic.ttf in Sources */,
+				CEC0FABA29C99C9E00ECB025 /* NotoSans-Light.ttf in Sources */,
+				CEC0FABB29C99C9E00ECB025 /* NotoSans-BoldItalic.ttf in Sources */,
+				CEC0FABC29C99C9E00ECB025 /* NotoSans-BlackItalic.ttf in Sources */,
+				CEC0FABD29C99C9E00ECB025 /* NotoSans-ExtraBoldItalic.ttf in Sources */,
+				CEC0FABE29C99C9E00ECB025 /* NotoSans-ExtraLight.ttf in Sources */,
+				CEC0FABF29C99C9E00ECB025 /* NotoSans-ThinItalic.ttf in Sources */,
+				CEC0FAC029C99C9E00ECB025 /* NotoSans-ExtraLightItalic.ttf in Sources */,
+				CEC0FAC129C99C9E00ECB025 /* NotoSans-ExtraBold.ttf in Sources */,
+				CEC0FAC229C99C9E00ECB025 /* NotoSans-Italic.ttf in Sources */,
 				CE280CB629C49045002B4DEC /* SettingsPresenterProtocol.swift in Sources */,
 				CE280CA829C47F49002B4DEC /* WalletPresenterProtocol.swift in Sources */,
 				CE280CAB29C4813A002B4DEC /* WalletViewProtocol.swift in Sources */,
 				CE280C9F29C4772A002B4DEC /* AppCoordinator.swift in Sources */,
-				CE280C8729C45167002B4DEC /* ViewController.swift in Sources */,
+				CEC0FAC829C9C59D00ECB025 /* RestoreWalletView.swift in Sources */,
 				CE280C8329C45167002B4DEC /* AppDelegate.swift in Sources */,
 				CE280CAD29C4850A002B4DEC /* WalletTabBarCoordinator.swift in Sources */,
 				CE280C8529C45167002B4DEC /* SceneDelegate.swift in Sources */,
+				CEC0FAB029C9925700ECB025 /* UIStackViewExtension.swift in Sources */,
 				CE280CA229C47D74002B4DEC /* WalletViewController.swift in Sources */,
 				CE280CA629C47EA6002B4DEC /* WalletPresenter.swift in Sources */,
+				CEC0FAAA29C98BBB00ECB025 /* PortfolioValueView.swift in Sources */,
 				CE280CBE29C49214002B4DEC /* SettingsCoordinator.swift in Sources */,
+				CE6A9B8D29C97BAD00E1077E /* R.generated.swift in Sources */,
 				CE280CBA29C4919C002B4DEC /* SettingsViewController.swift in Sources */,
 				CE280CB029C4868E002B4DEC /* WalletCoordinator.swift in Sources */,
+				CEC0FAAE29C98F6100ECB025 /* UIViewExtensions.swift in Sources */,
+				CEC0FAC529C99EF100ECB025 /* WalletCardView.swift in Sources */,
 				CE280CB829C49057002B4DEC /* SettingsPresenter.swift in Sources */,
 				CE280CBC29C491A9002B4DEC /* SettingsViewProtocol.swift in Sources */,
 			);
@@ -461,6 +736,7 @@
 		};
 		CE280C9429C45168002B4DEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA888EAC28A4DDECC2BCE442 /* Pods-CryptoWallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -492,6 +768,7 @@
 		};
 		CE280C9529C45168002B4DEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27555644CAEC2AA42143F11A /* Pods-CryptoWallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -545,37 +822,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CE280C9829C4731A002B4DEC /* XCRemoteSwiftPackageReference "XCoordinator" */ = {
+		CE6A9B8E29C97EF600E1077E /* XCRemoteSwiftPackageReference "OneInchKit.Swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/quickbirdstudios/XCoordinator.git";
+			repositoryURL = "https://github.com/horizontalsystems/OneInchKit.Swift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
-		CE6E65BD29C834FD0024D978 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/SwiftLint";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.2;
-			};
-		};
-		CE6E65BF29C8539F0024D978 /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/MetaMask/metamask-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.1;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CE280C9929C4731A002B4DEC /* XCoordinator */ = {
+		CE6A9B8F29C97EF600E1077E /* OneInchKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CE280C9829C4731A002B4DEC /* XCRemoteSwiftPackageReference "XCoordinator" */;
-			productName = XCoordinator;
+			package = CE6A9B8E29C97EF600E1077E /* XCRemoteSwiftPackageReference "OneInchKit.Swift" */;
+			productName = OneInchKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
