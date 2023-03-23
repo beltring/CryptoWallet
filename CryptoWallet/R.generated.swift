@@ -46,7 +46,7 @@ struct _R {
     let developmentRegion = "en"
   }
 
-  /// This `_R.color` struct is generated, and contains static references to 4 colors.
+  /// This `_R.color` struct is generated, and contains static references to 9 colors.
   struct color {
     let bundle: Foundation.Bundle
 
@@ -56,22 +56,52 @@ struct _R {
     /// Color `backgroundColor`.
     var backgroundColor: RswiftResources.ColorResource { .init(name: "backgroundColor", path: [], bundle: bundle) }
 
+    /// Color `createDescriptionColor`.
+    var createDescriptionColor: RswiftResources.ColorResource { .init(name: "createDescriptionColor", path: [], bundle: bundle) }
+
+    /// Color `createTitleColor`.
+    var createTitleColor: RswiftResources.ColorResource { .init(name: "createTitleColor", path: [], bundle: bundle) }
+
+    /// Color `createWalletBackgroundColor`.
+    var createWalletBackgroundColor: RswiftResources.ColorResource { .init(name: "createWalletBackgroundColor", path: [], bundle: bundle) }
+
+    /// Color `endButtonColor`.
+    var endButtonColor: RswiftResources.ColorResource { .init(name: "endButtonColor", path: [], bundle: bundle) }
+
     /// Color `portfolioTitleColor`.
     var portfolioTitleColor: RswiftResources.ColorResource { .init(name: "portfolioTitleColor", path: [], bundle: bundle) }
+
+    /// Color `startButtonColor`.
+    var startButtonColor: RswiftResources.ColorResource { .init(name: "startButtonColor", path: [], bundle: bundle) }
 
     /// Color `walletTitleColor`.
     var walletTitleColor: RswiftResources.ColorResource { .init(name: "walletTitleColor", path: [], bundle: bundle) }
   }
 
-  /// This `_R.image` struct is generated, and contains static references to 8 images.
+  /// This `_R.image` struct is generated, and contains static references to 16 images.
   struct image {
     let bundle: Foundation.Bundle
 
     /// Image `Logo`.
     var logo: RswiftResources.ImageResource { .init(name: "Logo", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
+    /// Image `backUpImage`.
+    var backUpImage: RswiftResources.ImageResource { .init(name: "backUpImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
     /// Image `cardImage`.
     var cardImage: RswiftResources.ImageResource { .init(name: "cardImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `checkImage`.
+    var checkImage: RswiftResources.ImageResource { .init(name: "checkImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `chooseThemeImage`.
+    var chooseThemeImage: RswiftResources.ImageResource { .init(name: "chooseThemeImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `closeImage`.
+    var closeImage: RswiftResources.ImageResource { .init(name: "closeImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `contactSupportImage`.
+    var contactSupportImage: RswiftResources.ImageResource { .init(name: "contactSupportImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `selectedSettingsTab`.
     var selectedSettingsTab: RswiftResources.ImageResource { .init(name: "selectedSettingsTab", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
@@ -79,17 +109,26 @@ struct _R {
     /// Image `selectedWalletTab`.
     var selectedWalletTab: RswiftResources.ImageResource { .init(name: "selectedWalletTab", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
+    /// Image `settingImage`.
+    var settingImage: RswiftResources.ImageResource { .init(name: "settingImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
     /// Image `settingsTab`.
     var settingsTab: RswiftResources.ImageResource { .init(name: "settingsTab", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `sharkCreateImage`.
     var sharkCreateImage: RswiftResources.ImageResource { .init(name: "sharkCreateImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
+    /// Image `sharkInstructionImage`.
+    var sharkInstructionImage: RswiftResources.ImageResource { .init(name: "sharkInstructionImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
     /// Image `walletCardImage`.
     var walletCardImage: RswiftResources.ImageResource { .init(name: "walletCardImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `walletTab`.
     var walletTab: RswiftResources.ImageResource { .init(name: "walletTab", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `warningImage`.
+    var warningImage: RswiftResources.ImageResource { .init(name: "warningImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
   }
 
   /// This `_R.info` struct is generated, and contains static references to 1 properties.

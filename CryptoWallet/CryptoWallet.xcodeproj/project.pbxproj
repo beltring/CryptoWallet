@@ -25,6 +25,22 @@
 		CE280CBA29C4919C002B4DEC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280CB929C4919C002B4DEC /* SettingsViewController.swift */; };
 		CE280CBC29C491A9002B4DEC /* SettingsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280CBB29C491A9002B4DEC /* SettingsViewProtocol.swift */; };
 		CE280CBE29C49214002B4DEC /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280CBD29C49214002B4DEC /* SettingsCoordinator.swift */; };
+		CE40637C29CAE3E6004664FE /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE40637B29CAE3E6004664FE /* UIButtonExtension.swift */; };
+		CE40638229CAFDD1004664FE /* CreateWalletCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE40638129CAFDD1004664FE /* CreateWalletCoordinator.swift */; };
+		CE40638429CAFECC004664FE /* CreateWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE40638329CAFECC004664FE /* CreateWalletViewController.swift */; };
+		CE40638629CAFEF0004664FE /* CreateWalletViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE40638529CAFEF0004664FE /* CreateWalletViewProtocol.swift */; };
+		CE40638829CB00AD004664FE /* CreateWalletPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE40638729CB00AD004664FE /* CreateWalletPresenter.swift */; };
+		CE40638A29CB01C0004664FE /* CreateWalletPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE40638929CB01C0004664FE /* CreateWalletPresenterProtocol.swift */; };
+		CE40638E29CB13E5004664FE /* CreateWalletInstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE40638D29CB13E5004664FE /* CreateWalletInstructionView.swift */; };
+		CE40639029CB276C004664FE /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE40638F29CB276C004664FE /* InstructionView.swift */; };
+		CE41AC4B29CC17A7009CE7C3 /* InstructionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41AC4A29CC17A7009CE7C3 /* InstructionType.swift */; };
+		CE41AC4D29CC2057009CE7C3 /* HeaderInstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41AC4C29CC2057009CE7C3 /* HeaderInstructionView.swift */; };
+		CE41AC4F29CC2388009CE7C3 /* FooterInstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41AC4E29CC2388009CE7C3 /* FooterInstructionView.swift */; };
+		CE41AC5529CC408A009CE7C3 /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41AC5429CC408A009CE7C3 /* AddAccountViewController.swift */; };
+		CE41AC5729CC409A009CE7C3 /* AddAccountViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41AC5629CC409A009CE7C3 /* AddAccountViewProtocol.swift */; };
+		CE41AC5929CC44ED009CE7C3 /* AddAccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41AC5829CC44ED009CE7C3 /* AddAccountPresenter.swift */; };
+		CE41AC5B29CC450B009CE7C3 /* AddAccountPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41AC5A29CC450B009CE7C3 /* AddAccountPresenterProtocol.swift */; };
+		CE41AC5D29CC46AA009CE7C3 /* AddAccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41AC5C29CC46AA009CE7C3 /* AddAccountCoordinator.swift */; };
 		CE6A9B8D29C97BAD00E1077E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A9B8C29C97BAD00E1077E /* R.generated.swift */; };
 		CE6A9B9029C97EF600E1077E /* OneInchKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE6A9B8F29C97EF600E1077E /* OneInchKit */; };
 		CEC0FA9429C9897000ECB025 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA8129C9897000ECB025 /* NotoSans-Regular.ttf */; };
@@ -93,6 +109,22 @@
 		CE280CB929C4919C002B4DEC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CE280CBB29C491A9002B4DEC /* SettingsViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewProtocol.swift; sourceTree = "<group>"; };
 		CE280CBD29C49214002B4DEC /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		CE40637B29CAE3E6004664FE /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		CE40638129CAFDD1004664FE /* CreateWalletCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletCoordinator.swift; sourceTree = "<group>"; };
+		CE40638329CAFECC004664FE /* CreateWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletViewController.swift; sourceTree = "<group>"; };
+		CE40638529CAFEF0004664FE /* CreateWalletViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletViewProtocol.swift; sourceTree = "<group>"; };
+		CE40638729CB00AD004664FE /* CreateWalletPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletPresenter.swift; sourceTree = "<group>"; };
+		CE40638929CB01C0004664FE /* CreateWalletPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletPresenterProtocol.swift; sourceTree = "<group>"; };
+		CE40638D29CB13E5004664FE /* CreateWalletInstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletInstructionView.swift; sourceTree = "<group>"; };
+		CE40638F29CB276C004664FE /* InstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
+		CE41AC4A29CC17A7009CE7C3 /* InstructionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionType.swift; sourceTree = "<group>"; };
+		CE41AC4C29CC2057009CE7C3 /* HeaderInstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderInstructionView.swift; sourceTree = "<group>"; };
+		CE41AC4E29CC2388009CE7C3 /* FooterInstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterInstructionView.swift; sourceTree = "<group>"; };
+		CE41AC5429CC408A009CE7C3 /* AddAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
+		CE41AC5629CC409A009CE7C3 /* AddAccountViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountViewProtocol.swift; sourceTree = "<group>"; };
+		CE41AC5829CC44ED009CE7C3 /* AddAccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountPresenter.swift; sourceTree = "<group>"; };
+		CE41AC5A29CC450B009CE7C3 /* AddAccountPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountPresenterProtocol.swift; sourceTree = "<group>"; };
+		CE41AC5C29CC46AA009CE7C3 /* AddAccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountCoordinator.swift; sourceTree = "<group>"; };
 		CE6A9B8C29C97BAD00E1077E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		CEC0FA8129C9897000ECB025 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 		CEC0FA8229C9897000ECB025 /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
@@ -182,6 +214,7 @@
 				CE6A9B8C29C97BAD00E1077E /* R.generated.swift */,
 				CE280C9629C454A7002B4DEC /* Application */,
 				CE280C8D29C45168002B4DEC /* LaunchScreen.storyboard */,
+				CE41AC4929CC178E009CE7C3 /* Models */,
 				CE280C9B29C475E6002B4DEC /* Modules */,
 				CE280C9729C45AB0002B4DEC /* Resources */,
 				CEC0FAAB29C98F4300ECB025 /* Utils */,
@@ -210,6 +243,8 @@
 		CE280C9B29C475E6002B4DEC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CE41AC5029CC3FC0009CE7C3 /* AddAccount */,
+				CE40637D29CAFC0E004664FE /* CreateWallet */,
 				CE280CB129C48FCC002B4DEC /* Settings */,
 				CE280CA029C47CF5002B4DEC /* Wallet */,
 				CE280C9C29C475FA002B4DEC /* Root */,
@@ -315,6 +350,106 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		CE40637D29CAFC0E004664FE /* CreateWallet */ = {
+			isa = PBXGroup;
+			children = (
+				CE40638029CAFD46004664FE /* Router */,
+				CE40637F29CAFC22004664FE /* View */,
+				CE40637E29CAFC1A004664FE /* Presenter */,
+			);
+			path = CreateWallet;
+			sourceTree = "<group>";
+		};
+		CE40637E29CAFC1A004664FE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CE40638729CB00AD004664FE /* CreateWalletPresenter.swift */,
+				CE40638929CB01C0004664FE /* CreateWalletPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CE40637F29CAFC22004664FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE40638B29CB10FE004664FE /* Subviews */,
+				CE40638329CAFECC004664FE /* CreateWalletViewController.swift */,
+				CE40638529CAFEF0004664FE /* CreateWalletViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE40638029CAFD46004664FE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CE40638129CAFDD1004664FE /* CreateWalletCoordinator.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CE40638B29CB10FE004664FE /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				CE40638C29CB1366004664FE /* Instruction */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		CE40638C29CB1366004664FE /* Instruction */ = {
+			isa = PBXGroup;
+			children = (
+				CE40638D29CB13E5004664FE /* CreateWalletInstructionView.swift */,
+				CE40638F29CB276C004664FE /* InstructionView.swift */,
+				CE41AC4C29CC2057009CE7C3 /* HeaderInstructionView.swift */,
+				CE41AC4E29CC2388009CE7C3 /* FooterInstructionView.swift */,
+			);
+			path = Instruction;
+			sourceTree = "<group>";
+		};
+		CE41AC4929CC178E009CE7C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE41AC4A29CC17A7009CE7C3 /* InstructionType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE41AC5029CC3FC0009CE7C3 /* AddAccount */ = {
+			isa = PBXGroup;
+			children = (
+				CE41AC5329CC4012009CE7C3 /* Router */,
+				CE41AC5229CC4007009CE7C3 /* Presenter */,
+				CE41AC5129CC4002009CE7C3 /* View */,
+			);
+			path = AddAccount;
+			sourceTree = "<group>";
+		};
+		CE41AC5129CC4002009CE7C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE41AC5429CC408A009CE7C3 /* AddAccountViewController.swift */,
+				CE41AC5629CC409A009CE7C3 /* AddAccountViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE41AC5229CC4007009CE7C3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CE41AC5829CC44ED009CE7C3 /* AddAccountPresenter.swift */,
+				CE41AC5A29CC450B009CE7C3 /* AddAccountPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CE41AC5329CC4012009CE7C3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CE41AC5C29CC46AA009CE7C3 /* AddAccountCoordinator.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		CEC0FA7F29C9895D00ECB025 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -380,6 +515,7 @@
 			children = (
 				CEC0FAAD29C98F6100ECB025 /* UIViewExtensions.swift */,
 				CEC0FAAF29C9925700ECB025 /* UIStackViewExtension.swift */,
+				CE40637B29CAE3E6004664FE /* UIButtonExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -577,7 +713,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC0FAB129C99C9E00ECB025 /* NotoSans-Regular.ttf in Sources */,
+				CE40638629CAFEF0004664FE /* CreateWalletViewProtocol.swift in Sources */,
+				CE40637C29CAE3E6004664FE /* UIButtonExtension.swift in Sources */,
 				CEC0FAB229C99C9E00ECB025 /* NotoSans-Medium.ttf in Sources */,
+				CE41AC4B29CC17A7009CE7C3 /* InstructionType.swift in Sources */,
 				CEC0FAB329C99C9E00ECB025 /* NotoSans-MediumItalic.ttf in Sources */,
 				CEC0FAB429C99C9E00ECB025 /* NotoSans-Black.ttf in Sources */,
 				CEC0FAB529C99C9E00ECB025 /* NotoSans-Bold.ttf in Sources */,
@@ -586,35 +725,48 @@
 				CEC0FAB829C99C9E00ECB025 /* NotoSans-SemiBoldItalic.ttf in Sources */,
 				CEC0FAB929C99C9E00ECB025 /* NotoSans-LightItalic.ttf in Sources */,
 				CEC0FABA29C99C9E00ECB025 /* NotoSans-Light.ttf in Sources */,
+				CE41AC5D29CC46AA009CE7C3 /* AddAccountCoordinator.swift in Sources */,
 				CEC0FABB29C99C9E00ECB025 /* NotoSans-BoldItalic.ttf in Sources */,
 				CEC0FABC29C99C9E00ECB025 /* NotoSans-BlackItalic.ttf in Sources */,
 				CEC0FABD29C99C9E00ECB025 /* NotoSans-ExtraBoldItalic.ttf in Sources */,
 				CEC0FABE29C99C9E00ECB025 /* NotoSans-ExtraLight.ttf in Sources */,
 				CEC0FABF29C99C9E00ECB025 /* NotoSans-ThinItalic.ttf in Sources */,
+				CE40638E29CB13E5004664FE /* CreateWalletInstructionView.swift in Sources */,
 				CEC0FAC029C99C9E00ECB025 /* NotoSans-ExtraLightItalic.ttf in Sources */,
 				CEC0FAC129C99C9E00ECB025 /* NotoSans-ExtraBold.ttf in Sources */,
 				CEC0FAC229C99C9E00ECB025 /* NotoSans-Italic.ttf in Sources */,
 				CE280CB629C49045002B4DEC /* SettingsPresenterProtocol.swift in Sources */,
 				CE280CA829C47F49002B4DEC /* WalletPresenterProtocol.swift in Sources */,
+				CE41AC5B29CC450B009CE7C3 /* AddAccountPresenterProtocol.swift in Sources */,
 				1403347B29C9F0A800305CA3 /* MoreThingsView.swift in Sources */,
+				CE40638829CB00AD004664FE /* CreateWalletPresenter.swift in Sources */,
 				CE280CAB29C4813A002B4DEC /* WalletViewProtocol.swift in Sources */,
 				CE280C9F29C4772A002B4DEC /* AppCoordinator.swift in Sources */,
 				CEC0FAC829C9C59D00ECB025 /* RestoreWalletView.swift in Sources */,
+				CE40639029CB276C004664FE /* InstructionView.swift in Sources */,
 				CE280C8329C45167002B4DEC /* AppDelegate.swift in Sources */,
 				CE280CAD29C4850A002B4DEC /* WalletTabBarCoordinator.swift in Sources */,
+				CE41AC4F29CC2388009CE7C3 /* FooterInstructionView.swift in Sources */,
 				CE280C8529C45167002B4DEC /* SceneDelegate.swift in Sources */,
 				CEC0FAB029C9925700ECB025 /* UIStackViewExtension.swift in Sources */,
+				CE40638229CAFDD1004664FE /* CreateWalletCoordinator.swift in Sources */,
 				CE280CA229C47D74002B4DEC /* WalletViewController.swift in Sources */,
 				CE280CA629C47EA6002B4DEC /* WalletPresenter.swift in Sources */,
 				CEC0FAAA29C98BBB00ECB025 /* PortfolioValueView.swift in Sources */,
+				CE41AC4D29CC2057009CE7C3 /* HeaderInstructionView.swift in Sources */,
 				CE280CBE29C49214002B4DEC /* SettingsCoordinator.swift in Sources */,
 				CE6A9B8D29C97BAD00E1077E /* R.generated.swift in Sources */,
 				CE280CBA29C4919C002B4DEC /* SettingsViewController.swift in Sources */,
+				CE41AC5529CC408A009CE7C3 /* AddAccountViewController.swift in Sources */,
+				CE40638A29CB01C0004664FE /* CreateWalletPresenterProtocol.swift in Sources */,
+				CE40638429CAFECC004664FE /* CreateWalletViewController.swift in Sources */,
+				CE41AC5729CC409A009CE7C3 /* AddAccountViewProtocol.swift in Sources */,
 				CE280CB029C4868E002B4DEC /* WalletCoordinator.swift in Sources */,
 				CEC0FAAE29C98F6100ECB025 /* UIViewExtensions.swift in Sources */,
 				CEC0FAC529C99EF100ECB025 /* WalletCardView.swift in Sources */,
 				CE280CB829C49057002B4DEC /* SettingsPresenter.swift in Sources */,
 				CE280CBC29C491A9002B4DEC /* SettingsViewProtocol.swift in Sources */,
+				CE41AC5929CC44ED009CE7C3 /* AddAccountPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -43,6 +43,10 @@ class WalletViewController: UIViewController {
                                                   subtitle: "You will need a wallet to buy some\ncryptocurrency and other value.",
                                                   backgroundImage: R.image.walletCardImage()))
         restoreWalletView.delegate = self
+        moreThingsView.delegate = self
+        walletCardView.addTapAction { [weak self] in
+            self?.tappedAddAccountCard()
+        }
     }
 
     private func setupScrollView() {
@@ -55,13 +59,16 @@ class WalletViewController: UIViewController {
             walletCardView,
             restoreWalletView,
             sharkImageView,
-            cardImageView
+            cardImageView,
+            moreThingsView,
+            descriptionLabel
         ])
     }
 
     private func configureConstraints() {
         scrollView.snp.makeConstraints { make in
-            make.edges.equalTo(view)
+            make.leading.trailing.equalTo(view)
+            make.top.bottom.equalTo(view.safeAreaLayoutGuide).inset(15)
         }
 
         contentView.snp.makeConstraints { make in
@@ -90,6 +97,12 @@ class WalletViewController: UIViewController {
         }
     }
 
+    // MARK: - Functions
+
+    private func tappedAddAccountCard() {
+        presenter.addAccountCardDidPressed()
+    }
+
     // MARK: - UIElements
 
     private lazy var scrollView = UIScrollView()
@@ -111,6 +124,16 @@ class WalletViewController: UIViewController {
         return label
     }()
 
+    private lazy var descriptionLabel: UILabel = {
+        let label = UILabel()
+        // swiftlint:disable line_length
+        label.text = "Phasellus proin integer ultrices et euismod auctor scelerisque aliquam. Proin montes, in enim gravida turpis habitasse aliquet tempus. Fames fusce nisl ac neque cras sollicitudin eros. Ornare dignissim penatibus lacinia est."
+        label.numberOfLines = 0
+        label.font = R.font.notoSansRegular(size: 14)
+        label.textColor = R.color.portfolioTitleColor()
+        return label
+    }()
+
     private lazy var sharkImageView: UIImageView = {
         let sharkImageView = UIImageView()
         sharkImageView.image = R.image.sharkCreateImage()
@@ -128,6 +151,7 @@ class WalletViewController: UIViewController {
     private lazy var portfolioView = PortfolioValueView()
     private lazy var walletCardView = WalletCardView()
     private lazy var restoreWalletView = RestoreWalletView()
+    private lazy var moreThingsView = MoreThingsView()
 
 }
 // MARK: WalletViewProtocol
@@ -140,6 +164,22 @@ extension WalletViewController: WalletViewProtocol {
 
 extension WalletViewController: RestoreWalletViewDelegate {
     func didTapRestoreButton() {
-        print("/n MY LOG: didTapRestoreButton")
+        print("\n MY LOG: didTapRestoreButton")
+    }
+}
+
+// MARK: - MoreThingsViewDelegate
+
+extension WalletViewController: MoreThingsViewDelegate {
+    func didTapChooseThemeButton() {
+        print("\n MYLOG: didTapChooseThemeButton")
+    }
+
+    func didTapContactButton() {
+        print("\n MYLOG: didTapContactButton")
+    }
+
+    func didTapSettingsButton() {
+        print("\n MYLOG: didTapSettingsButton")
     }
 }

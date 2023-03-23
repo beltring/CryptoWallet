@@ -10,6 +10,8 @@ import XCoordinator
 
 enum WalletRoute: Route {
     case wallet
+    case addAccount
+    case createWallet
     case close
 }
 
@@ -26,10 +28,16 @@ class WalletCoordinator: NavigationCoordinator<WalletRoute> {
     override func prepareTransition(for route: WalletRoute) -> NavigationTransition {
         switch route {
         case .wallet:
-            let presenter = WalletPresenter()
+            let presenter = WalletPresenter(router: unownedRouter)
             let viewController = WalletViewController(presenter: presenter)
 //            viewController.router = 
             return .push(viewController)
+        case .addAccount:
+            let router = AddAccountCoordinator()
+            return .present(router)
+        case .createWallet:
+            let router = CreateWalletCoordinator()
+            return .present(router)
         case .close:
             return .dismissToRoot()
         }
