@@ -43,6 +43,8 @@
 		CE41AC5D29CC46AA009CE7C3 /* AddAccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41AC5C29CC46AA009CE7C3 /* AddAccountCoordinator.swift */; };
 		CE6A9B8D29C97BAD00E1077E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A9B8C29C97BAD00E1077E /* R.generated.swift */; };
 		CE6A9B9029C97EF600E1077E /* OneInchKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE6A9B8F29C97EF600E1077E /* OneInchKit */; };
+		CE71C1BE29CD832E008D975E /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C1BD29CD832E008D975E /* Pin.swift */; };
+		CE71C1C129CD8422008D975E /* Passcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C1C029CD8422008D975E /* Passcode.swift */; };
 		CEC0FA9429C9897000ECB025 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA8129C9897000ECB025 /* NotoSans-Regular.ttf */; };
 		CEC0FA9529C9897000ECB025 /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA8229C9897000ECB025 /* NotoSans-Medium.ttf */; };
 		CEC0FA9629C9897000ECB025 /* NotoSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA8329C9897000ECB025 /* NotoSans-MediumItalic.ttf */; };
@@ -126,6 +128,8 @@
 		CE41AC5A29CC450B009CE7C3 /* AddAccountPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountPresenterProtocol.swift; sourceTree = "<group>"; };
 		CE41AC5C29CC46AA009CE7C3 /* AddAccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountCoordinator.swift; sourceTree = "<group>"; };
 		CE6A9B8C29C97BAD00E1077E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		CE71C1BD29CD832E008D975E /* Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
+		CE71C1C029CD8422008D975E /* Passcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passcode.swift; sourceTree = "<group>"; };
 		CEC0FA8129C9897000ECB025 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 		CEC0FA8229C9897000ECB025 /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
 		CEC0FA8329C9897000ECB025 /* NotoSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-MediumItalic.ttf"; sourceTree = "<group>"; };
@@ -218,6 +222,7 @@
 				CE280C9B29C475E6002B4DEC /* Modules */,
 				CE280C9729C45AB0002B4DEC /* Resources */,
 				CEC0FAAB29C98F4300ECB025 /* Utils */,
+				CE71C1BC29CD8171008D975E /* Views */,
 			);
 			path = CryptoWallet;
 			sourceTree = "<group>";
@@ -390,6 +395,7 @@
 		CE40638B29CB10FE004664FE /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				CE71C1C229CD9796008D975E /* Passcode */,
 				CE40638C29CB1366004664FE /* Instruction */,
 			);
 			path = Subviews;
@@ -427,6 +433,7 @@
 		CE41AC5129CC4002009CE7C3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CE71C1C329CDA38D008D975E /* Subviews */,
 				CE41AC5429CC408A009CE7C3 /* AddAccountViewController.swift */,
 				CE41AC5629CC409A009CE7C3 /* AddAccountViewProtocol.swift */,
 			);
@@ -448,6 +455,37 @@
 				CE41AC5C29CC46AA009CE7C3 /* AddAccountCoordinator.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		CE71C1BC29CD8171008D975E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE71C1BF29CD8342008D975E /* Passcode */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE71C1BF29CD8342008D975E /* Passcode */ = {
+			isa = PBXGroup;
+			children = (
+				CE71C1BD29CD832E008D975E /* Pin.swift */,
+				CE71C1C029CD8422008D975E /* Passcode.swift */,
+			);
+			path = Passcode;
+			sourceTree = "<group>";
+		};
+		CE71C1C229CD9796008D975E /* Passcode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Passcode;
+			sourceTree = "<group>";
+		};
+		CE71C1C329CDA38D008D975E /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 		CEC0FA7F29C9895D00ECB025 /* Fonts */ = {
@@ -739,6 +777,7 @@
 				CE280CA829C47F49002B4DEC /* WalletPresenterProtocol.swift in Sources */,
 				CE41AC5B29CC450B009CE7C3 /* AddAccountPresenterProtocol.swift in Sources */,
 				1403347B29C9F0A800305CA3 /* MoreThingsView.swift in Sources */,
+				CE71C1C129CD8422008D975E /* Passcode.swift in Sources */,
 				CE40638829CB00AD004664FE /* CreateWalletPresenter.swift in Sources */,
 				CE280CAB29C4813A002B4DEC /* WalletViewProtocol.swift in Sources */,
 				CE280C9F29C4772A002B4DEC /* AppCoordinator.swift in Sources */,
@@ -747,6 +786,7 @@
 				CE280C8329C45167002B4DEC /* AppDelegate.swift in Sources */,
 				CE280CAD29C4850A002B4DEC /* WalletTabBarCoordinator.swift in Sources */,
 				CE41AC4F29CC2388009CE7C3 /* FooterInstructionView.swift in Sources */,
+				CE71C1BE29CD832E008D975E /* Pin.swift in Sources */,
 				CE280C8529C45167002B4DEC /* SceneDelegate.swift in Sources */,
 				CEC0FAB029C9925700ECB025 /* UIStackViewExtension.swift in Sources */,
 				CE40638229CAFDD1004664FE /* CreateWalletCoordinator.swift in Sources */,

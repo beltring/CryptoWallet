@@ -40,7 +40,9 @@ class CreateWalletInstructionView: UIView {
             closeButton,
             sharkImageView,
             headerInstructionsView,
-            instructionsStackView
+            instructionsStackView,
+            footerInstructionsView,
+            createButton
         ])
 
         instructionsType.forEach { instructionType in
@@ -51,6 +53,10 @@ class CreateWalletInstructionView: UIView {
             instructionsStackView.addArrangedSubview(instructionView)
         }
         configureConstraints()
+        createButton.applyGradient(colors: [
+            R.color.startButtonColor()?.cgColor,
+            R.color.endButtonColor()?.cgColor
+        ])
     }
 
     private func configureConstraints() {
@@ -73,6 +79,18 @@ class CreateWalletInstructionView: UIView {
         instructionsStackView.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview()
             make.top.equalTo(headerInstructionsView.snp.bottom).offset(32)
+        }
+
+        footerInstructionsView.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview()
+            make.top.equalTo(instructionsStackView.snp.bottom)
+        }
+
+        createButton.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview()
+            make.height.equalTo(50)
+            make.top.equalTo(footerInstructionsView.snp.bottom).offset(48)
+            make.bottom.equalToSuperview().inset(13)
         }
     }
 
@@ -119,8 +137,9 @@ class CreateWalletInstructionView: UIView {
     private lazy var createButton: UIButton = {
         let button = UIButton()
         button.setTitle("Create a wallet", for: .normal)
+        button.layer.cornerRadius = 10
+        button.backgroundColor = R.color.endButtonColor()
         button.titleLabel?.textColor = R.color.walletTitleColor()
-        button.applyGradient(colors: [R.color.startButtonColor()?.cgColor, R.color.endButtonColor()?.cgColor])
         button.addTarget(self, action: #selector(tappedCreateWalletButton), for: .touchUpInside)
         return button
     }()

@@ -32,6 +32,44 @@ class AddAccountViewController: UIViewController {
     // MARK: - SetupUI
 
     private func setupUI() {
-        view.backgroundColor = .green
+        title = "Add Account"
+        view.backgroundColor = R.color.createWalletBackgroundColor()
+
+        view.addSubviews([
+            accountNicknameLabel,
+            accountNicknameTextField
+        ])
+        configureConstraints()
     }
+
+    private func configureConstraints() {
+        accountNicknameLabel.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(24)
+            make.leading.trailing.equalToSuperview().inset(16)
+        }
+
+        accountNicknameTextField.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview().inset(16)
+            make.top.equalTo(accountNicknameLabel.snp.bottom).offset(8)
+            make.height.equalTo(50)
+        }
+    }
+
+    // MARK: - UIElements
+
+    private lazy var accountNicknameLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Account nickname"
+        label.font = R.font.notoSansRegular(size: 16)
+        label.textColor = R.color.walletTitleColor()
+        return label
+    }()
+
+    private lazy var accountNicknameTextField: UITextField = {
+        let textField = UITextField()
+        textField.placeholder = "Invent a nickname for your account"
+        textField.backgroundColor = R.color.backgroundColor()
+        textField.layer.cornerRadius = 10
+        return textField
+    }()
 }

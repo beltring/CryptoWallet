@@ -21,12 +21,14 @@ class CreateWalletPresenter {
     }
 }
 
+// MARK: - CreateWalletPresenterProtocol
+
 extension CreateWalletPresenter: CreateWalletPresenterProtocol {
     func closeButtonDidTapped() {
-//        router.trigger(., with: <#T##TransitionOptions#>)
+        router.trigger(.close)
     }
 
     func createWalletButtonDidTapped() {
-        router.trigger(.close)
+        print("\n MYLOG: createWallet")
     }
 }

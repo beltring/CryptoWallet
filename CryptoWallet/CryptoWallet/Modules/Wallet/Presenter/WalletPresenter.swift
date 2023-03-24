@@ -23,6 +23,6 @@ class WalletPresenter {
 
 extension WalletPresenter: WalletPresenterProtocol {
     func addAccountCardDidPressed() {
-        router.trigger(.createWallet)
+        router.trigger(.addAccount)
     }
 }

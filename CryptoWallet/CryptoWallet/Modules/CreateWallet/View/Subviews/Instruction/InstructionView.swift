@@ -38,13 +38,13 @@ class InstructionView: UIView {
         }
 
         titleLabel.snp.makeConstraints { make in
-            make.leading.equalToSuperview()
+            make.leading.trailing.equalToSuperview()
             make.top.equalTo(imageView.snp.bottom).offset(16)
         }
 
         descriptionLabel.snp.makeConstraints { make in
-            make.leading.equalToSuperview()
-            make.top.equalTo(descriptionLabel.snp.bottom).offset(8)
+            make.leading.bottom.trailing.equalToSuperview()
+            make.top.equalTo(titleLabel.snp.bottom).offset(8)
         }
     }
 
