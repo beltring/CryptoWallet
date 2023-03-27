@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 protocol MoreThingsViewDelegate: AnyObject {
     func didTapChooseThemeButton()
@@ -61,7 +62,28 @@ class MoreThingsView: UIView {
     // MARK: - Functions
 
     @objc private func tappedChooseThemeButton() {
-        delegate?.didTapChooseThemeButton()
+//        delegate?.didTapChooseThemeButton()
+        let context = LAContext()
+        var error: NSError?
+
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            let reason = "Identify yourself!"
+
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) {
+                [weak self] success, authenticationError in
+
+                DispatchQueue.main.async {
+                    if success {
+//                        self?.unlockSecretMessage()
+                        print("/n MY LOG: success")
+                    } else {
+                        print("/n MY LOG: error")
+                    }
+                }
+            }
+        } else {
+            // no biometry
+        }
     }
 
     @objc private func tappedContactSupportButton() {

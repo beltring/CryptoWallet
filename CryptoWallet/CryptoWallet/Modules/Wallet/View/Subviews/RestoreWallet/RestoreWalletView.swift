@@ -30,6 +30,7 @@ class RestoreWalletView: UIView {
     private lazy var restoreButton: UIButton = {
         let button = UIButton()
         button.setTitle("RESTORE", for: .normal)
+        butt
         button.titleLabel?.textColor = R.color.portfolioTitleColor()
         button.titleLabel?.font = R.font.notoSansSemiBold(size: 14)
         return button

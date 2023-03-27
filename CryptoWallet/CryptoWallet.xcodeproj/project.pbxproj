@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1403347B29C9F0A800305CA3 /* MoreThingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1403347A29C9F0A800305CA3 /* MoreThingsView.swift */; };
+		14B2202F29D1BB710005AD13 /* ChooseCryptocurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B2202E29D1BB700005AD13 /* ChooseCryptocurrencyView.swift */; };
 		BCDFDEE3CB09A90B1455D233 /* Pods_CryptoWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F2A865BD33FFF60E4466D2 /* Pods_CryptoWallet.framework */; };
 		CE280C8329C45167002B4DEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280C8229C45167002B4DEC /* AppDelegate.swift */; };
 		CE280C8529C45167002B4DEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280C8429C45167002B4DEC /* SceneDelegate.swift */; };
@@ -90,6 +91,7 @@
 
 /* Begin PBXFileReference section */
 		1403347A29C9F0A800305CA3 /* MoreThingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreThingsView.swift; sourceTree = "<group>"; };
+		14B2202E29D1BB700005AD13 /* ChooseCryptocurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCryptocurrencyView.swift; sourceTree = "<group>"; };
 		27555644CAEC2AA42143F11A /* Pods-CryptoWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWallet.release.xcconfig"; path = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.release.xcconfig"; sourceTree = "<group>"; };
 		67F2A865BD33FFF60E4466D2 /* Pods_CryptoWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA888EAC28A4DDECC2BCE442 /* Pods-CryptoWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWallet.debug.xcconfig"; path = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.debug.xcconfig"; sourceTree = "<group>"; };
@@ -176,6 +178,14 @@
 			path = MoreThings;
 			sourceTree = "<group>";
 		};
+		14B2202D29D1B7AE0005AD13 /* AddAccount2 */ = {
+			isa = PBXGroup;
+			children = (
+				14B2202E29D1BB700005AD13 /* ChooseCryptocurrencyView.swift */,
+			);
+			path = AddAccount2;
+			sourceTree = "<group>";
+		};
 		2E309B1AD5AAED97235C80F8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +258,7 @@
 		CE280C9B29C475E6002B4DEC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				14B2202D29D1B7AE0005AD13 /* AddAccount2 */,
 				CE41AC5029CC3FC0009CE7C3 /* AddAccount */,
 				CE40637D29CAFC0E004664FE /* CreateWallet */,
 				CE280CB129C48FCC002B4DEC /* Settings */,
@@ -753,6 +764,7 @@
 				CEC0FAB129C99C9E00ECB025 /* NotoSans-Regular.ttf in Sources */,
 				CE40638629CAFEF0004664FE /* CreateWalletViewProtocol.swift in Sources */,
 				CE40637C29CAE3E6004664FE /* UIButtonExtension.swift in Sources */,
+				14B2202F29D1BB710005AD13 /* ChooseCryptocurrencyView.swift in Sources */,
 				CEC0FAB229C99C9E00ECB025 /* NotoSans-Medium.ttf in Sources */,
 				CE41AC4B29CC17A7009CE7C3 /* InstructionType.swift in Sources */,
 				CEC0FAB329C99C9E00ECB025 /* NotoSans-MediumItalic.ttf in Sources */,
