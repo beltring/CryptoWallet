@@ -35,3 +35,22 @@ extension UIView {
         }
     }
 }
+
+// MARK: - Gradient
+
+extension UIView {
+
+    func applyGradient(colors: [UIColor?]) -> CAGradientLayer {
+        let colors = colors.compactMap { $0 }
+        return self.applyGradient(colors: colors, locations: nil)
+    }
+
+    func applyGradient(colors: [UIColor], locations: [NSNumber]?) -> CAGradientLayer {
+        let gradient: CAGradientLayer = CAGradientLayer()
+        gradient.frame = self.bounds
+        gradient.colors = colors.map { $0.cgColor }
+        gradient.locations = locations
+        self.layer.insertSublayer(gradient, at: 0)
+        return gradient
+    }
+}

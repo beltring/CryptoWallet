@@ -29,6 +29,14 @@ extension CreateWalletPresenter: CreateWalletPresenterProtocol {
     }
 
     func createWalletButtonDidTapped() {
-        print("\n MYLOG: createWallet")
+        view?.showCreatePinView()
+    }
+
+    func presentErrorAlert(error: String) {
+        router.trigger(.alert(title: "Error", message: error))
+    }
+
+    func saveCode(code: String) {
+        KeychainService.shared.savePasscode(code: code)
     }
 }

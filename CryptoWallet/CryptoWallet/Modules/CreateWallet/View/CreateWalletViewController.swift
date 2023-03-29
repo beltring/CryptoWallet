@@ -10,9 +10,11 @@ import UIKit
 class CreateWalletViewController: UIViewController {
 
     // MARK: - Public Properties
+
     public var presenter: CreateWalletPresenterProtocol
 
     // MARK: - Init
+
     required init(presenter: CreateWalletPresenterProtocol) {
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
@@ -42,13 +44,23 @@ class CreateWalletViewController: UIViewController {
     // MARK: - SetupUI
 
     private func setupUI() {
+        presenter.view = self
         view.addSubview(scrollView)
         scrollView.addSubview(contentView)
         contentView.addSubview(mainStackView)
-        mainStackView.addArrangedSubview(createWalletInstructionView)
+        pinView.isHidden = true
+        localAuthView.isHidden = true
+        mainStackView.addArrangedSubviews([
+            createWalletInstructionView,
+            pinView,
+            localAuthView
+        ])
         createWalletInstructionView.delegate = self
+        pinView.delegate = self
+        localAuthView.delegate = self
         view.backgroundColor = R.color.createWalletBackgroundColor()
         configureConstraints()
+        hideNavBarLine()
     }
 
     private func configureConstraints() {
@@ -70,11 +82,19 @@ class CreateWalletViewController: UIViewController {
         }
     }
 
+    // MARK: - Functions
+
+    @objc private func tappedBackButton() {
+        presenter.closeButtonDidTapped()
+    }
+
     // MARK: - UIElements
 
     private lazy var scrollView = UIScrollView()
     private lazy var contentView = UIView()
     private lazy var createWalletInstructionView = CreateWalletInstructionView()
+    private lazy var pinView = CreatePinView()
+    private lazy var localAuthView = LocalAuthenticationView()
     private lazy var mainStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
@@ -88,7 +108,22 @@ class CreateWalletViewController: UIViewController {
 // MARK: - CreateWalletViewProtocol
 
 extension CreateWalletViewController: CreateWalletViewProtocol {
+    func showCreatePinView() {
+        createWalletInstructionView.isHidden = true
+        pinView.isHidden = false
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        title = "Create a wallet"
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: R.image.arrowBackImage(),
+                                                           style: .plain,
+                                                           target: self,
+                                                           action: #selector(tappedBackButton))
+        navigationItem.leftBarButtonItem?.tintColor = R.color.createWalletBackColor()
+        pinView.showKeyboardIfNeeded()
+    }
 
+    func showFaceIdView() {
+        print("\n MYLOG: showFaceIdView")
+    }
 }
 
 // MARK: - CreateWalletInstructionDelegate
@@ -100,5 +135,26 @@ extension CreateWalletViewController: CreateWalletInstructionDelegate {
 
     func didTappedCloseButton() {
         presenter.closeButtonDidTapped()
+    }
+}
+
+// MARK: - CreatePinViewDelegate
+
+extension CreateWalletViewController: CreatePinViewDelegate {
+    func didEnterPasscode(code: String) {
+        let biometricType = LocalAuthenticationService.shared.biometricType()
+        localAuthView.configure(biometricType: biometricType)
+        localAuthView.isHidden = false
+        pinView.isHidden = true
+    }
+}
+
+extension CreateWalletViewController: LocalAuthenticationViewDelegate {
+    func didTappedApprove() {
+        presenter.closeButtonDidTapped()
+    }
+
+    func didObtainError(error: String) {
+        presenter.presentErrorAlert(error: error)
     }
 }

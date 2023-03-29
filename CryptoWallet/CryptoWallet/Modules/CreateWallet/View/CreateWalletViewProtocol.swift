@@ -8,5 +8,6 @@
 import Foundation
 
 protocol CreateWalletViewProtocol: AnyObject {
-    
+    func showCreatePinView()
+    func showFaceIdView()
 }

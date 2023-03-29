@@ -26,7 +26,7 @@ class AddAccountCoordinator: NavigationCoordinator<AddAccountRoute> {
     override func prepareTransition(for route: AddAccountRoute) -> NavigationTransition {
         switch route {
         case .addAccount:
-            let presenter = AddAccountPresenter()
+            let presenter = AddAccountPresenter(router: unownedRouter)
             let viewController = AddAccountViewController(presenter: presenter)
             viewController.modalPresentationStyle = .pageSheet
             return .push(viewController)

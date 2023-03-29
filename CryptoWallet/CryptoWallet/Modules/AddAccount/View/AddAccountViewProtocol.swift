@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+protocol AddAccountViewProtocol: AnyObject {
+
+    var presenter: AddAccountPresenterProtocol { get }
+
+}

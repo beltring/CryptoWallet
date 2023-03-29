@@ -74,6 +74,8 @@ class WalletCardView: UIView {
         }
     }
 
+    // MARK: - Configure
+
     func configure(viewModel: ViewModel) {
         self.viewModel = viewModel
         titleLabel.text = viewModel.title

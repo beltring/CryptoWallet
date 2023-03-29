@@ -8,5 +8,9 @@
 import Foundation
 
 protocol AddAccountPresenterProtocol: AnyObject {
-    
+    // MARK: - Properties
+    var view: AddAccountViewProtocol? { get set }
+
+    // MARK: - Functions
+    func createAccount(name: String)
 }

@@ -47,6 +47,7 @@ class WalletViewController: UIViewController {
         walletCardView.addTapAction { [weak self] in
             self?.tappedAddAccountCard()
         }
+        hideNavBarLine()
     }
 
     private func setupScrollView() {

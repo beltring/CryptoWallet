@@ -10,6 +10,7 @@ import XCoordinator
 
 enum CreateWalletRoute: Route {
     case createWallet
+    case alert(title: String, message: String)
     case close
 }
 
@@ -30,6 +31,11 @@ class CreateWalletCoordinator: NavigationCoordinator<CreateWalletRoute> {
             let viewController = CreateWalletViewController(presenter: presenter)
             viewController.modalPresentationStyle = .pageSheet
             return .push(viewController)
+        case .alert(let title, let message):
+            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            alert.addAction(.init(title: "Ok", style: .default, handler: nil))
+            rootViewController.modalPresentationStyle = .fullScreen
+            return .present(alert)
         case .close:
             return .dismiss()
         }

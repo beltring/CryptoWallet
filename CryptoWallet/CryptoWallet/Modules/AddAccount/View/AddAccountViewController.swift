@@ -55,6 +55,13 @@ class AddAccountViewController: UIViewController {
         }
     }
 
+    // MARK: - Functions
+
+    @objc private func tappedAddButton() {
+        guard let name = accountNicknameLabel.text else { return }
+        presenter.createAccount(name: name)
+    }
+
     // MARK: - UIElements
 
     private lazy var accountNicknameLabel: UILabel = {
@@ -72,4 +79,16 @@ class AddAccountViewController: UIViewController {
         textField.layer.cornerRadius = 10
         return textField
     }()
+
+    private lazy var addButton: UIButton = {
+        let button = UIButton()
+        button.layer.cornerRadius = 10
+        button.backgroundColor = R.color.endButtonColor()
+        button.addTarget(self, action: #selector(tappedAddButton), for: .touchUpInside)
+        return button
+    }()
+}
+
+extension AddAccountViewController: AddAccountViewProtocol {
+
 }

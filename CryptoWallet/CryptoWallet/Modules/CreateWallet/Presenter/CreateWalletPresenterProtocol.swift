@@ -8,6 +8,13 @@
 import Foundation
 
 protocol CreateWalletPresenterProtocol: AnyObject {
+
+    // MARK: - Properties
+    var view: CreateWalletViewProtocol? { get set }
+
+    // MARK: - Functions
     func closeButtonDidTapped()
     func createWalletButtonDidTapped()
+    func presentErrorAlert(error: String)
+    func saveCode(code: String)
 }

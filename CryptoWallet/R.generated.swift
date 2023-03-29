@@ -46,7 +46,7 @@ struct _R {
     let developmentRegion = "en"
   }
 
-  /// This `_R.color` struct is generated, and contains static references to 9 colors.
+  /// This `_R.color` struct is generated, and contains static references to 13 colors.
   struct color {
     let bundle: Foundation.Bundle
 
@@ -59,14 +59,26 @@ struct _R {
     /// Color `createDescriptionColor`.
     var createDescriptionColor: RswiftResources.ColorResource { .init(name: "createDescriptionColor", path: [], bundle: bundle) }
 
+    /// Color `createPinColor`.
+    var createPinColor: RswiftResources.ColorResource { .init(name: "createPinColor", path: [], bundle: bundle) }
+
     /// Color `createTitleColor`.
     var createTitleColor: RswiftResources.ColorResource { .init(name: "createTitleColor", path: [], bundle: bundle) }
+
+    /// Color `createWalletAuthTitleColor`.
+    var createWalletAuthTitleColor: RswiftResources.ColorResource { .init(name: "createWalletAuthTitleColor", path: [], bundle: bundle) }
+
+    /// Color `createWalletBackColor`.
+    var createWalletBackColor: RswiftResources.ColorResource { .init(name: "createWalletBackColor", path: [], bundle: bundle) }
 
     /// Color `createWalletBackgroundColor`.
     var createWalletBackgroundColor: RswiftResources.ColorResource { .init(name: "createWalletBackgroundColor", path: [], bundle: bundle) }
 
     /// Color `endButtonColor`.
     var endButtonColor: RswiftResources.ColorResource { .init(name: "endButtonColor", path: [], bundle: bundle) }
+
+    /// Color `pinColor`.
+    var pinColor: RswiftResources.ColorResource { .init(name: "pinColor", path: [], bundle: bundle) }
 
     /// Color `portfolioTitleColor`.
     var portfolioTitleColor: RswiftResources.ColorResource { .init(name: "portfolioTitleColor", path: [], bundle: bundle) }
@@ -78,12 +90,15 @@ struct _R {
     var walletTitleColor: RswiftResources.ColorResource { .init(name: "walletTitleColor", path: [], bundle: bundle) }
   }
 
-  /// This `_R.image` struct is generated, and contains static references to 16 images.
+  /// This `_R.image` struct is generated, and contains static references to 21 images.
   struct image {
     let bundle: Foundation.Bundle
 
     /// Image `Logo`.
     var logo: RswiftResources.ImageResource { .init(name: "Logo", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `arrowBackImage`.
+    var arrowBackImage: RswiftResources.ImageResource { .init(name: "arrowBackImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `backUpImage`.
     var backUpImage: RswiftResources.ImageResource { .init(name: "backUpImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
@@ -103,6 +118,15 @@ struct _R {
     /// Image `contactSupportImage`.
     var contactSupportImage: RswiftResources.ImageResource { .init(name: "contactSupportImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
+    /// Image `createWalletFaceIdImage`.
+    var createWalletFaceIdImage: RswiftResources.ImageResource { .init(name: "createWalletFaceIdImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `createWalletTouchIdImage`.
+    var createWalletTouchIdImage: RswiftResources.ImageResource { .init(name: "createWalletTouchIdImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `faceIdImage`.
+    var faceIdImage: RswiftResources.ImageResource { .init(name: "faceIdImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
     /// Image `selectedSettingsTab`.
     var selectedSettingsTab: RswiftResources.ImageResource { .init(name: "selectedSettingsTab", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
@@ -120,6 +144,9 @@ struct _R {
 
     /// Image `sharkInstructionImage`.
     var sharkInstructionImage: RswiftResources.ImageResource { .init(name: "sharkInstructionImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `touchIdImage`.
+    var touchIdImage: RswiftResources.ImageResource { .init(name: "touchIdImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `walletCardImage`.
     var walletCardImage: RswiftResources.ImageResource { .init(name: "walletCardImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }

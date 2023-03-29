@@ -53,10 +53,6 @@ class CreateWalletInstructionView: UIView {
             instructionsStackView.addArrangedSubview(instructionView)
         }
         configureConstraints()
-        createButton.applyGradient(colors: [
-            R.color.startButtonColor()?.cgColor,
-            R.color.endButtonColor()?.cgColor
-        ])
     }
 
     private func configureConstraints() {
@@ -138,8 +134,8 @@ class CreateWalletInstructionView: UIView {
         let button = UIButton()
         button.setTitle("Create a wallet", for: .normal)
         button.layer.cornerRadius = 10
-        button.backgroundColor = R.color.endButtonColor()
         button.titleLabel?.textColor = R.color.walletTitleColor()
+        button.backgroundColor = R.color.endButtonColor()
         button.addTarget(self, action: #selector(tappedCreateWalletButton), for: .touchUpInside)
         return button
     }()
