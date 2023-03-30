@@ -65,6 +65,7 @@ class RestoreWalletView: UIView {
         restoreButton.snp.makeConstraints { make in
             make.top.equalToSuperview()
             make.centerY.equalTo(titleLabel.snp.centerY)
+            make.leading.greaterThanOrEqualTo(titleLabel.snp.trailing).offset(10)
             make.trailing.equalToSuperview()
         }
     }

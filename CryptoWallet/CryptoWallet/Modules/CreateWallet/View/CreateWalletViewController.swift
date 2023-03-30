@@ -143,11 +143,13 @@ extension CreateWalletViewController: CreateWalletInstructionDelegate {
 extension CreateWalletViewController: CreatePinViewDelegate {
     func didEnterPasscode(code: String) {
         let biometricType = LocalAuthenticationService.shared.biometricType()
-        localAuthView.configure(biometricType: biometricType)
         localAuthView.isHidden = false
+        localAuthView.configure(biometricType: biometricType)
         pinView.isHidden = true
     }
 }
+
+// MARK: - LocalAuthenticationViewDelegate
 
 extension CreateWalletViewController: LocalAuthenticationViewDelegate {
     func didTappedApprove() {

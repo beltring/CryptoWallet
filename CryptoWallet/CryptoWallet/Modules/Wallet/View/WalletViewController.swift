@@ -55,6 +55,7 @@ class WalletViewController: UIViewController {
         scrollView.addSubview(contentView)
         contentView.addSubview(mainStackView)
         mainStackView.addArrangedSubviews([
+            ethImageView,
             walletTitleLabel,
             portfolioView,
             walletCardView,
@@ -96,6 +97,10 @@ class WalletViewController: UIViewController {
         cardImageView.snp.makeConstraints { make in
             make.height.equalTo(210)
         }
+
+        ethImageView.snp.makeConstraints { make in
+            make.height.width.equalTo(32)
+        }
     }
 
     // MARK: - Functions
@@ -112,9 +117,16 @@ class WalletViewController: UIViewController {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.spacing = 10
-        stackView.alignment = .fill
+        stackView.alignment = .leading
         stackView.distribution = .equalSpacing
         return stackView
+    }()
+
+    private lazy var ethImageView: UIImageView = {
+        let image = UIImageView()
+        image.contentMode = .scaleAspectFit
+        image.image = R.image.ethereumToken()
+        return image
     }()
 
     private lazy var walletTitleLabel: UILabel = {
@@ -174,6 +186,7 @@ extension WalletViewController: RestoreWalletViewDelegate {
 extension WalletViewController: MoreThingsViewDelegate {
     func didTapChooseThemeButton() {
         print("\n MYLOG: didTapChooseThemeButton")
+        UIApplication.shared.keyWindow?.overrideUserInterfaceStyle = .light
     }
 
     func didTapContactButton() {

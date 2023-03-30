@@ -49,6 +49,10 @@
 		CE6A9B9029C97EF600E1077E /* OneInchKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE6A9B8F29C97EF600E1077E /* OneInchKit */; };
 		CE71C1BE29CD832E008D975E /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C1BD29CD832E008D975E /* PinView.swift */; };
 		CE71C1C129CD8422008D975E /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C1C029CD8422008D975E /* PasscodeView.swift */; };
+		CE79FAAC29D5A5F700CC4A7F /* WalletManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79FAAB29D5A5F700CC4A7F /* WalletManager.swift */; };
+		CE79FAB029D5A72C00CC4A7F /* EthereumAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79FAAF29D5A72C00CC4A7F /* EthereumAdapter.swift */; };
+		CE79FAB229D5A8F900CC4A7F /* TransactionRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79FAB129D5A8F900CC4A7F /* TransactionRecord.swift */; };
+		CE79FAB429D5AA8D00CC4A7F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79FAB329D5AA8D00CC4A7F /* Configuration.swift */; };
 		CEC0FA9429C9897000ECB025 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA8129C9897000ECB025 /* NotoSans-Regular.ttf */; };
 		CEC0FA9529C9897000ECB025 /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA8229C9897000ECB025 /* NotoSans-Medium.ttf */; };
 		CEC0FA9629C9897000ECB025 /* NotoSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA8329C9897000ECB025 /* NotoSans-MediumItalic.ttf */; };
@@ -93,6 +97,7 @@
 		CEC7210129D4030100D7BB81 /* BiometricType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7210029D4030100D7BB81 /* BiometricType.swift */; };
 		CEC7210429D41C4A00D7BB81 /* KeychainKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7210329D41C4A00D7BB81 /* KeychainKeys.swift */; };
 		CEC7210629D41CE500D7BB81 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7210529D41CE500D7BB81 /* KeychainService.swift */; };
+		CEC7210829D45C0C00D7BB81 /* OneInchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7210729D45C0C00D7BB81 /* OneInchService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -141,6 +146,10 @@
 		CE6A9B8C29C97BAD00E1077E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		CE71C1BD29CD832E008D975E /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
 		CE71C1C029CD8422008D975E /* PasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
+		CE79FAAB29D5A5F700CC4A7F /* WalletManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletManager.swift; sourceTree = "<group>"; };
+		CE79FAAF29D5A72C00CC4A7F /* EthereumAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumAdapter.swift; sourceTree = "<group>"; };
+		CE79FAB129D5A8F900CC4A7F /* TransactionRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRecord.swift; sourceTree = "<group>"; };
+		CE79FAB329D5AA8D00CC4A7F /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		CEC0FA8129C9897000ECB025 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 		CEC0FA8229C9897000ECB025 /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
 		CEC0FA8329C9897000ECB025 /* NotoSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-MediumItalic.ttf"; sourceTree = "<group>"; };
@@ -167,6 +176,7 @@
 		CEC7210029D4030100D7BB81 /* BiometricType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricType.swift; sourceTree = "<group>"; };
 		CEC7210329D41C4A00D7BB81 /* KeychainKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainKeys.swift; sourceTree = "<group>"; };
 		CEC7210529D41CE500D7BB81 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		CEC7210729D45C0C00D7BB81 /* OneInchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneInchService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +244,7 @@
 				CE280C8D29C45168002B4DEC /* LaunchScreen.storyboard */,
 				CE41AC4929CC178E009CE7C3 /* Models */,
 				CE280C9B29C475E6002B4DEC /* Modules */,
+				CE79FAAD29D5A70000CC4A7F /* Parents */,
 				CE280C9729C45AB0002B4DEC /* Resources */,
 				CEC0FAAB29C98F4300ECB025 /* Utils */,
 				CE71C1BC29CD8171008D975E /* Views */,
@@ -431,6 +442,8 @@
 			children = (
 				CE41AC4A29CC17A7009CE7C3 /* InstructionType.swift */,
 				CEC7210029D4030100D7BB81 /* BiometricType.swift */,
+				CE79FAB129D5A8F900CC4A7F /* TransactionRecord.swift */,
+				CE79FAB329D5AA8D00CC4A7F /* Configuration.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -477,6 +490,8 @@
 			children = (
 				CE4CAFCE29D2F6C10017467B /* LocalAuthenticationService.swift */,
 				CEC7210529D41CE500D7BB81 /* KeychainService.swift */,
+				CEC7210729D45C0C00D7BB81 /* OneInchService.swift */,
+				CE79FAAB29D5A5F700CC4A7F /* WalletManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -520,6 +535,22 @@
 			children = (
 			);
 			path = Subviews;
+			sourceTree = "<group>";
+		};
+		CE79FAAD29D5A70000CC4A7F /* Parents */ = {
+			isa = PBXGroup;
+			children = (
+				CE79FAAE29D5A71700CC4A7F /* Adapters */,
+			);
+			path = Parents;
+			sourceTree = "<group>";
+		};
+		CE79FAAE29D5A71700CC4A7F /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				CE79FAAF29D5A72C00CC4A7F /* EthereumAdapter.swift */,
+			);
+			path = Adapters;
 			sourceTree = "<group>";
 		};
 		CEC0FA7F29C9895D00ECB025 /* Fonts */ = {
@@ -821,6 +852,7 @@
 				CEC0FAC129C99C9E00ECB025 /* NotoSans-ExtraBold.ttf in Sources */,
 				CEC0FAC229C99C9E00ECB025 /* NotoSans-Italic.ttf in Sources */,
 				CE280CB629C49045002B4DEC /* SettingsPresenterProtocol.swift in Sources */,
+				CEC7210829D45C0C00D7BB81 /* OneInchService.swift in Sources */,
 				CE280CA829C47F49002B4DEC /* WalletPresenterProtocol.swift in Sources */,
 				CE41AC5B29CC450B009CE7C3 /* AddAccountPresenterProtocol.swift in Sources */,
 				1403347B29C9F0A800305CA3 /* MoreThingsView.swift in Sources */,
@@ -829,6 +861,7 @@
 				CE280CAB29C4813A002B4DEC /* WalletViewProtocol.swift in Sources */,
 				CE280C9F29C4772A002B4DEC /* AppCoordinator.swift in Sources */,
 				CEC0FAC829C9C59D00ECB025 /* RestoreWalletView.swift in Sources */,
+				CE79FAB229D5A8F900CC4A7F /* TransactionRecord.swift in Sources */,
 				CE40639029CB276C004664FE /* InstructionView.swift in Sources */,
 				CE280C8329C45167002B4DEC /* AppDelegate.swift in Sources */,
 				CE280CAD29C4850A002B4DEC /* WalletTabBarCoordinator.swift in Sources */,
@@ -838,10 +871,12 @@
 				CEC0FAB029C9925700ECB025 /* UIStackViewExtension.swift in Sources */,
 				CE40638229CAFDD1004664FE /* CreateWalletCoordinator.swift in Sources */,
 				CE280CA229C47D74002B4DEC /* WalletViewController.swift in Sources */,
+				CE79FAB029D5A72C00CC4A7F /* EthereumAdapter.swift in Sources */,
 				CE280CA629C47EA6002B4DEC /* WalletPresenter.swift in Sources */,
 				CE4CAFCF29D2F6C10017467B /* LocalAuthenticationService.swift in Sources */,
 				CEC7210629D41CE500D7BB81 /* KeychainService.swift in Sources */,
 				CEC0FAAA29C98BBB00ECB025 /* PortfolioValueView.swift in Sources */,
+				CE79FAAC29D5A5F700CC4A7F /* WalletManager.swift in Sources */,
 				CE41AC4D29CC2057009CE7C3 /* HeaderInstructionView.swift in Sources */,
 				CE280CBE29C49214002B4DEC /* SettingsCoordinator.swift in Sources */,
 				CE6A9B8D29C97BAD00E1077E /* R.generated.swift in Sources */,
@@ -857,6 +892,7 @@
 				CEC0FAAE29C98F6100ECB025 /* UIViewExtensions.swift in Sources */,
 				CEC0FAC529C99EF100ECB025 /* WalletCardView.swift in Sources */,
 				CE280CB829C49057002B4DEC /* SettingsPresenter.swift in Sources */,
+				CE79FAB429D5AA8D00CC4A7F /* Configuration.swift in Sources */,
 				CE280CBC29C491A9002B4DEC /* SettingsViewProtocol.swift in Sources */,
 				CE41AC5929CC44ED009CE7C3 /* AddAccountPresenter.swift in Sources */,
 			);

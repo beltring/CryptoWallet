@@ -27,5 +27,6 @@ class AddAccountPresenter {
 extension AddAccountPresenter: AddAccountPresenterProtocol {
     func createAccount(name: String) {
         KeychainService.shared.saveAccount(name: name)
+        router.trigger(.close)
     }
 }

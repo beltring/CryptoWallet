@@ -36,7 +36,7 @@ class LocalAuthenticationView: UIView {
             typeAuthImage,
             title,
             subtitle,
-            approveButton
+            enableButton
         ])
         configureConstraints()
     }
@@ -60,7 +60,7 @@ class LocalAuthenticationView: UIView {
             make.leading.trailing.equalToSuperview().inset(16)
         }
 
-        approveButton.snp.makeConstraints { make in
+        enableButton.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview().inset(16)
             make.top.equalTo(subtitle.snp.bottom).offset(50)
             make.height.equalTo(50)
@@ -77,19 +77,21 @@ class LocalAuthenticationView: UIView {
             title.text = "Enable biometry unlock"
             subtitle.text = "Access SHARK wallet with your biometry. Quick, easy and secure."
             typeAuthImage.image = R.image.createWalletTouchIdImage()
-            approveButton.setTitle("Enable biometry unlock", for: .normal)
+            enableButton.setTitle("Enable biometry unlock", for: .normal)
         case .face:
             title.text = "Enable Face ID"
             subtitle.text = "Access SHARK wallet with Face ID. Quick, easy and secure."
             typeAuthImage.image = R.image.createWalletFaceIdImage()
-            approveButton.setTitle("Enable Face ID", for: .normal)
+            enableButton.setTitle("Enable Face ID", for: .normal)
+        }
+        enableButton.addTapAction { [weak self] in
+            self?.didTappedApproveButton()
         }
     }
 
     // MARK: - Functions
 
     @objc private func didTappedApproveButton() {
-        let a = 5
         delegate?.didTappedApprove()
     }
 
@@ -118,11 +120,12 @@ class LocalAuthenticationView: UIView {
         return label
     }()
 
-    private lazy var approveButton: UIButton = {
+    private lazy var enableButton: UIButton = {
         let button = UIButton()
-        button.layer.cornerRadius = 10
+        button.setTitle("enable button", for: .normal)
         button.backgroundColor = R.color.endButtonColor()
-        button.addTarget(self, action: #selector(didTappedApproveButton), for: .touchUpInside)
+        button.layer.cornerRadius = 10
+        button.isUserInteractionEnabled = true
         return button
     }()
 }

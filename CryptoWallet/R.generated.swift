@@ -90,7 +90,7 @@ struct _R {
     var walletTitleColor: RswiftResources.ColorResource { .init(name: "walletTitleColor", path: [], bundle: bundle) }
   }
 
-  /// This `_R.image` struct is generated, and contains static references to 21 images.
+  /// This `_R.image` struct is generated, and contains static references to 22 images.
   struct image {
     let bundle: Foundation.Bundle
 
@@ -123,6 +123,9 @@ struct _R {
 
     /// Image `createWalletTouchIdImage`.
     var createWalletTouchIdImage: RswiftResources.ImageResource { .init(name: "createWalletTouchIdImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `ethereumToken`.
+    var ethereumToken: RswiftResources.ImageResource { .init(name: "ethereumToken", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `faceIdImage`.
     var faceIdImage: RswiftResources.ImageResource { .init(name: "faceIdImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }

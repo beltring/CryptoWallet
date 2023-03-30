@@ -9,7 +9,8 @@ import UIKit
 
 class PinView: UIView {
 
-    // MARK: -
+    // MARK: - Properties
+
     private let pin = UIView()
 
     // MARK: - Init
@@ -37,7 +38,6 @@ class PinView: UIView {
     }
 
     func showBorder() {
-//        self.frame = CGRectInset(self.frame, -2, -2)
         pin.layer.borderColor = R.color.pinColor()?.cgColor
         pin.layer.borderWidth = 2
     }
