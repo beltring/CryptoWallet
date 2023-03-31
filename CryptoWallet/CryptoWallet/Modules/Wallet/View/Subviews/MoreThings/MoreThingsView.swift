@@ -35,16 +35,16 @@ class MoreThingsView: UIView {
     private func setupUI() {
         addSubviews([
             titleLabel,
-            mainStackView
-        ])
-
-        mainStackView.addArrangedSubviews([
+//            mainStackView
             chooseThemeButton,
             contactSupportButton,
             settingButton
         ])
 
         configureConstraint()
+        chooseThemeButton.addTarget(self, action: #selector(tappedChooseThemeButton), for: .touchUpInside)
+        contactSupportButton.addTarget(self, action: #selector(tappedContactSupportButton), for: .touchUpInside)
+        settingButton.addTarget(self, action: #selector(tappedSettingsButton), for: .touchUpInside)
     }
 
     private func configureConstraint() {
@@ -52,10 +52,29 @@ class MoreThingsView: UIView {
             make.leading.top.equalToSuperview()
         }
 
-        mainStackView.snp.makeConstraints { make in
-            make.leading.bottom.equalToSuperview()
-            make.top.equalTo(titleLabel.snp.bottom).offset(17)
+        chooseThemeButton.snp.makeConstraints { make in
+            make.top.equalTo(titleLabel.snp.bottom).offset(16)
+            make.leading.equalToSuperview()
+            make.height.equalTo(25)
         }
+
+        contactSupportButton.snp.makeConstraints { make in
+            make.top.equalTo(chooseThemeButton.snp.bottom).offset(16)
+            make.leading.equalToSuperview()
+            make.height.equalTo(25)
+        }
+
+        settingButton.snp.makeConstraints { make in
+            make.top.equalTo(contactSupportButton.snp.bottom).offset(16)
+            make.leading.equalToSuperview()
+            make.height.equalTo(25)
+            make.bottom.equalToSuperview().offset(-16)
+        }
+
+//        mainStackView.snp.makeConstraints { make in
+//            make.leading.bottom.equalToSuperview()
+//            make.top.equalTo(titleLabel.snp.bottom).offset(17)
+//        }
     }
 
     // MARK: - Functions
@@ -98,7 +117,6 @@ class MoreThingsView: UIView {
         button.setTitle("Choose theme", for: .normal)
         button.setImage(R.image.chooseThemeImage(), for: .normal)
         button.setInsets(forContentPadding: .zero, imageTitlePadding: 8)
-        button.addTarget(self, action: #selector(tappedChooseThemeButton), for: .touchUpInside)
         return button
     }()
 
@@ -109,7 +127,6 @@ class MoreThingsView: UIView {
         button.setTitle("Contact support", for: .normal)
         button.setImage(R.image.contactSupportImage(), for: .normal)
         button.setInsets(forContentPadding: .zero, imageTitlePadding: 8)
-        button.addTarget(self, action: #selector(tappedContactSupportButton), for: .touchUpInside)
         return button
     }()
 
@@ -120,7 +137,6 @@ class MoreThingsView: UIView {
         button.setTitle("Settings", for: .normal)
         button.setImage(R.image.settingImage(), for: .normal)
         button.setInsets(forContentPadding: .zero, imageTitlePadding: 8)
-        button.addTarget(self, action: #selector(tappedSettingsButton), for: .touchUpInside)
         return button
     }()
 }

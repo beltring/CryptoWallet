@@ -54,6 +54,8 @@ class WalletViewController: UIViewController {
         view.addSubview(scrollView)
         scrollView.addSubview(contentView)
         contentView.addSubview(mainStackView)
+        scrollView.isExclusiveTouch = false
+        scrollView.delaysContentTouches = false
         mainStackView.addArrangedSubviews([
             ethImageView,
             walletTitleLabel,
@@ -80,10 +82,8 @@ class WalletViewController: UIViewController {
         }
 
         mainStackView.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(24)
-            make.leading.equalToSuperview().offset(16)
-            make.trailing.equalToSuperview().offset(-16)
-            make.bottom.equalToSuperview()
+            make.top.bottom.equalToSuperview().inset(5)
+            make.leading.trailing.equalToSuperview().inset(16)
         }
 
         walletCardView.snp.makeConstraints { make in
