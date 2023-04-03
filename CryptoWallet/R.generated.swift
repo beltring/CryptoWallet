@@ -90,7 +90,7 @@ struct _R {
     var walletTitleColor: RswiftResources.ColorResource { .init(name: "walletTitleColor", path: [], bundle: bundle) }
   }
 
-  /// This `_R.image` struct is generated, and contains static references to 22 images.
+  /// This `_R.image` struct is generated, and contains static references to 28 images.
   struct image {
     let bundle: Foundation.Bundle
 
@@ -130,6 +130,21 @@ struct _R {
     /// Image `faceIdImage`.
     var faceIdImage: RswiftResources.ImageResource { .init(name: "faceIdImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
+    /// Image `historyTab`.
+    var historyTab: RswiftResources.ImageResource { .init(name: "historyTab", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `noOperationShark`.
+    var noOperationShark: RswiftResources.ImageResource { .init(name: "noOperationShark", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `refferalProgramImage`.
+    var refferalProgramImage: RswiftResources.ImageResource { .init(name: "refferalProgramImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `securityCenterImage`.
+    var securityCenterImage: RswiftResources.ImageResource { .init(name: "securityCenterImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `selectedHistoryTab`.
+    var selectedHistoryTab: RswiftResources.ImageResource { .init(name: "selectedHistoryTab", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
     /// Image `selectedSettingsTab`.
     var selectedSettingsTab: RswiftResources.ImageResource { .init(name: "selectedSettingsTab", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
@@ -147,6 +162,9 @@ struct _R {
 
     /// Image `sharkInstructionImage`.
     var sharkInstructionImage: RswiftResources.ImageResource { .init(name: "sharkInstructionImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `telegramSupportImage`.
+    var telegramSupportImage: RswiftResources.ImageResource { .init(name: "telegramSupportImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `touchIdImage`.
     var touchIdImage: RswiftResources.ImageResource { .init(name: "touchIdImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }

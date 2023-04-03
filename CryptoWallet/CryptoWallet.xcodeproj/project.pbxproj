@@ -53,6 +53,11 @@
 		CE79FAB029D5A72C00CC4A7F /* EthereumAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79FAAF29D5A72C00CC4A7F /* EthereumAdapter.swift */; };
 		CE79FAB229D5A8F900CC4A7F /* TransactionRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79FAB129D5A8F900CC4A7F /* TransactionRecord.swift */; };
 		CE79FAB429D5AA8D00CC4A7F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79FAB329D5AA8D00CC4A7F /* Configuration.swift */; };
+		CEB7CDC929DAA82D000181D5 /* OperationsHistoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7CDC829DAA82D000181D5 /* OperationsHistoryCoordinator.swift */; };
+		CEB7CDCB29DAA8CE000181D5 /* OperationsHistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7CDCA29DAA8CE000181D5 /* OperationsHistoryPresenter.swift */; };
+		CEB7CDCD29DAA93B000181D5 /* OperationsHistoryPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7CDCC29DAA93B000181D5 /* OperationsHistoryPresenterProtocol.swift */; };
+		CEB7CDCF29DAAAE1000181D5 /* OperationsHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7CDCE29DAAAE1000181D5 /* OperationsHistoryViewController.swift */; };
+		CEB7CDD129DAAC57000181D5 /* OperationsHistoryViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7CDD029DAAC57000181D5 /* OperationsHistoryViewProtocol.swift */; };
 		CEC0FA9429C9897000ECB025 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA8129C9897000ECB025 /* NotoSans-Regular.ttf */; };
 		CEC0FA9529C9897000ECB025 /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA8229C9897000ECB025 /* NotoSans-Medium.ttf */; };
 		CEC0FA9629C9897000ECB025 /* NotoSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC0FA8329C9897000ECB025 /* NotoSans-MediumItalic.ttf */; };
@@ -150,6 +155,11 @@
 		CE79FAAF29D5A72C00CC4A7F /* EthereumAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumAdapter.swift; sourceTree = "<group>"; };
 		CE79FAB129D5A8F900CC4A7F /* TransactionRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRecord.swift; sourceTree = "<group>"; };
 		CE79FAB329D5AA8D00CC4A7F /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		CEB7CDC829DAA82D000181D5 /* OperationsHistoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationsHistoryCoordinator.swift; sourceTree = "<group>"; };
+		CEB7CDCA29DAA8CE000181D5 /* OperationsHistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationsHistoryPresenter.swift; sourceTree = "<group>"; };
+		CEB7CDCC29DAA93B000181D5 /* OperationsHistoryPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationsHistoryPresenterProtocol.swift; sourceTree = "<group>"; };
+		CEB7CDCE29DAAAE1000181D5 /* OperationsHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationsHistoryViewController.swift; sourceTree = "<group>"; };
+		CEB7CDD029DAAC57000181D5 /* OperationsHistoryViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationsHistoryViewProtocol.swift; sourceTree = "<group>"; };
 		CEC0FA8129C9897000ECB025 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 		CEC0FA8229C9897000ECB025 /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
 		CEC0FA8329C9897000ECB025 /* NotoSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-MediumItalic.ttf"; sourceTree = "<group>"; };
@@ -273,6 +283,8 @@
 		CE280C9B29C475E6002B4DEC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CEB7CDD229DAD84A000181D5 /* Swap */,
+				CEB7CDC429DAA71E000181D5 /* OperationsHistory */,
 				CE41AC5029CC3FC0009CE7C3 /* AddAccount */,
 				CE40637D29CAFC0E004664FE /* CreateWallet */,
 				CE280CB129C48FCC002B4DEC /* Settings */,
@@ -551,6 +563,49 @@
 				CE79FAAF29D5A72C00CC4A7F /* EthereumAdapter.swift */,
 			);
 			path = Adapters;
+			sourceTree = "<group>";
+		};
+		CEB7CDC429DAA71E000181D5 /* OperationsHistory */ = {
+			isa = PBXGroup;
+			children = (
+				CEB7CDC729DAA792000181D5 /* View */,
+				CEB7CDC629DAA78D000181D5 /* Presenter */,
+				CEB7CDC529DAA788000181D5 /* Router */,
+			);
+			path = OperationsHistory;
+			sourceTree = "<group>";
+		};
+		CEB7CDC529DAA788000181D5 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CEB7CDC829DAA82D000181D5 /* OperationsHistoryCoordinator.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CEB7CDC629DAA78D000181D5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CEB7CDCA29DAA8CE000181D5 /* OperationsHistoryPresenter.swift */,
+				CEB7CDCC29DAA93B000181D5 /* OperationsHistoryPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CEB7CDC729DAA792000181D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEB7CDCE29DAAAE1000181D5 /* OperationsHistoryViewController.swift */,
+				CEB7CDD029DAAC57000181D5 /* OperationsHistoryViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEB7CDD229DAD84A000181D5 /* Swap */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Swap;
 			sourceTree = "<group>";
 		};
 		CEC0FA7F29C9895D00ECB025 /* Fonts */ = {
@@ -835,6 +890,7 @@
 				CEC7210429D41C4A00D7BB81 /* KeychainKeys.swift in Sources */,
 				CEC0FAB429C99C9E00ECB025 /* NotoSans-Black.ttf in Sources */,
 				CEC0FAB529C99C9E00ECB025 /* NotoSans-Bold.ttf in Sources */,
+				CEB7CDCF29DAAAE1000181D5 /* OperationsHistoryViewController.swift in Sources */,
 				CEC0FAB629C99C9E00ECB025 /* NotoSans-Thin.ttf in Sources */,
 				CE4CAFD229D300E50017467B /* LocalAuthenticationView.swift in Sources */,
 				CEC0FAB729C99C9E00ECB025 /* NotoSans-SemiBold.ttf in Sources */,
@@ -844,9 +900,11 @@
 				CE41AC5D29CC46AA009CE7C3 /* AddAccountCoordinator.swift in Sources */,
 				CEC0FABB29C99C9E00ECB025 /* NotoSans-BoldItalic.ttf in Sources */,
 				CEC0FABC29C99C9E00ECB025 /* NotoSans-BlackItalic.ttf in Sources */,
+				CEB7CDD129DAAC57000181D5 /* OperationsHistoryViewProtocol.swift in Sources */,
 				CEC0FABD29C99C9E00ECB025 /* NotoSans-ExtraBoldItalic.ttf in Sources */,
 				CEC0FABE29C99C9E00ECB025 /* NotoSans-ExtraLight.ttf in Sources */,
 				CEC0FABF29C99C9E00ECB025 /* NotoSans-ThinItalic.ttf in Sources */,
+				CEB7CDC929DAA82D000181D5 /* OperationsHistoryCoordinator.swift in Sources */,
 				CE40638E29CB13E5004664FE /* CreateWalletInstructionView.swift in Sources */,
 				CEC0FAC029C99C9E00ECB025 /* NotoSans-ExtraLightItalic.ttf in Sources */,
 				CEC0FAC129C99C9E00ECB025 /* NotoSans-ExtraBold.ttf in Sources */,
@@ -876,6 +934,7 @@
 				CE4CAFCF29D2F6C10017467B /* LocalAuthenticationService.swift in Sources */,
 				CEC7210629D41CE500D7BB81 /* KeychainService.swift in Sources */,
 				CEC0FAAA29C98BBB00ECB025 /* PortfolioValueView.swift in Sources */,
+				CEB7CDCD29DAA93B000181D5 /* OperationsHistoryPresenterProtocol.swift in Sources */,
 				CE79FAAC29D5A5F700CC4A7F /* WalletManager.swift in Sources */,
 				CE41AC4D29CC2057009CE7C3 /* HeaderInstructionView.swift in Sources */,
 				CE280CBE29C49214002B4DEC /* SettingsCoordinator.swift in Sources */,
@@ -890,6 +949,7 @@
 				CE41AC5729CC409A009CE7C3 /* AddAccountViewProtocol.swift in Sources */,
 				CE280CB029C4868E002B4DEC /* WalletCoordinator.swift in Sources */,
 				CEC0FAAE29C98F6100ECB025 /* UIViewExtensions.swift in Sources */,
+				CEB7CDCB29DAA8CE000181D5 /* OperationsHistoryPresenter.swift in Sources */,
 				CEC0FAC529C99EF100ECB025 /* WalletCardView.swift in Sources */,
 				CE280CB829C49057002B4DEC /* SettingsPresenter.swift in Sources */,
 				CE79FAB429D5AA8D00CC4A7F /* Configuration.swift in Sources */,

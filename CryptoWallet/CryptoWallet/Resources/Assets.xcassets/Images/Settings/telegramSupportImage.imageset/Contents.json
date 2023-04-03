@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "Icon=Setting, Stan=Active.svg",
+      "filename" : "icon (1).svg",
       "idiom" : "universal"
     },
     {
@@ -11,7 +11,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "Wallet.svg",
+      "filename" : "TelegramLogo.svg",
       "idiom" : "universal"
     }
   ],

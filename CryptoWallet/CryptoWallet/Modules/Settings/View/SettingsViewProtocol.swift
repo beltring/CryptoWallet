@@ -8,6 +8,5 @@
 import Foundation
 
 protocol SettingsViewProtocol: AnyObject {
-
     var presenter: SettingsPresenterProtocol { get }
 }
