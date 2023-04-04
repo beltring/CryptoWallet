@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1403347B29C9F0A800305CA3 /* MoreThingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1403347A29C9F0A800305CA3 /* MoreThingsView.swift */; };
+		14E4A0CC29DAF4D800E8D68F /* SwapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E4A0CB29DAF4D800E8D68F /* SwapCoordinator.swift */; };
+		14E4A0CE29DB051900E8D68F /* SwapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E4A0CD29DB051900E8D68F /* SwapPresenter.swift */; };
+		14E4A0D029DB068C00E8D68F /* SwapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E4A0CF29DB068C00E8D68F /* SwapViewController.swift */; };
+		14E4A0D229DB1C5E00E8D68F /* SwapViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E4A0D129DB1C5E00E8D68F /* SwapViewProtocol.swift */; };
+		14E4A0D429DB1C7200E8D68F /* SwapPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E4A0D329DB1C7200E8D68F /* SwapPresenterProtocol.swift */; };
 		BCDFDEE3CB09A90B1455D233 /* Pods_CryptoWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F2A865BD33FFF60E4466D2 /* Pods_CryptoWallet.framework */; };
 		CE280C8329C45167002B4DEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280C8229C45167002B4DEC /* AppDelegate.swift */; };
 		CE280C8529C45167002B4DEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280C8429C45167002B4DEC /* SceneDelegate.swift */; };
@@ -107,6 +112,11 @@
 
 /* Begin PBXFileReference section */
 		1403347A29C9F0A800305CA3 /* MoreThingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreThingsView.swift; sourceTree = "<group>"; };
+		14E4A0CB29DAF4D800E8D68F /* SwapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapCoordinator.swift; sourceTree = "<group>"; };
+		14E4A0CD29DB051900E8D68F /* SwapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapPresenter.swift; sourceTree = "<group>"; };
+		14E4A0CF29DB068C00E8D68F /* SwapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwapViewController.swift; path = CryptoWallet/Modules/Swap/View/SwapViewController.swift; sourceTree = SOURCE_ROOT; };
+		14E4A0D129DB1C5E00E8D68F /* SwapViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwapViewProtocol.swift; path = CryptoWallet/Modules/Swap/View/SwapViewProtocol.swift; sourceTree = SOURCE_ROOT; };
+		14E4A0D329DB1C7200E8D68F /* SwapPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapPresenterProtocol.swift; sourceTree = "<group>"; };
 		27555644CAEC2AA42143F11A /* Pods-CryptoWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWallet.release.xcconfig"; path = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.release.xcconfig"; sourceTree = "<group>"; };
 		67F2A865BD33FFF60E4466D2 /* Pods_CryptoWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA888EAC28A4DDECC2BCE442 /* Pods-CryptoWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWallet.debug.xcconfig"; path = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.debug.xcconfig"; sourceTree = "<group>"; };
@@ -208,6 +218,33 @@
 				1403347A29C9F0A800305CA3 /* MoreThingsView.swift */,
 			);
 			path = MoreThings;
+			sourceTree = "<group>";
+		};
+		14E4A0C829DAEF6C00E8D68F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14E4A0CF29DB068C00E8D68F /* SwapViewController.swift */,
+				14E4A0D129DB1C5E00E8D68F /* SwapViewProtocol.swift */,
+			);
+			name = View;
+			path = CryptoWallet/Modules/Swap/View;
+			sourceTree = "<group>";
+		};
+		14E4A0C929DAEF7400E8D68F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				14E4A0CD29DB051900E8D68F /* SwapPresenter.swift */,
+				14E4A0D329DB1C7200E8D68F /* SwapPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		14E4A0CA29DAF48100E8D68F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				14E4A0CB29DAF4D800E8D68F /* SwapCoordinator.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		2E309B1AD5AAED97235C80F8 /* Pods */ = {
@@ -604,6 +641,9 @@
 		CEB7CDD229DAD84A000181D5 /* Swap */ = {
 			isa = PBXGroup;
 			children = (
+				14E4A0CA29DAF48100E8D68F /* Router */,
+				14E4A0C929DAEF7400E8D68F /* Presenter */,
+				14E4A0C829DAEF6C00E8D68F /* View */,
 			);
 			path = Swap;
 			sourceTree = "<group>";
@@ -886,6 +926,7 @@
 				CE40637C29CAE3E6004664FE /* UIButtonExtension.swift in Sources */,
 				CEC0FAB229C99C9E00ECB025 /* NotoSans-Medium.ttf in Sources */,
 				CE41AC4B29CC17A7009CE7C3 /* InstructionType.swift in Sources */,
+				14E4A0CC29DAF4D800E8D68F /* SwapCoordinator.swift in Sources */,
 				CEC0FAB329C99C9E00ECB025 /* NotoSans-MediumItalic.ttf in Sources */,
 				CEC7210429D41C4A00D7BB81 /* KeychainKeys.swift in Sources */,
 				CEC0FAB429C99C9E00ECB025 /* NotoSans-Black.ttf in Sources */,
@@ -903,6 +944,7 @@
 				CEB7CDD129DAAC57000181D5 /* OperationsHistoryViewProtocol.swift in Sources */,
 				CEC0FABD29C99C9E00ECB025 /* NotoSans-ExtraBoldItalic.ttf in Sources */,
 				CEC0FABE29C99C9E00ECB025 /* NotoSans-ExtraLight.ttf in Sources */,
+				14E4A0D429DB1C7200E8D68F /* SwapPresenterProtocol.swift in Sources */,
 				CEC0FABF29C99C9E00ECB025 /* NotoSans-ThinItalic.ttf in Sources */,
 				CEB7CDC929DAA82D000181D5 /* OperationsHistoryCoordinator.swift in Sources */,
 				CE40638E29CB13E5004664FE /* CreateWalletInstructionView.swift in Sources */,
@@ -931,6 +973,7 @@
 				CE280CA229C47D74002B4DEC /* WalletViewController.swift in Sources */,
 				CE79FAB029D5A72C00CC4A7F /* EthereumAdapter.swift in Sources */,
 				CE280CA629C47EA6002B4DEC /* WalletPresenter.swift in Sources */,
+				14E4A0D029DB068C00E8D68F /* SwapViewController.swift in Sources */,
 				CE4CAFCF29D2F6C10017467B /* LocalAuthenticationService.swift in Sources */,
 				CEC7210629D41CE500D7BB81 /* KeychainService.swift in Sources */,
 				CEC0FAAA29C98BBB00ECB025 /* PortfolioValueView.swift in Sources */,
@@ -944,6 +987,7 @@
 				CE41AC5529CC408A009CE7C3 /* AddAccountViewController.swift in Sources */,
 				CE5CCD8929D14B2800F0C1DD /* CreatePinView.swift in Sources */,
 				CEC7210129D4030100D7BB81 /* BiometricType.swift in Sources */,
+				14E4A0D229DB1C5E00E8D68F /* SwapViewProtocol.swift in Sources */,
 				CE40638A29CB01C0004664FE /* CreateWalletPresenterProtocol.swift in Sources */,
 				CE40638429CAFECC004664FE /* CreateWalletViewController.swift in Sources */,
 				CE41AC5729CC409A009CE7C3 /* AddAccountViewProtocol.swift in Sources */,
@@ -953,6 +997,7 @@
 				CEC0FAC529C99EF100ECB025 /* WalletCardView.swift in Sources */,
 				CE280CB829C49057002B4DEC /* SettingsPresenter.swift in Sources */,
 				CE79FAB429D5AA8D00CC4A7F /* Configuration.swift in Sources */,
+				14E4A0CE29DB051900E8D68F /* SwapPresenter.swift in Sources */,
 				CE280CBC29C491A9002B4DEC /* SettingsViewProtocol.swift in Sources */,
 				CE41AC5929CC44ED009CE7C3 /* AddAccountPresenter.swift in Sources */,
 			);
