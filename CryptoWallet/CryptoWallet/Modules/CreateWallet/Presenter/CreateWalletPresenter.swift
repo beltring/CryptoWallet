@@ -7,6 +7,7 @@
 
 import UIKit
 import XCoordinator
+import Firebase
 
 class CreateWalletPresenter {
     // MARK: - Public Properties
@@ -38,5 +39,18 @@ extension CreateWalletPresenter: CreateWalletPresenterProtocol {
 
     func saveCode(code: String) {
         KeychainService.shared.savePasscode(code: code)
+    }
+
+    func getkey() {
+        let db = Firestore.firestore()
+        db.collection("keys").getDocuments { [weak self] querySnapshot, err in
+            if let error = err {
+                self?.router.trigger(.alert(title: "Error", message: error.localizedDescription))
+            } else {
+                for document in querySnapshot!.documents {
+                    print("\n MYLOG: \(document.documentID) => \(document.data())")
+                }
+            }
+        }
     }
 }

@@ -35,7 +35,6 @@ class MoreThingsView: UIView {
     private func setupUI() {
         addSubviews([
             titleLabel,
-//            mainStackView
             chooseThemeButton,
             contactSupportButton,
             settingButton
@@ -54,27 +53,22 @@ class MoreThingsView: UIView {
 
         chooseThemeButton.snp.makeConstraints { make in
             make.top.equalTo(titleLabel.snp.bottom).offset(16)
-            make.leading.equalToSuperview()
+            make.leading.trailing.equalToSuperview()
             make.height.equalTo(25)
         }
 
         contactSupportButton.snp.makeConstraints { make in
             make.top.equalTo(chooseThemeButton.snp.bottom).offset(16)
-            make.leading.equalToSuperview()
+            make.leading.trailing.equalToSuperview()
             make.height.equalTo(25)
         }
 
         settingButton.snp.makeConstraints { make in
             make.top.equalTo(contactSupportButton.snp.bottom).offset(16)
-            make.leading.equalToSuperview()
+            make.leading.trailing.equalToSuperview()
             make.height.equalTo(25)
             make.bottom.equalToSuperview().offset(-16)
         }
-
-//        mainStackView.snp.makeConstraints { make in
-//            make.leading.bottom.equalToSuperview()
-//            make.top.equalTo(titleLabel.snp.bottom).offset(17)
-//        }
     }
 
     // MARK: - Functions
@@ -112,6 +106,7 @@ class MoreThingsView: UIView {
 
     private lazy var chooseThemeButton: UIButton = {
         let button = UIButton()
+        button.contentHorizontalAlignment = .leading
         button.titleLabel?.textColor = R.color.walletTitleColor()
         button.titleLabel?.font = R.font.notoSansRegular(size: 16)
         button.setTitle("Choose theme", for: .normal)
@@ -122,6 +117,7 @@ class MoreThingsView: UIView {
 
     private lazy var contactSupportButton: UIButton = {
         let button = UIButton()
+        button.contentHorizontalAlignment = .leading
         button.titleLabel?.textColor = R.color.walletTitleColor()
         button.titleLabel?.font = R.font.notoSansRegular(size: 16)
         button.setTitle("Contact support", for: .normal)
@@ -132,11 +128,13 @@ class MoreThingsView: UIView {
 
     private lazy var settingButton: UIButton = {
         let button = UIButton()
+        button.contentHorizontalAlignment = .leading
         button.titleLabel?.textColor = R.color.walletTitleColor()
         button.titleLabel?.font = R.font.notoSansRegular(size: 16)
         button.setTitle("Settings", for: .normal)
         button.setImage(R.image.settingImage(), for: .normal)
         button.setInsets(forContentPadding: .zero, imageTitlePadding: 8)
+        button.addTarget(self, action: #selector(tappedSettingsButton), for: .touchUpInside)
         return button
     }()
 }

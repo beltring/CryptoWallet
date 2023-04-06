@@ -50,14 +50,23 @@
 		CE4CAFCF29D2F6C10017467B /* LocalAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4CAFCE29D2F6C10017467B /* LocalAuthenticationService.swift */; };
 		CE4CAFD229D300E50017467B /* LocalAuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4CAFD129D300E50017467B /* LocalAuthenticationView.swift */; };
 		CE5CCD8929D14B2800F0C1DD /* CreatePinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5CCD8829D14B2800F0C1DD /* CreatePinView.swift */; };
+		CE61EDB829DC3FA1005ABAB7 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61EDB729DC3FA1005ABAB7 /* HistoryView.swift */; };
+		CE66736329DD899200BF3AC8 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66736229DD899200BF3AC8 /* UserDefaultsService.swift */; };
+		CE66736529DD8BA500BF3AC8 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66736429DD8BA500BF3AC8 /* UserDefaultsKeys.swift */; };
+		CE66736729DD96FA00BF3AC8 /* WalletBackUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66736629DD96FA00BF3AC8 /* WalletBackUpViewController.swift */; };
+		CE66736929DD971400BF3AC8 /* WalletBackUpViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66736829DD971400BF3AC8 /* WalletBackUpViewProtocol.swift */; };
+		CE66736B29DD995000BF3AC8 /* WalletBackUpPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66736A29DD995000BF3AC8 /* WalletBackUpPresenterProtocol.swift */; };
+		CE66736D29DD9E5F00BF3AC8 /* WalletBackUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66736C29DD9E5F00BF3AC8 /* WalletBackUpCoordinator.swift */; };
+		CE66737029DDA28B00BF3AC8 /* BackUpOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66736F29DDA28B00BF3AC8 /* BackUpOnboardingView.swift */; };
 		CE6A9B8D29C97BAD00E1077E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A9B8C29C97BAD00E1077E /* R.generated.swift */; };
-		CE6A9B9029C97EF600E1077E /* OneInchKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE6A9B8F29C97EF600E1077E /* OneInchKit */; };
 		CE71C1BE29CD832E008D975E /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C1BD29CD832E008D975E /* PinView.swift */; };
 		CE71C1C129CD8422008D975E /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C1C029CD8422008D975E /* PasscodeView.swift */; };
 		CE79FAAC29D5A5F700CC4A7F /* WalletManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79FAAB29D5A5F700CC4A7F /* WalletManager.swift */; };
 		CE79FAB029D5A72C00CC4A7F /* EthereumAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79FAAF29D5A72C00CC4A7F /* EthereumAdapter.swift */; };
 		CE79FAB229D5A8F900CC4A7F /* TransactionRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79FAB129D5A8F900CC4A7F /* TransactionRecord.swift */; };
 		CE79FAB429D5AA8D00CC4A7F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79FAB329D5AA8D00CC4A7F /* Configuration.swift */; };
+		CE7FA9FE29DBF90C00291CFF /* WalletBackUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FA9FD29DBF90C00291CFF /* WalletBackUpPresenter.swift */; };
+		CE7FAA0029DC093600291CFF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE7FA9FF29DC093600291CFF /* GoogleService-Info.plist */; };
 		CEB7CDC929DAA82D000181D5 /* OperationsHistoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7CDC829DAA82D000181D5 /* OperationsHistoryCoordinator.swift */; };
 		CEB7CDCB29DAA8CE000181D5 /* OperationsHistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7CDCA29DAA8CE000181D5 /* OperationsHistoryPresenter.swift */; };
 		CEB7CDCD29DAA93B000181D5 /* OperationsHistoryPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7CDCC29DAA93B000181D5 /* OperationsHistoryPresenterProtocol.swift */; };
@@ -108,6 +117,16 @@
 		CEC7210429D41C4A00D7BB81 /* KeychainKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7210329D41C4A00D7BB81 /* KeychainKeys.swift */; };
 		CEC7210629D41CE500D7BB81 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7210529D41CE500D7BB81 /* KeychainService.swift */; };
 		CEC7210829D45C0C00D7BB81 /* OneInchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7210729D45C0C00D7BB81 /* OneInchService.swift */; };
+		CEE913AE29DC25EA0006B763 /* OneInchKit in Frameworks */ = {isa = PBXBuildFile; productRef = CEE913AD29DC25EA0006B763 /* OneInchKit */; };
+		CEE913B129DC26770006B763 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CEE913B029DC26770006B763 /* FirebaseAnalytics */; };
+		CEE913B329DC26770006B763 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CEE913B229DC26770006B763 /* FirebaseAnalyticsSwift */; };
+		CEE913B529DC26770006B763 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = CEE913B429DC26770006B763 /* FirebaseCrashlytics */; };
+		CEE913B729DC26770006B763 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CEE913B629DC26770006B763 /* FirebaseFirestore */; };
+		CEE913B929DC26770006B763 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CEE913B829DC26770006B763 /* FirebaseFirestoreSwift */; };
+		CEE913BB29DC26770006B763 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = CEE913BA29DC26770006B763 /* FirebaseMessaging */; };
+		CEE913BD29DC26770006B763 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = CEE913BC29DC26770006B763 /* FirebaseRemoteConfig */; };
+		CEE913BF29DC26770006B763 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CEE913BE29DC26770006B763 /* FirebaseRemoteConfigSwift */; };
+		CEE913C129DC26770006B763 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CEE913C029DC26770006B763 /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -158,6 +177,14 @@
 		CE4CAFCE29D2F6C10017467B /* LocalAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationService.swift; sourceTree = "<group>"; };
 		CE4CAFD129D300E50017467B /* LocalAuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationView.swift; sourceTree = "<group>"; };
 		CE5CCD8829D14B2800F0C1DD /* CreatePinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePinView.swift; sourceTree = "<group>"; };
+		CE61EDB729DC3FA1005ABAB7 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistoryView.swift; path = CryptoWallet/Modules/WalletbackUp/Presenter/HistoryView.swift; sourceTree = SOURCE_ROOT; };
+		CE66736229DD899200BF3AC8 /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
+		CE66736429DD8BA500BF3AC8 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		CE66736629DD96FA00BF3AC8 /* WalletBackUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletBackUpViewController.swift; sourceTree = "<group>"; };
+		CE66736829DD971400BF3AC8 /* WalletBackUpViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletBackUpViewProtocol.swift; sourceTree = "<group>"; };
+		CE66736A29DD995000BF3AC8 /* WalletBackUpPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletBackUpPresenterProtocol.swift; sourceTree = "<group>"; };
+		CE66736C29DD9E5F00BF3AC8 /* WalletBackUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletBackUpCoordinator.swift; sourceTree = "<group>"; };
+		CE66736F29DDA28B00BF3AC8 /* BackUpOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackUpOnboardingView.swift; sourceTree = "<group>"; };
 		CE6A9B8C29C97BAD00E1077E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		CE71C1BD29CD832E008D975E /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
 		CE71C1C029CD8422008D975E /* PasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
@@ -165,6 +192,8 @@
 		CE79FAAF29D5A72C00CC4A7F /* EthereumAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumAdapter.swift; sourceTree = "<group>"; };
 		CE79FAB129D5A8F900CC4A7F /* TransactionRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRecord.swift; sourceTree = "<group>"; };
 		CE79FAB329D5AA8D00CC4A7F /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		CE7FA9FD29DBF90C00291CFF /* WalletBackUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletBackUpPresenter.swift; sourceTree = "<group>"; };
+		CE7FA9FF29DC093600291CFF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CEB7CDC829DAA82D000181D5 /* OperationsHistoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationsHistoryCoordinator.swift; sourceTree = "<group>"; };
 		CEB7CDCA29DAA8CE000181D5 /* OperationsHistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationsHistoryPresenter.swift; sourceTree = "<group>"; };
 		CEB7CDCC29DAA93B000181D5 /* OperationsHistoryPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationsHistoryPresenterProtocol.swift; sourceTree = "<group>"; };
@@ -204,8 +233,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE6A9B9029C97EF600E1077E /* OneInchKit in Frameworks */,
+				CEE913BD29DC26770006B763 /* FirebaseRemoteConfig in Frameworks */,
+				CEE913BB29DC26770006B763 /* FirebaseMessaging in Frameworks */,
+				CEE913B329DC26770006B763 /* FirebaseAnalyticsSwift in Frameworks */,
+				CEE913AE29DC25EA0006B763 /* OneInchKit in Frameworks */,
+				CEE913B529DC26770006B763 /* FirebaseCrashlytics in Frameworks */,
+				CEE913B929DC26770006B763 /* FirebaseFirestoreSwift in Frameworks */,
 				BCDFDEE3CB09A90B1455D233 /* Pods_CryptoWallet.framework in Frameworks */,
+				CEE913BF29DC26770006B763 /* FirebaseRemoteConfigSwift in Frameworks */,
+				CEE913C129DC26770006B763 /* FirebaseStorage in Frameworks */,
+				CEE913B129DC26770006B763 /* FirebaseAnalytics in Frameworks */,
+				CEE913B729DC26770006B763 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +261,7 @@
 		14E4A0C829DAEF6C00E8D68F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CE61EDB629DC3F76005ABAB7 /* Subviews */,
 				14E4A0CF29DB068C00E8D68F /* SwapViewController.swift */,
 				14E4A0D129DB1C5E00E8D68F /* SwapViewProtocol.swift */,
 			);
@@ -285,6 +324,7 @@
 		CE280C8129C45167002B4DEC /* CryptoWallet */ = {
 			isa = PBXGroup;
 			children = (
+				CE7FA9FF29DC093600291CFF /* GoogleService-Info.plist */,
 				CE280C9029C45168002B4DEC /* Info.plist */,
 				CE6A9B8C29C97BAD00E1077E /* R.generated.swift */,
 				CE280C9629C454A7002B4DEC /* Application */,
@@ -320,6 +360,7 @@
 		CE280C9B29C475E6002B4DEC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CE7FA9F929DBF70000291CFF /* WalletbackUp */,
 				CEB7CDD229DAD84A000181D5 /* Swap */,
 				CEB7CDC429DAA71E000181D5 /* OperationsHistory */,
 				CE41AC5029CC3FC0009CE7C3 /* AddAccount */,
@@ -541,6 +582,7 @@
 				CEC7210529D41CE500D7BB81 /* KeychainService.swift */,
 				CEC7210729D45C0C00D7BB81 /* OneInchService.swift */,
 				CE79FAAB29D5A5F700CC4A7F /* WalletManager.swift */,
+				CE66736229DD899200BF3AC8 /* UserDefaultsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -551,6 +593,23 @@
 				CE4CAFD129D300E50017467B /* LocalAuthenticationView.swift */,
 			);
 			path = LocalAuthentication;
+			sourceTree = "<group>";
+		};
+		CE61EDB629DC3F76005ABAB7 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				CE61EDB729DC3FA1005ABAB7 /* HistoryView.swift */,
+			);
+			name = Subviews;
+			path = CryptoWallet/Modules/Swap/CryptoWallet/Modules/Swap/View/Subviews;
+			sourceTree = "<group>";
+		};
+		CE66736E29DDA15800BF3AC8 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				CE66736F29DDA28B00BF3AC8 /* BackUpOnboardingView.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 		CE71C1BC29CD8171008D975E /* Views */ = {
@@ -600,6 +659,43 @@
 				CE79FAAF29D5A72C00CC4A7F /* EthereumAdapter.swift */,
 			);
 			path = Adapters;
+			sourceTree = "<group>";
+		};
+		CE7FA9F929DBF70000291CFF /* WalletbackUp */ = {
+			isa = PBXGroup;
+			children = (
+				CE7FA9FC29DBF71F00291CFF /* Router */,
+				CE7FA9FB29DBF71900291CFF /* Presenter */,
+				CE7FA9FA29DBF71100291CFF /* View */,
+			);
+			path = WalletbackUp;
+			sourceTree = "<group>";
+		};
+		CE7FA9FA29DBF71100291CFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE66736E29DDA15800BF3AC8 /* Subviews */,
+				CE66736629DD96FA00BF3AC8 /* WalletBackUpViewController.swift */,
+				CE66736829DD971400BF3AC8 /* WalletBackUpViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE7FA9FB29DBF71900291CFF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CE7FA9FD29DBF90C00291CFF /* WalletBackUpPresenter.swift */,
+				CE66736A29DD995000BF3AC8 /* WalletBackUpPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CE7FA9FC29DBF71F00291CFF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CE66736C29DD9E5F00BF3AC8 /* WalletBackUpCoordinator.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		CEB7CDC429DAA71E000181D5 /* OperationsHistory */ = {
@@ -741,6 +837,7 @@
 			isa = PBXGroup;
 			children = (
 				CEC7210329D41C4A00D7BB81 /* KeychainKeys.swift */,
+				CE66736429DD8BA500BF3AC8 /* UserDefaultsKeys.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -766,7 +863,16 @@
 			);
 			name = CryptoWallet;
 			packageProductDependencies = (
-				CE6A9B8F29C97EF600E1077E /* OneInchKit */,
+				CEE913AD29DC25EA0006B763 /* OneInchKit */,
+				CEE913B029DC26770006B763 /* FirebaseAnalytics */,
+				CEE913B229DC26770006B763 /* FirebaseAnalyticsSwift */,
+				CEE913B429DC26770006B763 /* FirebaseCrashlytics */,
+				CEE913B629DC26770006B763 /* FirebaseFirestore */,
+				CEE913B829DC26770006B763 /* FirebaseFirestoreSwift */,
+				CEE913BA29DC26770006B763 /* FirebaseMessaging */,
+				CEE913BC29DC26770006B763 /* FirebaseRemoteConfig */,
+				CEE913BE29DC26770006B763 /* FirebaseRemoteConfigSwift */,
+				CEE913C029DC26770006B763 /* FirebaseStorage */,
 			);
 			productName = CryptoWallet;
 			productReference = CE280C7F29C45167002B4DEC /* CryptoWallet.app */;
@@ -797,7 +903,8 @@
 			);
 			mainGroup = CE280C7629C45166002B4DEC;
 			packageReferences = (
-				CE6A9B8E29C97EF600E1077E /* XCRemoteSwiftPackageReference "OneInchKit.Swift" */,
+				CEE913AC29DC25EA0006B763 /* XCRemoteSwiftPackageReference "OneInchKit.Swift" */,
+				CEE913AF29DC26770006B763 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = CE280C8029C45167002B4DEC /* Products */;
 			projectDirPath = "";
@@ -817,6 +924,7 @@
 				CEC0FA9429C9897000ECB025 /* NotoSans-Regular.ttf in Resources */,
 				CEC0FA9729C9897000ECB025 /* NotoSans-Black.ttf in Resources */,
 				CEC0FA9B29C9897000ECB025 /* NotoSans-SemiBoldItalic.ttf in Resources */,
+				CE7FAA0029DC093600291CFF /* GoogleService-Info.plist in Resources */,
 				CEC0FAA229C9897000ECB025 /* NotoSans-ExtraLight.ttf in Resources */,
 				CEC0FAA129C9897000ECB025 /* NotoSans-ExtraBoldItalic.ttf in Resources */,
 				CEC0FAA029C9897000ECB025 /* NotoSans-BlackItalic.ttf in Resources */,
@@ -928,9 +1036,12 @@
 				CE41AC4B29CC17A7009CE7C3 /* InstructionType.swift in Sources */,
 				14E4A0CC29DAF4D800E8D68F /* SwapCoordinator.swift in Sources */,
 				CEC0FAB329C99C9E00ECB025 /* NotoSans-MediumItalic.ttf in Sources */,
+				CE61EDB829DC3FA1005ABAB7 /* HistoryView.swift in Sources */,
 				CEC7210429D41C4A00D7BB81 /* KeychainKeys.swift in Sources */,
+				CE66737029DDA28B00BF3AC8 /* BackUpOnboardingView.swift in Sources */,
 				CEC0FAB429C99C9E00ECB025 /* NotoSans-Black.ttf in Sources */,
 				CEC0FAB529C99C9E00ECB025 /* NotoSans-Bold.ttf in Sources */,
+				CE66736B29DD995000BF3AC8 /* WalletBackUpPresenterProtocol.swift in Sources */,
 				CEB7CDCF29DAAAE1000181D5 /* OperationsHistoryViewController.swift in Sources */,
 				CEC0FAB629C99C9E00ECB025 /* NotoSans-Thin.ttf in Sources */,
 				CE4CAFD229D300E50017467B /* LocalAuthenticationView.swift in Sources */,
@@ -940,6 +1051,7 @@
 				CEC0FABA29C99C9E00ECB025 /* NotoSans-Light.ttf in Sources */,
 				CE41AC5D29CC46AA009CE7C3 /* AddAccountCoordinator.swift in Sources */,
 				CEC0FABB29C99C9E00ECB025 /* NotoSans-BoldItalic.ttf in Sources */,
+				CE66736529DD8BA500BF3AC8 /* UserDefaultsKeys.swift in Sources */,
 				CEC0FABC29C99C9E00ECB025 /* NotoSans-BlackItalic.ttf in Sources */,
 				CEB7CDD129DAAC57000181D5 /* OperationsHistoryViewProtocol.swift in Sources */,
 				CEC0FABD29C99C9E00ECB025 /* NotoSans-ExtraBoldItalic.ttf in Sources */,
@@ -964,12 +1076,15 @@
 				CE79FAB229D5A8F900CC4A7F /* TransactionRecord.swift in Sources */,
 				CE40639029CB276C004664FE /* InstructionView.swift in Sources */,
 				CE280C8329C45167002B4DEC /* AppDelegate.swift in Sources */,
+				CE66736D29DD9E5F00BF3AC8 /* WalletBackUpCoordinator.swift in Sources */,
 				CE280CAD29C4850A002B4DEC /* WalletTabBarCoordinator.swift in Sources */,
 				CE41AC4F29CC2388009CE7C3 /* FooterInstructionView.swift in Sources */,
 				CE71C1BE29CD832E008D975E /* PinView.swift in Sources */,
 				CE280C8529C45167002B4DEC /* SceneDelegate.swift in Sources */,
 				CEC0FAB029C9925700ECB025 /* UIStackViewExtension.swift in Sources */,
+				CE66736729DD96FA00BF3AC8 /* WalletBackUpViewController.swift in Sources */,
 				CE40638229CAFDD1004664FE /* CreateWalletCoordinator.swift in Sources */,
+				CE66736929DD971400BF3AC8 /* WalletBackUpViewProtocol.swift in Sources */,
 				CE280CA229C47D74002B4DEC /* WalletViewController.swift in Sources */,
 				CE79FAB029D5A72C00CC4A7F /* EthereumAdapter.swift in Sources */,
 				CE280CA629C47EA6002B4DEC /* WalletPresenter.swift in Sources */,
@@ -980,6 +1095,7 @@
 				CEB7CDCD29DAA93B000181D5 /* OperationsHistoryPresenterProtocol.swift in Sources */,
 				CE79FAAC29D5A5F700CC4A7F /* WalletManager.swift in Sources */,
 				CE41AC4D29CC2057009CE7C3 /* HeaderInstructionView.swift in Sources */,
+				CE66736329DD899200BF3AC8 /* UserDefaultsService.swift in Sources */,
 				CE280CBE29C49214002B4DEC /* SettingsCoordinator.swift in Sources */,
 				CE6A9B8D29C97BAD00E1077E /* R.generated.swift in Sources */,
 				CE4CAFCC29D2D6710017467B /* UIViewControllerExtension.swift in Sources */,
@@ -998,6 +1114,7 @@
 				CE280CB829C49057002B4DEC /* SettingsPresenter.swift in Sources */,
 				CE79FAB429D5AA8D00CC4A7F /* Configuration.swift in Sources */,
 				14E4A0CE29DB051900E8D68F /* SwapPresenter.swift in Sources */,
+				CE7FA9FE29DBF90C00291CFF /* WalletBackUpPresenter.swift in Sources */,
 				CE280CBC29C491A9002B4DEC /* SettingsViewProtocol.swift in Sources */,
 				CE41AC5929CC44ED009CE7C3 /* AddAccountPresenter.swift in Sources */,
 			);
@@ -1219,7 +1336,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CE6A9B8E29C97EF600E1077E /* XCRemoteSwiftPackageReference "OneInchKit.Swift" */ = {
+		CEE913AC29DC25EA0006B763 /* XCRemoteSwiftPackageReference "OneInchKit.Swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/horizontalsystems/OneInchKit.Swift.git";
 			requirement = {
@@ -1227,13 +1344,66 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		CEE913AF29DC26770006B763 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CE6A9B8F29C97EF600E1077E /* OneInchKit */ = {
+		CEE913AD29DC25EA0006B763 /* OneInchKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CE6A9B8E29C97EF600E1077E /* XCRemoteSwiftPackageReference "OneInchKit.Swift" */;
+			package = CEE913AC29DC25EA0006B763 /* XCRemoteSwiftPackageReference "OneInchKit.Swift" */;
 			productName = OneInchKit;
+		};
+		CEE913B029DC26770006B763 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEE913AF29DC26770006B763 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		CEE913B229DC26770006B763 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEE913AF29DC26770006B763 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		CEE913B429DC26770006B763 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEE913AF29DC26770006B763 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		CEE913B629DC26770006B763 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEE913AF29DC26770006B763 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		CEE913B829DC26770006B763 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEE913AF29DC26770006B763 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		CEE913BA29DC26770006B763 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEE913AF29DC26770006B763 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		CEE913BC29DC26770006B763 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEE913AF29DC26770006B763 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		CEE913BE29DC26770006B763 /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEE913AF29DC26770006B763 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+		CEE913C029DC26770006B763 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEE913AF29DC26770006B763 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

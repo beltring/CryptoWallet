@@ -57,7 +57,7 @@ class WalletTabBarCoordinator: TabBarCoordinator<WalletTabBarRoute> {
     }
 
     // MARK: Overrides
-    
+
     override func prepareTransition(for route: WalletTabBarRoute) -> TabBarTransition {
         switch route {
         case .initial:

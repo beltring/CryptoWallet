@@ -26,12 +26,11 @@ class SwapCoordinator: NavigationCoordinator<SwapRoute> {
     override func prepareTransition(for route: SwapRoute) -> NavigationTransition {
         switch route {
         case .swap:
-            let presenter = 
-            let viewController = OperationsHistoryViewController(presenter: presenter)
+            let presenter = SwapPresenter(router: unownedRouter)
+            let viewController = SwapViewController(presenter: presenter)
             return .push(viewController)
         case .close:
             return .dismissToRoot()
         }
     }
 }
-

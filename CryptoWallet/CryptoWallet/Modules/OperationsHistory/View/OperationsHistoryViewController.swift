@@ -118,6 +118,7 @@ class OperationsHistoryViewController: UIViewController, OperationsHistoryViewPr
         button.backgroundColor = R.color.startButtonColor()
         button.titleLabel?.textColor = .white
         button.titleLabel?.font = R.font.notoSansRegular(size: 16)
+        button.layer.cornerRadius = 15
         button.addTarget(self, action: #selector(tappedBuyCryptoButton), for: .touchUpInside)
         return button
     }()

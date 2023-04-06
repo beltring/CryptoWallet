@@ -17,7 +17,9 @@ class OneInchService {
 
     func generateNewWords() -> String {
         if let generatedWords = try? Mnemonic.generate() {
-            return generatedWords.joined(separator: " ")
+            let words = generatedWords.joined(separator: " ")
+            UserDefaultsService.shared.setWords(words: words)
+            return words
         }
         return ""
     }
@@ -31,5 +33,9 @@ class OneInchService {
         catch {
             print("CREATE WALLET")
         }
+    }
+
+    func ecryptWords() -> String {
+        UserDefaultsService.shared.getWords()
     }
 }

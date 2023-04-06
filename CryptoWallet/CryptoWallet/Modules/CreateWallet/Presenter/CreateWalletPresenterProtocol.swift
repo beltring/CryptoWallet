@@ -17,4 +17,5 @@ protocol CreateWalletPresenterProtocol: AnyObject {
     func createWalletButtonDidTapped()
     func presentErrorAlert(error: String)
     func saveCode(code: String)
+    func getkey()
 }

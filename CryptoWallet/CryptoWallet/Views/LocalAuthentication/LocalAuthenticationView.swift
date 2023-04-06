@@ -84,9 +84,6 @@ class LocalAuthenticationView: UIView {
             typeAuthImage.image = R.image.createWalletFaceIdImage()
             enableButton.setTitle("Enable Face ID", for: .normal)
         }
-        enableButton.addTapAction { [weak self] in
-            self?.didTappedApproveButton()
-        }
     }
 
     // MARK: - Functions
@@ -125,7 +122,7 @@ class LocalAuthenticationView: UIView {
         button.setTitle("enable button", for: .normal)
         button.backgroundColor = R.color.endButtonColor()
         button.layer.cornerRadius = 10
-        button.isUserInteractionEnabled = true
+        button.addTarget(self, action: #selector(didTappedApproveButton), for: .touchUpInside)
         return button
     }()
 }

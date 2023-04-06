@@ -13,6 +13,8 @@ class CreateWalletViewController: UIViewController {
 
     public var presenter: CreateWalletPresenterProtocol
 
+    private let biometricType = LocalAuthenticationService.shared.biometricType()
+
     // MARK: - Init
 
     required init(presenter: CreateWalletPresenterProtocol) {
@@ -48,16 +50,17 @@ class CreateWalletViewController: UIViewController {
         view.addSubview(scrollView)
         scrollView.addSubview(contentView)
         contentView.addSubview(mainStackView)
-        pinView.isHidden = true
-        localAuthView.isHidden = true
         mainStackView.addArrangedSubviews([
             createWalletInstructionView,
             pinView,
             localAuthView
         ])
+        pinView.isHidden = true
+        localAuthView.isHidden = true
         createWalletInstructionView.delegate = self
         pinView.delegate = self
         localAuthView.delegate = self
+        localAuthView.configure(biometricType: biometricType)
         view.backgroundColor = R.color.createWalletBackgroundColor()
         configureConstraints()
         hideNavBarLine()
@@ -142,9 +145,8 @@ extension CreateWalletViewController: CreateWalletInstructionDelegate {
 
 extension CreateWalletViewController: CreatePinViewDelegate {
     func didEnterPasscode(code: String) {
-        let biometricType = LocalAuthenticationService.shared.biometricType()
         localAuthView.isHidden = false
-        localAuthView.configure(biometricType: biometricType)
+//        presenter.getkey()
         pinView.isHidden = true
     }
 }

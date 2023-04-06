@@ -12,6 +12,7 @@ enum WalletRoute: Route {
     case wallet
     case addAccount
     case createWallet
+    case settings
     case close
 }
 
@@ -30,7 +31,6 @@ class WalletCoordinator: NavigationCoordinator<WalletRoute> {
         case .wallet:
             let presenter = WalletPresenter(router: unownedRouter)
             let viewController = WalletViewController(presenter: presenter)
-//            viewController.router = 
             return .push(viewController)
         case .addAccount:
             let router = AddAccountCoordinator()
@@ -38,6 +38,9 @@ class WalletCoordinator: NavigationCoordinator<WalletRoute> {
         case .createWallet:
             let router = CreateWalletCoordinator()
             return .present(router)
+        case .settings:
+            rootViewController.tabBarController?.selectedIndex = 2
+            return .none()
         case .close:
             return .dismissToRoot()
         }

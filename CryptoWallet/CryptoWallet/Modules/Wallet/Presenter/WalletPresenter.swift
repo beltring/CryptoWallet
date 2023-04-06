@@ -7,6 +7,7 @@
 
 import UIKit
 import XCoordinator
+import Firebase
 
 class WalletPresenter {
     // MARK: - Public Properties
@@ -25,5 +26,9 @@ extension WalletPresenter: WalletPresenterProtocol {
     func addAccountCardDidPressed() {
         //        router.trigger(.addAccount)
         router.trigger(.createWallet)
+    }
+
+    func settingsButtonDidPressed() {
+        router.trigger(.settings)
     }
 }

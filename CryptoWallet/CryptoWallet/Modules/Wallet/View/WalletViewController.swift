@@ -194,6 +194,6 @@ extension WalletViewController: MoreThingsViewDelegate {
     }
 
     func didTapSettingsButton() {
-        print("\n MYLOG: didTapSettingsButton")
+        presenter.settingsButtonDidPressed()
     }
 }

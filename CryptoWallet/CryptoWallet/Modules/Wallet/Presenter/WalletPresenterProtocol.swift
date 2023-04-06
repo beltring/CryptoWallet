@@ -9,4 +9,6 @@ import Foundation
 
 protocol WalletPresenterProtocol: AnyObject {
     func addAccountCardDidPressed()
+
+    func settingsButtonDidPressed()
 }

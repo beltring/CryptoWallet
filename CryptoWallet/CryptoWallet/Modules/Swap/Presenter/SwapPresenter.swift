@@ -8,7 +8,7 @@
 import Foundation
 import XCoordinator
 
-class SwapPresenter {
+class SwapPresenter: SwapPresenterProtocol {
 
     // MARK: - Public Properties
     public weak var view: SwapViewProtocol?

@@ -295,9 +295,12 @@ struct _R {
     }
   }
 
-  /// This `_R.file` struct is generated, and contains static references to 18 resource files.
+  /// This `_R.file` struct is generated, and contains static references to 19 resource files.
   struct file {
     let bundle: Foundation.Bundle
+
+    /// Resource file `GoogleService-Info.plist`.
+    var googleServiceInfoPlist: RswiftResources.FileResource { .init(name: "GoogleService-Info", pathExtension: "plist", bundle: bundle, locale: LocaleReference.none) }
 
     /// Resource file `NotoSans-Black.ttf`.
     var notoSansBlackTtf: RswiftResources.FileResource { .init(name: "NotoSans-Black", pathExtension: "ttf", bundle: bundle, locale: LocaleReference.none) }
