@@ -27,6 +27,36 @@ class WalletBackUpViewController: UIViewController, WalletBackUpViewProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
         tabBarController?.tabBar.selectedItem?.title = ""
+
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: R.image.arrowBackImage(),
+                                                           style: .plain,
+                                                           target: self,
+                                                           action: #selector(tappedCloseButton))
+        navigationItem.leftBarButtonItem?.tintColor = R.color.createWalletBackColor()
     }
+
+    // MARK: - SetupUI
+
+    private func setupUI() {
+        view.addSubview(backUpOnboardingView)
+        configureConstraints()
+    }
+
+    private func configureConstraints() {
+        backUpOnboardingView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+    }
+
+    // MARK: - Functions
+
+    @objc private func tappedCloseButton() {
+        presenter.closeButtonDidTapped()
+    }
+
+    // MARK: - UIElements
+
+    private lazy var backUpOnboardingView = BackUpOnboardingView()
 }

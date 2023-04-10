@@ -12,5 +12,8 @@ protocol WalletBackUpPresenterProtocol: AnyObject {
     var view: WalletBackUpViewProtocol? { get set }
 
     // MARK: - Functions
+
     func backUpNowButtonDidTapped()
+
+    func closeButtonDidTapped()
 }

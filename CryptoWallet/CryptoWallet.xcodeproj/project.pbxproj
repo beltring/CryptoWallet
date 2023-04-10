@@ -14,6 +14,8 @@
 		14E4A0D229DB1C5E00E8D68F /* SwapViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E4A0D129DB1C5E00E8D68F /* SwapViewProtocol.swift */; };
 		14E4A0D429DB1C7200E8D68F /* SwapPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E4A0D329DB1C7200E8D68F /* SwapPresenterProtocol.swift */; };
 		BCDFDEE3CB09A90B1455D233 /* Pods_CryptoWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F2A865BD33FFF60E4466D2 /* Pods_CryptoWallet.framework */; };
+		CE125ABD29DEAF8E0033A429 /* BackUpOnboardingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE125ABC29DEAF8E0033A429 /* BackUpOnboardingType.swift */; };
+		CE125ABF29DEEAE50033A429 /* FirebaseFirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE125ABE29DEEAE40033A429 /* FirebaseFirestoreManager.swift */; };
 		CE280C8329C45167002B4DEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280C8229C45167002B4DEC /* AppDelegate.swift */; };
 		CE280C8529C45167002B4DEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE280C8429C45167002B4DEC /* SceneDelegate.swift */; };
 		CE280C8C29C45168002B4DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE280C8B29C45168002B4DEC /* Assets.xcassets */; };
@@ -58,7 +60,13 @@
 		CE66736B29DD995000BF3AC8 /* WalletBackUpPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66736A29DD995000BF3AC8 /* WalletBackUpPresenterProtocol.swift */; };
 		CE66736D29DD9E5F00BF3AC8 /* WalletBackUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66736C29DD9E5F00BF3AC8 /* WalletBackUpCoordinator.swift */; };
 		CE66737029DDA28B00BF3AC8 /* BackUpOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66736F29DDA28B00BF3AC8 /* BackUpOnboardingView.swift */; };
+		CE6A7EC929E3F93E007AB103 /* RecoveryPhraseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A7EC829E3F93E007AB103 /* RecoveryPhraseViewController.swift */; };
+		CE6A7ECB29E3F97D007AB103 /* RecoveryPhraseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A7ECA29E3F97D007AB103 /* RecoveryPhraseViewProtocol.swift */; };
+		CE6A7ECD29E3FA0D007AB103 /* RecoveryPhrasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A7ECC29E3FA0D007AB103 /* RecoveryPhrasePresenter.swift */; };
+		CE6A7ECF29E3FA24007AB103 /* RecoveryPhrasePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A7ECE29E3FA24007AB103 /* RecoveryPhrasePresenterProtocol.swift */; };
 		CE6A9B8D29C97BAD00E1077E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A9B8C29C97BAD00E1077E /* R.generated.swift */; };
+		CE6F491429E3DDF500E5E220 /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F491329E3DDF500E5E220 /* WordCell.swift */; };
+		CE6F491A29E3F7B300E5E220 /* RecoveryPhraseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F491929E3F7B300E5E220 /* RecoveryPhraseCoordinator.swift */; };
 		CE71C1BE29CD832E008D975E /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C1BD29CD832E008D975E /* PinView.swift */; };
 		CE71C1C129CD8422008D975E /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71C1C029CD8422008D975E /* PasscodeView.swift */; };
 		CE79FAAC29D5A5F700CC4A7F /* WalletManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79FAAB29D5A5F700CC4A7F /* WalletManager.swift */; };
@@ -67,6 +75,13 @@
 		CE79FAB429D5AA8D00CC4A7F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79FAB329D5AA8D00CC4A7F /* Configuration.swift */; };
 		CE7FA9FE29DBF90C00291CFF /* WalletBackUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FA9FD29DBF90C00291CFF /* WalletBackUpPresenter.swift */; };
 		CE7FAA0029DC093600291CFF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE7FA9FF29DC093600291CFF /* GoogleService-Info.plist */; };
+		CE87D6F129DFF29900677FE0 /* LocalAuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87D6F029DFF29900677FE0 /* LocalAuthenticationViewController.swift */; };
+		CE87D6F329DFF2E300677FE0 /* LocalAuthenticationViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87D6F229DFF2E300677FE0 /* LocalAuthenticationViewProtocol.swift */; };
+		CE87D6F529DFF36700677FE0 /* LocalAuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87D6F429DFF36700677FE0 /* LocalAuthenticationPresenter.swift */; };
+		CE87D6F729DFF37A00677FE0 /* LocalAuthenticationPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87D6F629DFF37A00677FE0 /* LocalAuthenticationPresenterProtocol.swift */; };
+		CE87D6F929DFF42700677FE0 /* LocalAuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87D6F829DFF42700677FE0 /* LocalAuthenticationCoordinator.swift */; };
+		CE87D6FC29E02B7900677FE0 /* SeedPhraseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87D6FB29E02B7900677FE0 /* SeedPhraseView.swift */; };
+		CE87D6FE29E02F5400677FE0 /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87D6FD29E02F5400677FE0 /* WordView.swift */; };
 		CEB7CDC929DAA82D000181D5 /* OperationsHistoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7CDC829DAA82D000181D5 /* OperationsHistoryCoordinator.swift */; };
 		CEB7CDCB29DAA8CE000181D5 /* OperationsHistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7CDCA29DAA8CE000181D5 /* OperationsHistoryPresenter.swift */; };
 		CEB7CDCD29DAA93B000181D5 /* OperationsHistoryPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7CDCC29DAA93B000181D5 /* OperationsHistoryPresenterProtocol.swift */; };
@@ -139,6 +154,8 @@
 		27555644CAEC2AA42143F11A /* Pods-CryptoWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWallet.release.xcconfig"; path = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.release.xcconfig"; sourceTree = "<group>"; };
 		67F2A865BD33FFF60E4466D2 /* Pods_CryptoWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA888EAC28A4DDECC2BCE442 /* Pods-CryptoWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWallet.debug.xcconfig"; path = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.debug.xcconfig"; sourceTree = "<group>"; };
+		CE125ABC29DEAF8E0033A429 /* BackUpOnboardingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackUpOnboardingType.swift; sourceTree = "<group>"; };
+		CE125ABE29DEEAE40033A429 /* FirebaseFirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFirestoreManager.swift; sourceTree = "<group>"; };
 		CE280C7F29C45167002B4DEC /* CryptoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE280C8229C45167002B4DEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE280C8429C45167002B4DEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -185,7 +202,13 @@
 		CE66736A29DD995000BF3AC8 /* WalletBackUpPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletBackUpPresenterProtocol.swift; sourceTree = "<group>"; };
 		CE66736C29DD9E5F00BF3AC8 /* WalletBackUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletBackUpCoordinator.swift; sourceTree = "<group>"; };
 		CE66736F29DDA28B00BF3AC8 /* BackUpOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackUpOnboardingView.swift; sourceTree = "<group>"; };
+		CE6A7EC829E3F93E007AB103 /* RecoveryPhraseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryPhraseViewController.swift; sourceTree = "<group>"; };
+		CE6A7ECA29E3F97D007AB103 /* RecoveryPhraseViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryPhraseViewProtocol.swift; sourceTree = "<group>"; };
+		CE6A7ECC29E3FA0D007AB103 /* RecoveryPhrasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryPhrasePresenter.swift; sourceTree = "<group>"; };
+		CE6A7ECE29E3FA24007AB103 /* RecoveryPhrasePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryPhrasePresenterProtocol.swift; sourceTree = "<group>"; };
 		CE6A9B8C29C97BAD00E1077E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		CE6F491329E3DDF500E5E220 /* WordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
+		CE6F491929E3F7B300E5E220 /* RecoveryPhraseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryPhraseCoordinator.swift; sourceTree = "<group>"; };
 		CE71C1BD29CD832E008D975E /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
 		CE71C1C029CD8422008D975E /* PasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
 		CE79FAAB29D5A5F700CC4A7F /* WalletManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletManager.swift; sourceTree = "<group>"; };
@@ -194,6 +217,13 @@
 		CE79FAB329D5AA8D00CC4A7F /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		CE7FA9FD29DBF90C00291CFF /* WalletBackUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletBackUpPresenter.swift; sourceTree = "<group>"; };
 		CE7FA9FF29DC093600291CFF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE87D6F029DFF29900677FE0 /* LocalAuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationViewController.swift; sourceTree = "<group>"; };
+		CE87D6F229DFF2E300677FE0 /* LocalAuthenticationViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationViewProtocol.swift; sourceTree = "<group>"; };
+		CE87D6F429DFF36700677FE0 /* LocalAuthenticationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationPresenter.swift; sourceTree = "<group>"; };
+		CE87D6F629DFF37A00677FE0 /* LocalAuthenticationPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationPresenterProtocol.swift; sourceTree = "<group>"; };
+		CE87D6F829DFF42700677FE0 /* LocalAuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		CE87D6FB29E02B7900677FE0 /* SeedPhraseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedPhraseView.swift; sourceTree = "<group>"; };
+		CE87D6FD29E02F5400677FE0 /* WordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordView.swift; sourceTree = "<group>"; };
 		CEB7CDC829DAA82D000181D5 /* OperationsHistoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationsHistoryCoordinator.swift; sourceTree = "<group>"; };
 		CEB7CDCA29DAA8CE000181D5 /* OperationsHistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationsHistoryPresenter.swift; sourceTree = "<group>"; };
 		CEB7CDCC29DAA93B000181D5 /* OperationsHistoryPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationsHistoryPresenterProtocol.swift; sourceTree = "<group>"; };
@@ -360,6 +390,8 @@
 		CE280C9B29C475E6002B4DEC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CE6F491529E3F74700E5E220 /* RecoveryPhrase */,
+				CE87D6EC29DFF0AB00677FE0 /* LocalAuthentication */,
 				CE7FA9F929DBF70000291CFF /* WalletbackUp */,
 				CEB7CDD229DAD84A000181D5 /* Swap */,
 				CEB7CDC429DAA71E000181D5 /* OperationsHistory */,
@@ -493,8 +525,8 @@
 			isa = PBXGroup;
 			children = (
 				CE40638B29CB10FE004664FE /* Subviews */,
-				CE40638329CAFECC004664FE /* CreateWalletViewController.swift */,
 				CE40638529CAFEF0004664FE /* CreateWalletViewProtocol.swift */,
+				CE40638329CAFECC004664FE /* CreateWalletViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -534,6 +566,7 @@
 				CEC7210029D4030100D7BB81 /* BiometricType.swift */,
 				CE79FAB129D5A8F900CC4A7F /* TransactionRecord.swift */,
 				CE79FAB329D5AA8D00CC4A7F /* Configuration.swift */,
+				CE125ABC29DEAF8E0033A429 /* BackUpOnboardingType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -583,6 +616,7 @@
 				CEC7210729D45C0C00D7BB81 /* OneInchService.swift */,
 				CE79FAAB29D5A5F700CC4A7F /* WalletManager.swift */,
 				CE66736229DD899200BF3AC8 /* UserDefaultsService.swift */,
+				CE125ABE29DEEAE40033A429 /* FirebaseFirestoreManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -612,9 +646,54 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
+		CE6F491229E3DAED00E5E220 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CE6F491329E3DDF500E5E220 /* WordCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CE6F491529E3F74700E5E220 /* RecoveryPhrase */ = {
+			isa = PBXGroup;
+			children = (
+				CE6F491829E3F76300E5E220 /* Router */,
+				CE6F491729E3F75E00E5E220 /* View */,
+				CE6F491629E3F75800E5E220 /* Presenter */,
+			);
+			path = RecoveryPhrase;
+			sourceTree = "<group>";
+		};
+		CE6F491629E3F75800E5E220 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CE6A7ECC29E3FA0D007AB103 /* RecoveryPhrasePresenter.swift */,
+				CE6A7ECE29E3FA24007AB103 /* RecoveryPhrasePresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CE6F491729E3F75E00E5E220 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE6A7EC829E3F93E007AB103 /* RecoveryPhraseViewController.swift */,
+				CE6A7ECA29E3F97D007AB103 /* RecoveryPhraseViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE6F491829E3F76300E5E220 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CE6F491929E3F7B300E5E220 /* RecoveryPhraseCoordinator.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		CE71C1BC29CD8171008D975E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CE87D6FA29E02A6000677FE0 /* SeedPhraseView */,
 				CE4CAFD029D300830017467B /* LocalAuthentication */,
 				CE71C1BF29CD8342008D975E /* Passcode */,
 			);
@@ -696,6 +775,52 @@
 				CE66736C29DD9E5F00BF3AC8 /* WalletBackUpCoordinator.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		CE87D6EC29DFF0AB00677FE0 /* LocalAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				CE87D6EF29DFF28300677FE0 /* Router */,
+				CE87D6EE29DFF27C00677FE0 /* View */,
+				CE87D6ED29DFF27500677FE0 /* Presenter */,
+			);
+			path = LocalAuthentication;
+			sourceTree = "<group>";
+		};
+		CE87D6ED29DFF27500677FE0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CE87D6F429DFF36700677FE0 /* LocalAuthenticationPresenter.swift */,
+				CE87D6F629DFF37A00677FE0 /* LocalAuthenticationPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CE87D6EE29DFF27C00677FE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE87D6F029DFF29900677FE0 /* LocalAuthenticationViewController.swift */,
+				CE87D6F229DFF2E300677FE0 /* LocalAuthenticationViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE87D6EF29DFF28300677FE0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CE87D6F829DFF42700677FE0 /* LocalAuthenticationCoordinator.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CE87D6FA29E02A6000677FE0 /* SeedPhraseView */ = {
+			isa = PBXGroup;
+			children = (
+				CE6F491229E3DAED00E5E220 /* Cell */,
+				CE87D6FB29E02B7900677FE0 /* SeedPhraseView.swift */,
+				CE87D6FD29E02F5400677FE0 /* WordView.swift */,
+			);
+			path = SeedPhraseView;
 			sourceTree = "<group>";
 		};
 		CEB7CDC429DAA71E000181D5 /* OperationsHistory */ = {
@@ -1029,6 +1154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE87D6FE29E02F5400677FE0 /* WordView.swift in Sources */,
 				CEC0FAB129C99C9E00ECB025 /* NotoSans-Regular.ttf in Sources */,
 				CE40638629CAFEF0004664FE /* CreateWalletViewProtocol.swift in Sources */,
 				CE40637C29CAE3E6004664FE /* UIButtonExtension.swift in Sources */,
@@ -1044,20 +1170,28 @@
 				CE66736B29DD995000BF3AC8 /* WalletBackUpPresenterProtocol.swift in Sources */,
 				CEB7CDCF29DAAAE1000181D5 /* OperationsHistoryViewController.swift in Sources */,
 				CEC0FAB629C99C9E00ECB025 /* NotoSans-Thin.ttf in Sources */,
+				CE87D6F929DFF42700677FE0 /* LocalAuthenticationCoordinator.swift in Sources */,
 				CE4CAFD229D300E50017467B /* LocalAuthenticationView.swift in Sources */,
+				CE6A7ECB29E3F97D007AB103 /* RecoveryPhraseViewProtocol.swift in Sources */,
+				CE87D6F329DFF2E300677FE0 /* LocalAuthenticationViewProtocol.swift in Sources */,
 				CEC0FAB729C99C9E00ECB025 /* NotoSans-SemiBold.ttf in Sources */,
 				CEC0FAB829C99C9E00ECB025 /* NotoSans-SemiBoldItalic.ttf in Sources */,
 				CEC0FAB929C99C9E00ECB025 /* NotoSans-LightItalic.ttf in Sources */,
 				CEC0FABA29C99C9E00ECB025 /* NotoSans-Light.ttf in Sources */,
 				CE41AC5D29CC46AA009CE7C3 /* AddAccountCoordinator.swift in Sources */,
+				CE6A7ECF29E3FA24007AB103 /* RecoveryPhrasePresenterProtocol.swift in Sources */,
 				CEC0FABB29C99C9E00ECB025 /* NotoSans-BoldItalic.ttf in Sources */,
+				CE6A7ECD29E3FA0D007AB103 /* RecoveryPhrasePresenter.swift in Sources */,
 				CE66736529DD8BA500BF3AC8 /* UserDefaultsKeys.swift in Sources */,
 				CEC0FABC29C99C9E00ECB025 /* NotoSans-BlackItalic.ttf in Sources */,
+				CE87D6F529DFF36700677FE0 /* LocalAuthenticationPresenter.swift in Sources */,
 				CEB7CDD129DAAC57000181D5 /* OperationsHistoryViewProtocol.swift in Sources */,
 				CEC0FABD29C99C9E00ECB025 /* NotoSans-ExtraBoldItalic.ttf in Sources */,
+				CE6A7EC929E3F93E007AB103 /* RecoveryPhraseViewController.swift in Sources */,
 				CEC0FABE29C99C9E00ECB025 /* NotoSans-ExtraLight.ttf in Sources */,
 				14E4A0D429DB1C7200E8D68F /* SwapPresenterProtocol.swift in Sources */,
 				CEC0FABF29C99C9E00ECB025 /* NotoSans-ThinItalic.ttf in Sources */,
+				CE87D6F129DFF29900677FE0 /* LocalAuthenticationViewController.swift in Sources */,
 				CEB7CDC929DAA82D000181D5 /* OperationsHistoryCoordinator.swift in Sources */,
 				CE40638E29CB13E5004664FE /* CreateWalletInstructionView.swift in Sources */,
 				CEC0FAC029C99C9E00ECB025 /* NotoSans-ExtraLightItalic.ttf in Sources */,
@@ -1092,7 +1226,9 @@
 				CE4CAFCF29D2F6C10017467B /* LocalAuthenticationService.swift in Sources */,
 				CEC7210629D41CE500D7BB81 /* KeychainService.swift in Sources */,
 				CEC0FAAA29C98BBB00ECB025 /* PortfolioValueView.swift in Sources */,
+				CE125ABD29DEAF8E0033A429 /* BackUpOnboardingType.swift in Sources */,
 				CEB7CDCD29DAA93B000181D5 /* OperationsHistoryPresenterProtocol.swift in Sources */,
+				CE87D6F729DFF37A00677FE0 /* LocalAuthenticationPresenterProtocol.swift in Sources */,
 				CE79FAAC29D5A5F700CC4A7F /* WalletManager.swift in Sources */,
 				CE41AC4D29CC2057009CE7C3 /* HeaderInstructionView.swift in Sources */,
 				CE66736329DD899200BF3AC8 /* UserDefaultsService.swift in Sources */,
@@ -1101,6 +1237,8 @@
 				CE4CAFCC29D2D6710017467B /* UIViewControllerExtension.swift in Sources */,
 				CE280CBA29C4919C002B4DEC /* SettingsViewController.swift in Sources */,
 				CE41AC5529CC408A009CE7C3 /* AddAccountViewController.swift in Sources */,
+				CE6F491429E3DDF500E5E220 /* WordCell.swift in Sources */,
+				CE87D6FC29E02B7900677FE0 /* SeedPhraseView.swift in Sources */,
 				CE5CCD8929D14B2800F0C1DD /* CreatePinView.swift in Sources */,
 				CEC7210129D4030100D7BB81 /* BiometricType.swift in Sources */,
 				14E4A0D229DB1C5E00E8D68F /* SwapViewProtocol.swift in Sources */,
@@ -1109,9 +1247,11 @@
 				CE41AC5729CC409A009CE7C3 /* AddAccountViewProtocol.swift in Sources */,
 				CE280CB029C4868E002B4DEC /* WalletCoordinator.swift in Sources */,
 				CEC0FAAE29C98F6100ECB025 /* UIViewExtensions.swift in Sources */,
+				CE6F491A29E3F7B300E5E220 /* RecoveryPhraseCoordinator.swift in Sources */,
 				CEB7CDCB29DAA8CE000181D5 /* OperationsHistoryPresenter.swift in Sources */,
 				CEC0FAC529C99EF100ECB025 /* WalletCardView.swift in Sources */,
 				CE280CB829C49057002B4DEC /* SettingsPresenter.swift in Sources */,
+				CE125ABF29DEEAE50033A429 /* FirebaseFirestoreManager.swift in Sources */,
 				CE79FAB429D5AA8D00CC4A7F /* Configuration.swift in Sources */,
 				14E4A0CE29DB051900E8D68F /* SwapPresenter.swift in Sources */,
 				CE7FA9FE29DBF90C00291CFF /* WalletBackUpPresenter.swift in Sources */,

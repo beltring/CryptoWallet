@@ -11,4 +11,6 @@ protocol WalletPresenterProtocol: AnyObject {
     func addAccountCardDidPressed()
 
     func settingsButtonDidPressed()
+
+    func restoreButtonDidPressed()
 }

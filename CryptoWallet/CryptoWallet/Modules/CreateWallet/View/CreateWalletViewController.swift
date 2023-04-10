@@ -13,8 +13,6 @@ class CreateWalletViewController: UIViewController {
 
     public var presenter: CreateWalletPresenterProtocol
 
-    private let biometricType = LocalAuthenticationService.shared.biometricType()
-
     // MARK: - Init
 
     required init(presenter: CreateWalletPresenterProtocol) {
@@ -52,15 +50,11 @@ class CreateWalletViewController: UIViewController {
         contentView.addSubview(mainStackView)
         mainStackView.addArrangedSubviews([
             createWalletInstructionView,
-            pinView,
-            localAuthView
+            pinView
         ])
         pinView.isHidden = true
-        localAuthView.isHidden = true
         createWalletInstructionView.delegate = self
         pinView.delegate = self
-        localAuthView.delegate = self
-        localAuthView.configure(biometricType: biometricType)
         view.backgroundColor = R.color.createWalletBackgroundColor()
         configureConstraints()
         hideNavBarLine()
@@ -97,7 +91,6 @@ class CreateWalletViewController: UIViewController {
     private lazy var contentView = UIView()
     private lazy var createWalletInstructionView = CreateWalletInstructionView()
     private lazy var pinView = CreatePinView()
-    private lazy var localAuthView = LocalAuthenticationView()
     private lazy var mainStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
@@ -145,20 +138,6 @@ extension CreateWalletViewController: CreateWalletInstructionDelegate {
 
 extension CreateWalletViewController: CreatePinViewDelegate {
     func didEnterPasscode(code: String) {
-        localAuthView.isHidden = false
-//        presenter.getkey()
-        pinView.isHidden = true
-    }
-}
-
-// MARK: - LocalAuthenticationViewDelegate
-
-extension CreateWalletViewController: LocalAuthenticationViewDelegate {
-    func didTappedApprove() {
-        presenter.closeButtonDidTapped()
-    }
-
-    func didObtainError(error: String) {
-        presenter.presentErrorAlert(error: error)
+        presenter.showLocalAuth()
     }
 }

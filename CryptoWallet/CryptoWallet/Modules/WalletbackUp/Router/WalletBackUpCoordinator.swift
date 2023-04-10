@@ -30,7 +30,7 @@ class WalletBackUpCoordinator: NavigationCoordinator<WalletBackUpRoute> {
             let viewController = WalletBackUpViewController(presenter: presenter)
             return .push(viewController)
         case .close:
-            return .dismissToRoot()
+            return .dismiss()
         }
     }
 }

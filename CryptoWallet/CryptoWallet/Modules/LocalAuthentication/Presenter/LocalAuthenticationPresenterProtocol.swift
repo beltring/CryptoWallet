@@ -1,13 +1,13 @@
 //
-//  CreateWalletPresenterProtocol.swift
+//  LocalAuthenticationPresenterProtocol.swift
 //  CryptoWallet
 //
-//  Created by Pavel Boltromyuk on 22.03.23.
+//  Created by Pavel Boltromyuk on 7.04.23.
 //
 
 import Foundation
 
-protocol CreateWalletPresenterProtocol: AnyObject {
+protocol LocalAuthenticationPresenterProtocol: AnyObject {
 
     // MARK: - Properties
     var view: CreateWalletViewProtocol? { get set }
@@ -16,6 +16,4 @@ protocol CreateWalletPresenterProtocol: AnyObject {
     func closeButtonDidTapped()
     func createWalletButtonDidTapped()
     func presentErrorAlert(error: String)
-    func saveCode(code: String)
-    func showLocalAuth()
 }

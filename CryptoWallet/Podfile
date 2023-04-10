@@ -9,6 +9,7 @@ target 'CryptoWallet' do
   pod 'SnapKit', '~> 5.6.0'
   pod 'XCoordinator', '~> 2.0'
   pod 'KeychainSwift', '~> 20.0'
+  pod 'RNCryptor', '~> 5.0'
   pod 'SwiftLint'
   pod 'R.swift'
 end

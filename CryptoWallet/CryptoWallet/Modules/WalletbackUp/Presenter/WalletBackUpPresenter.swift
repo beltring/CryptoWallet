@@ -28,4 +28,8 @@ extension WalletBackUpPresenter: WalletBackUpPresenterProtocol {
     func backUpNowButtonDidTapped() {
         print("\n MYLOG: backUpNowButtonDidTapped")
     }
+
+    func closeButtonDidTapped() {
+        router.trigger(.close)
+    }
 }

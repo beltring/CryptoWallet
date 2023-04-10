@@ -177,7 +177,7 @@ extension WalletViewController: WalletViewProtocol {
 
 extension WalletViewController: RestoreWalletViewDelegate {
     func didTapRestoreButton() {
-        print("\n MY LOG: didTapRestoreButton")
+        presenter.restoreButtonDidPressed()
     }
 }
 

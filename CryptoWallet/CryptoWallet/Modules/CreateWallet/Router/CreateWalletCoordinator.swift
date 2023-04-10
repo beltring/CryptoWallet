@@ -11,6 +11,7 @@ import XCoordinator
 enum CreateWalletRoute: Route {
     case createWallet
     case alert(title: String, message: String)
+    case authView
     case close
 }
 
@@ -36,6 +37,10 @@ class CreateWalletCoordinator: NavigationCoordinator<CreateWalletRoute> {
             alert.addAction(.init(title: "Ok", style: .default, handler: nil))
             rootViewController.modalPresentationStyle = .fullScreen
             return .present(alert)
+        case .authView:
+            let router = LocalAuthenticationCoordinator()
+            router.viewController.modalPresentationStyle = .fullScreen
+            return .present(router)
         case .close:
             return .dismiss()
         }

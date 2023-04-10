@@ -9,7 +9,7 @@ import UIKit
 
 protocol LocalAuthenticationViewDelegate: AnyObject {
     func didObtainError(error: String)
-    func didTappedApprove()
+    func enableButtonDidTapped()
 }
 
 class LocalAuthenticationView: UIView {
@@ -88,8 +88,8 @@ class LocalAuthenticationView: UIView {
 
     // MARK: - Functions
 
-    @objc private func didTappedApproveButton() {
-        delegate?.didTappedApprove()
+    @objc private func didTappedEnableButton() {
+        delegate?.enableButtonDidTapped()
     }
 
     // MARK: - UIElements
@@ -122,7 +122,7 @@ class LocalAuthenticationView: UIView {
         button.setTitle("enable button", for: .normal)
         button.backgroundColor = R.color.endButtonColor()
         button.layer.cornerRadius = 10
-        button.addTarget(self, action: #selector(didTappedApproveButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(didTappedEnableButton), for: .touchUpInside)
         return button
     }()
 }

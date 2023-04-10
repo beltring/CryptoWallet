@@ -31,4 +31,8 @@ extension WalletPresenter: WalletPresenterProtocol {
     func settingsButtonDidPressed() {
         router.trigger(.settings)
     }
+
+    func restoreButtonDidPressed() {
+        router.trigger(.restore)
+    }
 }

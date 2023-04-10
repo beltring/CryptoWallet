@@ -11,6 +11,8 @@ import LocalAuthentication
 class LocalAuthenticationService {
     static let shared = LocalAuthenticationService()
 
+    typealias AuthCompletionClosure = ((Bool) -> Void)
+
     private init() {}
 
     func biometricType() -> BiometricType {
@@ -34,29 +36,5 @@ class LocalAuthenticationService {
         }
 
         return .none
-    }
-
-    func callFaceId() {
-        let context = LAContext()
-        var error: NSError?
-
-        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-            let reason = "Identify yourself!"
-
-            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) {
-                [weak self] success, authenticationError in
-
-                DispatchQueue.main.async {
-                    if success {
-                        //                        self?.unlockSecretMessage()
-                        print("/n MY LOG: success")
-                    } else {
-                        print("/n MY LOG: error")
-                    }
-                }
-            }
-        } else {
-            // no biometry
-        }
     }
 }
