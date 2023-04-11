@@ -39,6 +39,7 @@ class LocalAuthenticationCoordinator: NavigationCoordinator<LocalAuthenticationR
             return .present(alert)
         case .recoveryPhrase:
             let router = RecoveryPhraseCoordinator()
+            router.viewController.modalPresentationStyle = .fullScreen
             return .present(router)
         case .close:
             return .dismiss()

@@ -26,8 +26,12 @@ extension RecoveryPhrasePresenter: RecoveryPhrasePresenterProtocol {
         router.trigger(.close)
     }
 
+    func presentAlert(message: String) {
+        router.trigger(.alert(title: "", message: message))
+    }
+
     func nextButtonDidTapped() {
-        print("\n MYLOG: nextButtonDidTapped")
+        router.trigger(.walletResult)
     }
 
     func presentErrorAlert(error: String) {

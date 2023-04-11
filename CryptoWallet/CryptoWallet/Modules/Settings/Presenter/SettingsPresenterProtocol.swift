@@ -8,4 +8,5 @@
 import Foundation
 
 protocol SettingsPresenterProtocol: AnyObject {
+    func privacyPolicyButtonDidTapped()
 }

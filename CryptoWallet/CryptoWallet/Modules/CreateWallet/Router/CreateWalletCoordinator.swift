@@ -9,7 +9,7 @@ import UIKit
 import XCoordinator
 
 enum CreateWalletRoute: Route {
-    case createWallet
+    case initial
     case alert(title: String, message: String)
     case authView
     case close
@@ -20,14 +20,14 @@ class CreateWalletCoordinator: NavigationCoordinator<CreateWalletRoute> {
     // MARK: Initialization
 
     init() {
-        super.init(initialRoute: .createWallet)
+        super.init(initialRoute: .initial)
     }
 
     // MARK: Overrides
 
     override func prepareTransition(for route: CreateWalletRoute) -> NavigationTransition {
         switch route {
-        case .createWallet:
+        case .initial:
             let presenter = CreateWalletPresenter(router: unownedRouter)
             let viewController = CreateWalletViewController(presenter: presenter)
             viewController.modalPresentationStyle = .pageSheet

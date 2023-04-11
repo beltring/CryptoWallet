@@ -1,21 +1,20 @@
 //
-//  RecoveryPhraseCoordinator.swift
+//  CreateWalletResultCoordinator.swift
 //  CryptoWallet
 //
-//  Created by Pavel Boltromyuk on 10.04.23.
+//  Created by Pavel Boltromyuk on 11.04.23.
 //
 
 import UIKit
 import XCoordinator
 
-enum RecoveryPhraseRoute: Route {
+enum CreateWalletResultRoute: Route {
     case initial
-    case walletResult
     case alert(title: String, message: String)
     case close
 }
 
-class RecoveryPhraseCoordinator: NavigationCoordinator<RecoveryPhraseRoute> {
+class CreateWalletResultCoordinator: NavigationCoordinator<CreateWalletResultRoute> {
 
     // MARK: Initialization
 
@@ -25,23 +24,20 @@ class RecoveryPhraseCoordinator: NavigationCoordinator<RecoveryPhraseRoute> {
 
     // MARK: Overrides
 
-    override func prepareTransition(for route: RecoveryPhraseRoute) -> NavigationTransition {
+    override func prepareTransition(for route: CreateWalletResultRoute) -> NavigationTransition {
         switch route {
         case .initial:
-            let presenter = RecoveryPhrasePresenter(router: unownedRouter)
-            let viewController = RecoveryPhraseViewController(presenter: presenter)
+            let presenter = CreateWalletResultPresenter(router: unownedRouter)
+            let viewController = CreateWalletResultViewController(presenter: presenter)
+            viewController.modalPresentationStyle = .pageSheet
             return .push(viewController)
         case .alert(let title, let message):
             let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
             alert.addAction(.init(title: "Ok", style: .default, handler: nil))
             rootViewController.modalPresentationStyle = .fullScreen
             return .present(alert)
-        case .walletResult:
-            let router = CreateWalletResultCoordinator()
-            router.viewController.modalPresentationStyle = .fullScreen
-            return .present(router)
         case .close:
-            return .dismiss()
+            return .dismissToRoot()
         }
     }
 }

@@ -37,13 +37,19 @@ extension LocalAuthenticationPresenter: LocalAuthenticationPresenterProtocol {
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics,
                                    localizedReason: reason) { [weak self] success, _ in
                 if success {
-                    print("\n MYLOG: SUCCESS")
+                    DispatchQueue.main.async {
+                        self?.router.trigger(.recoveryPhrase)
+                    }
                 } else {
-                    self?.router.trigger(.alert(title: "Error", message: "Authentication error"))
+                    DispatchQueue.main.async {
+                        self?.router.trigger(.alert(title: "Error", message: "Authentication error"))
+                    }
                 }
             }
         } else {
-            router.trigger(.alert(title: "Error", message: "Authentication error"))
+            DispatchQueue.main.async {
+                self.router.trigger(.alert(title: "Error", message: "Authentication error"))
+            }
         }
     }
 

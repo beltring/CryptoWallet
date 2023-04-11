@@ -44,7 +44,8 @@ class SettingsViewController: UIViewController {
             referralProgramButton,
             thirdSeparator,
             telegramSupportButton,
-            securityCenterButton
+            securityCenterButton,
+            privacyPolicyButton
         ])
         configureConstraints()
     }
@@ -94,6 +95,12 @@ class SettingsViewController: UIViewController {
             make.height.equalTo(25)
             make.top.equalTo(telegramSupportButton.snp.bottom).offset(24)
         }
+
+        privacyPolicyButton.snp.makeConstraints { make in
+            make.leading.equalToSuperview().offset(16)
+            make.height.equalTo(25)
+            make.top.equalTo(securityCenterButton.snp.bottom).offset(24)
+        }
     }
 
     // MARK: - Actions
@@ -108,6 +115,10 @@ class SettingsViewController: UIViewController {
 
     @objc private func tappedSecurityCenterButton() {
         print("\n MYLOG: tappedSecurityCenterButton")
+    }
+
+    @objc private func tappedPrivacyPolicyButton() {
+        presenter.privacyPolicyButtonDidTapped()
     }
 
     // MARK: - UIElements
@@ -174,6 +185,16 @@ class SettingsViewController: UIViewController {
         button.setImage(UIImage(named: "securityCenterImage"), for: .normal)
         button.setInsets(forContentPadding: .zero, imageTitlePadding: 8)
         button.addTarget(self, action: #selector(tappedSecurityCenterButton), for: .touchUpInside)
+        return button
+    }()
+
+    private lazy var privacyPolicyButton: UIButton = {
+        let button = UIButton()
+        button.setTitleColor(R.color.createPinColor(), for: .normal)
+        button.setTitle("Privacy Policy", for: .normal)
+        button.setImage(UIImage(named: "securityCenterImage"), for: .normal)
+        button.setInsets(forContentPadding: .zero, imageTitlePadding: 8)
+        button.addTarget(self, action: #selector(tappedPrivacyPolicyButton), for: .touchUpInside)
         return button
     }()
 }

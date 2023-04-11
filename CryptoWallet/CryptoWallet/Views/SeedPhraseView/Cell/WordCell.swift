@@ -13,6 +13,15 @@ class WordCell: UICollectionViewCell {
 
     private lazy var wordView = WordView()
 
+    override init(frame: CGRect) {
+        super.init(frame: .zero)
+        setupUI()
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
     override class func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -20,7 +29,10 @@ class WordCell: UICollectionViewCell {
     // MARK: - SetupUI
 
     private func setupUI() {
+        contentView.backgroundColor = R.color.createWalletBackgroundColor()
+        backgroundColor = R.color.createWalletBackgroundColor()
         addSubview(wordView)
+        configureConstraints()
     }
 
     private func configureConstraints() {

@@ -16,4 +16,5 @@ protocol RecoveryPhrasePresenterProtocol: AnyObject {
     func backButtonDidTapped()
     func nextButtonDidTapped()
     func presentErrorAlert(error: String)
+    func presentAlert(message: String)
 }

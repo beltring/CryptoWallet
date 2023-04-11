@@ -9,7 +9,9 @@ import UIKit
 
 class SeedPhraseView: UIView {
 
-    var wordsCollectionView: UICollectionView!
+    private var wordsCollectionView: UICollectionView!
+
+    private let words = UserDefaultsService.shared.getWords().components(separatedBy: " ")
 
     // MARK: - Init
 
@@ -25,9 +27,11 @@ class SeedPhraseView: UIView {
     // MARK: - SetupUI
 
     private func setupUI() {
+        backgroundColor = R.color.createWalletBackgroundColor()
         setupCollection()
         addSubview(wordsCollectionView)
         configureConstraints()
+        wordsCollectionView.reloadData()
     }
 
     private func configureConstraints() {
@@ -38,12 +42,11 @@ class SeedPhraseView: UIView {
 
     private func setupCollection() {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
-        layout.itemSize = CGSize(width: 60, height: 60)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
 
         wordsCollectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
+        wordsCollectionView.backgroundColor = R.color.createWalletBackgroundColor()
         wordsCollectionView.register(WordCell.self, forCellWithReuseIdentifier: WordCell.cellIdentifier)
-        wordsCollectionView.backgroundColor = UIColor.white
         wordsCollectionView.delegate = self
         wordsCollectionView.dataSource = self
     }
@@ -53,7 +56,7 @@ class SeedPhraseView: UIView {
 
 extension SeedPhraseView: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return words.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -62,7 +65,28 @@ extension SeedPhraseView: UICollectionViewDataSource, UICollectionViewDelegate {
         else {
             return UICollectionViewCell()
         }
-        cell.configure(number: 1, title: "TestTT")
+        let word = words[indexPath.row]
+        cell.configure(number: indexPath.row + 1, title: word)
         return cell
+    }
+}
+
+// MARK: - UICollectionViewDelegateFlowLayout
+
+extension SeedPhraseView: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let widthCollection = UIScreen.main.bounds.width - 32
+        let widthCell = (widthCollection - 32) / 2
+        let heightCell: CGFloat = 30
+
+        return .init(width: widthCell, height: heightCell)
+    }
+
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
 }

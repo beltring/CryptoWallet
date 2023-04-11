@@ -21,7 +21,6 @@ class WordView: UIView {
     // MARK: - SetupUI
 
     private func setupUI() {
-
         addSubviews([
             numberLabel,
             wordLabel
@@ -32,10 +31,11 @@ class WordView: UIView {
     private func configureConstraints() {
         numberLabel.snp.makeConstraints { make in
             make.leading.top.bottom.equalToSuperview()
+            make.width.equalTo(20)
         }
 
         wordLabel.snp.makeConstraints { make in
-            make.leading.equalTo(numberLabel.snp.trailing)
+            make.leading.equalTo(numberLabel.snp.trailing).offset(5)
             make.trailing.top.bottom.equalToSuperview()
         }
     }
@@ -53,6 +53,7 @@ class WordView: UIView {
         let label = UILabel()
         label.font = R.font.notoSansRegular(size: 16)
         label.textColor = R.color.walletTitleColor()
+        label.textAlignment = .left
         return label
     }()
 

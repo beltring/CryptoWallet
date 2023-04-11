@@ -32,15 +32,25 @@ class RecoveryPhraseViewController: UIViewController, RecoveryPhraseViewProtocol
         setupNavBar()
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        presenter.presentAlert(message: "Write down the words on a piece of paper or click to copy")
+    }
+
     // MARK: - SetupUI
 
     private func setupUI() {
+        view.backgroundColor = R.color.createWalletBackgroundColor()
         view.addSubviews([
             titleLabel,
             descriptionLabel,
             phraseView
         ])
         configureConstraints()
+
+        phraseView.addTapAction {
+            UIPasteboard.general.string = UserDefaultsService.shared.getWords()
+        }
     }
 
     private func setupNavBar() {
@@ -70,6 +80,7 @@ class RecoveryPhraseViewController: UIViewController, RecoveryPhraseViewProtocol
         phraseView.snp.makeConstraints { make in
             make.top.equalTo(descriptionLabel.snp.bottom).offset(48)
             make.leading.trailing.equalToSuperview().inset(16)
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-16)
         }
     }
 
@@ -80,7 +91,7 @@ class RecoveryPhraseViewController: UIViewController, RecoveryPhraseViewProtocol
     }
 
     @objc private func tappedNextButton() {
-        print("\n MYLOG: tappedNextButton")
+        presenter.nextButtonDidTapped()
     }
 
     // MARK: - UIElements
@@ -91,7 +102,7 @@ class RecoveryPhraseViewController: UIViewController, RecoveryPhraseViewProtocol
         let label = UILabel()
         label.text = "Here is your recovery phrase"
         label.numberOfLines = 0
-        label.font = R.font.notoSansRegular(size: 16)
+        label.font = R.font.notoSansSemiBold(size: 28)
         label.textColor = R.color.createWalletBackColor()
         return label
     }()
