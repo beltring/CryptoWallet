@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1403347B29C9F0A800305CA3 /* MoreThingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1403347A29C9F0A800305CA3 /* MoreThingsView.swift */; };
+		140E059C29E529AE00E19CA4 /* EnterRecoveryPhraseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E059B29E529AE00E19CA4 /* EnterRecoveryPhraseView.swift */; };
 		14E4A0CC29DAF4D800E8D68F /* SwapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E4A0CB29DAF4D800E8D68F /* SwapCoordinator.swift */; };
 		14E4A0CE29DB051900E8D68F /* SwapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E4A0CD29DB051900E8D68F /* SwapPresenter.swift */; };
 		14E4A0D029DB068C00E8D68F /* SwapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E4A0CF29DB068C00E8D68F /* SwapViewController.swift */; };
@@ -146,6 +147,7 @@
 
 /* Begin PBXFileReference section */
 		1403347A29C9F0A800305CA3 /* MoreThingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreThingsView.swift; sourceTree = "<group>"; };
+		140E059B29E529AE00E19CA4 /* EnterRecoveryPhraseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterRecoveryPhraseView.swift; sourceTree = "<group>"; };
 		14E4A0CB29DAF4D800E8D68F /* SwapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapCoordinator.swift; sourceTree = "<group>"; };
 		14E4A0CD29DB051900E8D68F /* SwapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapPresenter.swift; sourceTree = "<group>"; };
 		14E4A0CF29DB068C00E8D68F /* SwapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwapViewController.swift; path = CryptoWallet/Modules/Swap/View/SwapViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -642,6 +644,7 @@
 			isa = PBXGroup;
 			children = (
 				CE66736F29DDA28B00BF3AC8 /* BackUpOnboardingView.swift */,
+				140E059B29E529AE00E19CA4 /* EnterRecoveryPhraseView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -1181,6 +1184,7 @@
 				CE41AC5D29CC46AA009CE7C3 /* AddAccountCoordinator.swift in Sources */,
 				CE6A7ECF29E3FA24007AB103 /* RecoveryPhrasePresenterProtocol.swift in Sources */,
 				CEC0FABB29C99C9E00ECB025 /* NotoSans-BoldItalic.ttf in Sources */,
+				140E059C29E529AE00E19CA4 /* EnterRecoveryPhraseView.swift in Sources */,
 				CE6A7ECD29E3FA0D007AB103 /* RecoveryPhrasePresenter.swift in Sources */,
 				CE66736529DD8BA500BF3AC8 /* UserDefaultsKeys.swift in Sources */,
 				CEC0FABC29C99C9E00ECB025 /* NotoSans-BlackItalic.ttf in Sources */,

@@ -22,6 +22,8 @@ class WalletPresenter {
     }
 }
 
+// MARK: - WalletPresenterProtocol
+
 extension WalletPresenter: WalletPresenterProtocol {
     func addAccountCardDidPressed() {
         //        router.trigger(.addAccount)

@@ -93,7 +93,7 @@ struct _R {
     var walletTitleColor: RswiftResources.ColorResource { .init(name: "walletTitleColor", path: [], bundle: bundle) }
   }
 
-  /// This `_R.image` struct is generated, and contains static references to 28 images.
+  /// This `_R.image` struct is generated, and contains static references to 31 images.
   struct image {
     let bundle: Foundation.Bundle
 
@@ -103,8 +103,17 @@ struct _R {
     /// Image `arrowBackImage`.
     var arrowBackImage: RswiftResources.ImageResource { .init(name: "arrowBackImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
+    /// Image `backUpArrowOnboarding`.
+    var backUpArrowOnboarding: RswiftResources.ImageResource { .init(name: "backUpArrowOnboarding", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
     /// Image `backUpImage`.
     var backUpImage: RswiftResources.ImageResource { .init(name: "backUpImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `backUpKeyOnboarding`.
+    var backUpKeyOnboarding: RswiftResources.ImageResource { .init(name: "backUpKeyOnboarding", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `backUpSharkOnboarding`.
+    var backUpSharkOnboarding: RswiftResources.ImageResource { .init(name: "backUpSharkOnboarding", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `cardImage`.
     var cardImage: RswiftResources.ImageResource { .init(name: "cardImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }

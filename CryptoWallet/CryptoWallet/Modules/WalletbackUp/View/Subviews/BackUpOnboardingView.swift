@@ -9,7 +9,6 @@ import UIKit
 
 class BackUpOnboardingView: UIView {
 
-
     private var type = BackUpOnboardingType.backUpNow
 
     // MARK: - Init
@@ -28,6 +27,8 @@ class BackUpOnboardingView: UIView {
     private func setupUI() {
         backgroundColor = R.color.createWalletBackgroundColor()
         addSubviews([
+            imageView,
+            arrowImageView,
             titleLabel,
             descriptionLabel,
             button
@@ -37,8 +38,22 @@ class BackUpOnboardingView: UIView {
     }
 
     private func configureConstraints() {
+
+        imageView.snp.makeConstraints { make in
+            make.width.height.equalTo(150)
+            make.leading.equalToSuperview()
+            make.top.equalTo(safeAreaLayoutGuide.snp.top).offset(30)
+        }
+
+        arrowImageView.snp.makeConstraints { make in
+            make.width.equalTo(95)
+            make.height.equalTo(57)
+            make.leading.equalTo(imageView.snp.trailing).offset(10)
+            make.centerY.equalTo(imageView.snp.centerY)
+        }
+
         titleLabel.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
+            make.top.equalTo(imageView.snp.bottom).offset(24)
             make.leading.trailing.equalToSuperview().inset(16)
         }
 
@@ -58,6 +73,7 @@ class BackUpOnboardingView: UIView {
         titleLabel.text = type.title
         descriptionLabel.text = type.description
         button.setTitle(type.buttonTitle, for: .normal)
+        imageView.image = type.image
     }
 
     // MARK: - Functions
@@ -68,6 +84,19 @@ class BackUpOnboardingView: UIView {
     }
 
     // MARK: - UIElements
+
+    private lazy var imageView: UIImageView = {
+        let image = UIImageView()
+        image.contentMode = .scaleAspectFit
+        return image
+    }()
+
+    private lazy var arrowImageView: UIImageView = {
+        let image = UIImageView()
+        image.contentMode = .scaleAspectFit
+        image.image = R.image.backUpArrowOnboarding()
+        return image
+    }()
 
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
