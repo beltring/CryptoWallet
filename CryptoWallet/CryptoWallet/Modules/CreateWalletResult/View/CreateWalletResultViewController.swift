@@ -33,6 +33,7 @@ class CreateWalletResultViewController: UIViewController, CreateWalletResultView
     }
 
     private func setupUI() {
+        view.backgroundColor = R.color.createWalletBackgroundColor()
         successView.delegate = self
         view.addSubview(successView)
         configureConstraints()

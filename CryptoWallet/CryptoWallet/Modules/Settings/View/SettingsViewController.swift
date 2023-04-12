@@ -44,7 +44,7 @@ class SettingsViewController: UIViewController {
             referralProgramButton,
             thirdSeparator,
             telegramSupportButton,
-            securityCenterButton,
+            faqButton,
             privacyPolicyButton
         ])
         configureConstraints()
@@ -90,7 +90,7 @@ class SettingsViewController: UIViewController {
             make.top.equalTo(thirdSeparator.snp.bottom).offset(24)
         }
 
-        securityCenterButton.snp.makeConstraints { make in
+        faqButton.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(16)
             make.height.equalTo(25)
             make.top.equalTo(telegramSupportButton.snp.bottom).offset(24)
@@ -99,7 +99,7 @@ class SettingsViewController: UIViewController {
         privacyPolicyButton.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(16)
             make.height.equalTo(25)
-            make.top.equalTo(securityCenterButton.snp.bottom).offset(24)
+            make.top.equalTo(faqButton.snp.bottom).offset(24)
         }
     }
 
@@ -113,8 +113,8 @@ class SettingsViewController: UIViewController {
         print("\n MYLOG: tappedTelegramSupportButton")
     }
 
-    @objc private func tappedSecurityCenterButton() {
-        print("\n MYLOG: tappedSecurityCenterButton")
+    @objc private func tappedFAQButton() {
+        presenter.faqButtonDidTapped()
     }
 
     @objc private func tappedPrivacyPolicyButton() {
@@ -178,13 +178,13 @@ class SettingsViewController: UIViewController {
         return button
     }()
 
-    private lazy var securityCenterButton: UIButton = {
+    private lazy var faqButton: UIButton = {
         let button = UIButton()
         button.setTitleColor(R.color.createPinColor(), for: .normal)
-        button.setTitle("Security center", for: .normal)
+        button.setTitle("FAQ", for: .normal)
         button.setImage(UIImage(named: "securityCenterImage"), for: .normal)
         button.setInsets(forContentPadding: .zero, imageTitlePadding: 8)
-        button.addTarget(self, action: #selector(tappedSecurityCenterButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(tappedFAQButton), for: .touchUpInside)
         return button
     }()
 

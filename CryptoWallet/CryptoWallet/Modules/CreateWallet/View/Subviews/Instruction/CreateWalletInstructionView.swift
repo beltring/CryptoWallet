@@ -114,6 +114,7 @@ class CreateWalletInstructionView: UIView {
         button.setTitle(nil, for: .normal)
         button.setImage(R.image.closeImage(), for: .normal)
         button.addTarget(self, action: #selector(tappedCloseButton), for: .touchUpInside)
+        button.tintColor = R.color.createWalletBackColor()
         return button
     }()
 

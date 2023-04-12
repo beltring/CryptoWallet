@@ -21,7 +21,13 @@ class SettingsPresenter {
     }
 }
 
+// MARK: - SettingsPresenterProtocol
+
 extension SettingsPresenter: SettingsPresenterProtocol {
+    func faqButtonDidTapped() {
+        router.trigger(.faq)
+    }
+
     func privacyPolicyButtonDidTapped() {
         router.trigger(.privacyPolicy)
     }

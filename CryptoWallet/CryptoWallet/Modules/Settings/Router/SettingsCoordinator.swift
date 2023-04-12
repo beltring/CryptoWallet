@@ -11,6 +11,7 @@ import XCoordinator
 enum SettingsRoute: Route {
     case settings
     case privacyPolicy
+    case faq
     case close
 }
 
@@ -32,6 +33,11 @@ class SettingsCoordinator: NavigationCoordinator<SettingsRoute> {
             return .push(viewController)
         case .privacyPolicy:
             let router = PrivacyPolicyCoordinator()
+            router.viewController.modalPresentationStyle = .fullScreen
+            return .present(router)
+        case .faq:
+            let router = FAQCoordinator()
+            router.viewController.modalPresentationStyle = .fullScreen
             return .present(router)
         case .close:
             return .dismissToRoot()

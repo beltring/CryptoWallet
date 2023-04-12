@@ -94,6 +94,15 @@
 		CE87D6F929DFF42700677FE0 /* LocalAuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87D6F829DFF42700677FE0 /* LocalAuthenticationCoordinator.swift */; };
 		CE87D6FC29E02B7900677FE0 /* SeedPhraseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87D6FB29E02B7900677FE0 /* SeedPhraseView.swift */; };
 		CE87D6FE29E02F5400677FE0 /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87D6FD29E02F5400677FE0 /* WordView.swift */; };
+		CEB3879B29E6812700BEDF18 /* FAQPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3879A29E6812700BEDF18 /* FAQPresenter.swift */; };
+		CEB3879D29E6813400BEDF18 /* FAQPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3879C29E6813400BEDF18 /* FAQPresenterProtocol.swift */; };
+		CEB3879F29E6814000BEDF18 /* FAQCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3879E29E6814000BEDF18 /* FAQCoordinator.swift */; };
+		CEB387A129E6814C00BEDF18 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB387A029E6814C00BEDF18 /* FAQViewController.swift */; };
+		CEB387A329E6815800BEDF18 /* FAQViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB387A229E6815800BEDF18 /* FAQViewProtocol.swift */; };
+		CEB387A629E68D3600BEDF18 /* FAQTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB387A529E68D3600BEDF18 /* FAQTitleView.swift */; };
+		CEB387A829E6995D00BEDF18 /* FAQDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB387A729E6995D00BEDF18 /* FAQDescriptionView.swift */; };
+		CEB387AA29E69DF600BEDF18 /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB387A929E69DF600BEDF18 /* FAQ.swift */; };
+		CEB387AC29E6CB3A00BEDF18 /* FAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB387AB29E6CB3A00BEDF18 /* FAQView.swift */; };
 		CEB7CDC929DAA82D000181D5 /* OperationsHistoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7CDC829DAA82D000181D5 /* OperationsHistoryCoordinator.swift */; };
 		CEB7CDCB29DAA8CE000181D5 /* OperationsHistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7CDCA29DAA8CE000181D5 /* OperationsHistoryPresenter.swift */; };
 		CEB7CDCD29DAA93B000181D5 /* OperationsHistoryPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7CDCC29DAA93B000181D5 /* OperationsHistoryPresenterProtocol.swift */; };
@@ -248,6 +257,15 @@
 		CE87D6F829DFF42700677FE0 /* LocalAuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationCoordinator.swift; sourceTree = "<group>"; };
 		CE87D6FB29E02B7900677FE0 /* SeedPhraseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedPhraseView.swift; sourceTree = "<group>"; };
 		CE87D6FD29E02F5400677FE0 /* WordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordView.swift; sourceTree = "<group>"; };
+		CEB3879A29E6812700BEDF18 /* FAQPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQPresenter.swift; sourceTree = "<group>"; };
+		CEB3879C29E6813400BEDF18 /* FAQPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQPresenterProtocol.swift; sourceTree = "<group>"; };
+		CEB3879E29E6814000BEDF18 /* FAQCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQCoordinator.swift; sourceTree = "<group>"; };
+		CEB387A029E6814C00BEDF18 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
+		CEB387A229E6815800BEDF18 /* FAQViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewProtocol.swift; sourceTree = "<group>"; };
+		CEB387A529E68D3600BEDF18 /* FAQTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQTitleView.swift; sourceTree = "<group>"; };
+		CEB387A729E6995D00BEDF18 /* FAQDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQDescriptionView.swift; sourceTree = "<group>"; };
+		CEB387A929E69DF600BEDF18 /* FAQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
+		CEB387AB29E6CB3A00BEDF18 /* FAQView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQView.swift; sourceTree = "<group>"; };
 		CEB7CDC829DAA82D000181D5 /* OperationsHistoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationsHistoryCoordinator.swift; sourceTree = "<group>"; };
 		CEB7CDCA29DAA8CE000181D5 /* OperationsHistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationsHistoryPresenter.swift; sourceTree = "<group>"; };
 		CEB7CDCC29DAA93B000181D5 /* OperationsHistoryPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationsHistoryPresenterProtocol.swift; sourceTree = "<group>"; };
@@ -414,6 +432,7 @@
 		CE280C9B29C475E6002B4DEC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CEB3879629E6810500BEDF18 /* FAQ */,
 				CE641B0929E59A75007B2122 /* PrivacyPolicy */,
 				CE641AFB29E57E8F007B2122 /* CreateWalletResult */,
 				CE6F491529E3F74700E5E220 /* RecoveryPhrase */,
@@ -593,6 +612,7 @@
 				CE79FAB129D5A8F900CC4A7F /* TransactionRecord.swift */,
 				CE79FAB329D5AA8D00CC4A7F /* Configuration.swift */,
 				CE125ABC29DEAF8E0033A429 /* BackUpOnboardingType.swift */,
+				CEB387A929E69DF600BEDF18 /* FAQ.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -931,6 +951,53 @@
 			path = SeedPhraseView;
 			sourceTree = "<group>";
 		};
+		CEB3879629E6810500BEDF18 /* FAQ */ = {
+			isa = PBXGroup;
+			children = (
+				CEB3879729E6810A00BEDF18 /* Presenter */,
+				CEB3879829E6811100BEDF18 /* Router */,
+				CEB3879929E6811800BEDF18 /* View */,
+			);
+			path = FAQ;
+			sourceTree = "<group>";
+		};
+		CEB3879729E6810A00BEDF18 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CEB3879A29E6812700BEDF18 /* FAQPresenter.swift */,
+				CEB3879C29E6813400BEDF18 /* FAQPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CEB3879829E6811100BEDF18 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CEB3879E29E6814000BEDF18 /* FAQCoordinator.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CEB3879929E6811800BEDF18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEB387A429E6882900BEDF18 /* Subviews */,
+				CEB387A029E6814C00BEDF18 /* FAQViewController.swift */,
+				CEB387A229E6815800BEDF18 /* FAQViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEB387A429E6882900BEDF18 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				CEB387A529E68D3600BEDF18 /* FAQTitleView.swift */,
+				CEB387A729E6995D00BEDF18 /* FAQDescriptionView.swift */,
+				CEB387AB29E6CB3A00BEDF18 /* FAQView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 		CEB7CDC429DAA71E000181D5 /* OperationsHistory */ = {
 			isa = PBXGroup;
 			children = (
@@ -1267,6 +1334,7 @@
 				CEC0FAB129C99C9E00ECB025 /* NotoSans-Regular.ttf in Sources */,
 				CE40638629CAFEF0004664FE /* CreateWalletViewProtocol.swift in Sources */,
 				CE40637C29CAE3E6004664FE /* UIButtonExtension.swift in Sources */,
+				CEB387AA29E69DF600BEDF18 /* FAQ.swift in Sources */,
 				CEC0FAB229C99C9E00ECB025 /* NotoSans-Medium.ttf in Sources */,
 				CE41AC4B29CC17A7009CE7C3 /* InstructionType.swift in Sources */,
 				14E4A0CC29DAF4D800E8D68F /* SwapCoordinator.swift in Sources */,
@@ -1292,6 +1360,7 @@
 				CEC0FAB929C99C9E00ECB025 /* NotoSans-LightItalic.ttf in Sources */,
 				CEC0FABA29C99C9E00ECB025 /* NotoSans-Light.ttf in Sources */,
 				CE41AC5D29CC46AA009CE7C3 /* AddAccountCoordinator.swift in Sources */,
+				CEB387AC29E6CB3A00BEDF18 /* FAQView.swift in Sources */,
 				CE6A7ECF29E3FA24007AB103 /* RecoveryPhrasePresenterProtocol.swift in Sources */,
 				CEC0FABB29C99C9E00ECB025 /* NotoSans-BoldItalic.ttf in Sources */,
 				CE6A7ECD29E3FA0D007AB103 /* RecoveryPhrasePresenter.swift in Sources */,
@@ -1312,6 +1381,7 @@
 				CEC0FAC129C99C9E00ECB025 /* NotoSans-ExtraBold.ttf in Sources */,
 				CEC0FAC229C99C9E00ECB025 /* NotoSans-Italic.ttf in Sources */,
 				CE280CB629C49045002B4DEC /* SettingsPresenterProtocol.swift in Sources */,
+				CEB387A629E68D3600BEDF18 /* FAQTitleView.swift in Sources */,
 				CEC7210829D45C0C00D7BB81 /* OneInchService.swift in Sources */,
 				CE280CA829C47F49002B4DEC /* WalletPresenterProtocol.swift in Sources */,
 				CE41AC5B29CC450B009CE7C3 /* AddAccountPresenterProtocol.swift in Sources */,
@@ -1319,6 +1389,7 @@
 				CE71C1C129CD8422008D975E /* PasscodeView.swift in Sources */,
 				CE40638829CB00AD004664FE /* CreateWalletPresenter.swift in Sources */,
 				CE280CAB29C4813A002B4DEC /* WalletViewProtocol.swift in Sources */,
+				CEB3879F29E6814000BEDF18 /* FAQCoordinator.swift in Sources */,
 				CE280C9F29C4772A002B4DEC /* AppCoordinator.swift in Sources */,
 				CEC0FAC829C9C59D00ECB025 /* RestoreWalletView.swift in Sources */,
 				CE79FAB229D5A8F900CC4A7F /* TransactionRecord.swift in Sources */,
@@ -1354,13 +1425,16 @@
 				CE4CAFCC29D2D6710017467B /* UIViewControllerExtension.swift in Sources */,
 				CE280CBA29C4919C002B4DEC /* SettingsViewController.swift in Sources */,
 				CE41AC5529CC408A009CE7C3 /* AddAccountViewController.swift in Sources */,
+				CEB387A829E6995D00BEDF18 /* FAQDescriptionView.swift in Sources */,
 				CE6F491429E3DDF500E5E220 /* WordCell.swift in Sources */,
+				CEB3879D29E6813400BEDF18 /* FAQPresenterProtocol.swift in Sources */,
 				CE87D6FC29E02B7900677FE0 /* SeedPhraseView.swift in Sources */,
 				CE5CCD8929D14B2800F0C1DD /* CreatePinView.swift in Sources */,
 				CEC7210129D4030100D7BB81 /* BiometricType.swift in Sources */,
 				CE641B0429E57F26007B2122 /* CreateWalletResultPresenterProtocol.swift in Sources */,
 				14E4A0D229DB1C5E00E8D68F /* SwapViewProtocol.swift in Sources */,
 				CE40638A29CB01C0004664FE /* CreateWalletPresenterProtocol.swift in Sources */,
+				CEB387A329E6815800BEDF18 /* FAQViewProtocol.swift in Sources */,
 				CE40638429CAFECC004664FE /* CreateWalletViewController.swift in Sources */,
 				CE641AF629E56C13007B2122 /* CreateWalletSuccessView.swift in Sources */,
 				CE41AC5729CC409A009CE7C3 /* AddAccountViewProtocol.swift in Sources */,
@@ -1369,12 +1443,14 @@
 				CE6F491A29E3F7B300E5E220 /* RecoveryPhraseCoordinator.swift in Sources */,
 				CEB7CDCB29DAA8CE000181D5 /* OperationsHistoryPresenter.swift in Sources */,
 				CE641B0629E57F39007B2122 /* CreateWalletResultViewController.swift in Sources */,
+				CEB387A129E6814C00BEDF18 /* FAQViewController.swift in Sources */,
 				CEC0FAC529C99EF100ECB025 /* WalletCardView.swift in Sources */,
 				CE280CB829C49057002B4DEC /* SettingsPresenter.swift in Sources */,
 				CE125ABF29DEEAE50033A429 /* FirebaseFirestoreManager.swift in Sources */,
 				CE79FAB429D5AA8D00CC4A7F /* Configuration.swift in Sources */,
 				14E4A0CE29DB051900E8D68F /* SwapPresenter.swift in Sources */,
 				CE7FA9FE29DBF90C00291CFF /* WalletBackUpPresenter.swift in Sources */,
+				CEB3879B29E6812700BEDF18 /* FAQPresenter.swift in Sources */,
 				CE280CBC29C491A9002B4DEC /* SettingsViewProtocol.swift in Sources */,
 				CE41AC5929CC44ED009CE7C3 /* AddAccountPresenter.swift in Sources */,
 			);
