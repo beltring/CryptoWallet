@@ -57,7 +57,8 @@ class OperationsHistoryViewController: UIViewController, OperationsHistoryViewPr
 
     private func setupConstraints() {
         sharkHistoryImage.snp.makeConstraints { make in
-            make.centerX.centerY.equalToSuperview()
+            make.centerX.equalToSuperview()
+            make.top.equalToSuperview().offset(120)
             make.width.height.equalTo(150)
         }
 
@@ -115,7 +116,7 @@ class OperationsHistoryViewController: UIViewController, OperationsHistoryViewPr
     private lazy var buyCryptoButton: UIButton = {
         let button = UIButton()
         button.setTitle("Buy crypto", for: .normal)
-        button.backgroundColor = R.color.startButtonColor()
+        button.backgroundColor = R.color.endButtonColor()
         button.titleLabel?.textColor = .white
         button.titleLabel?.font = R.font.notoSansRegular(size: 16)
         button.layer.cornerRadius = 15

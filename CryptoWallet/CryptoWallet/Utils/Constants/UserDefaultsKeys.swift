@@ -9,4 +9,5 @@ import Foundation
 
 struct UserDefaultsKeys {
     static let words = "words"
+    static let address = "address"
 }

@@ -23,6 +23,6 @@ class CreateWalletResultPresenter {
 
 extension CreateWalletResultPresenter: CreateWalletResultPresenterProtocol {
     func doneButtonDidTapped() {
-        router.trigger(.close)
+        router.trigger(.wallet)
     }
 }

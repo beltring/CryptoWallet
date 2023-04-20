@@ -9,7 +9,6 @@ import UIKit
 
 class BackUpOnboardingView: UIView {
 
-
     private var type = BackUpOnboardingType.backUpNow
 
     // MARK: - Init
@@ -28,6 +27,8 @@ class BackUpOnboardingView: UIView {
     private func setupUI() {
         backgroundColor = R.color.createWalletBackgroundColor()
         addSubviews([
+            onboardingImageView,
+            arrowImageView,
             titleLabel,
             descriptionLabel,
             button
@@ -52,12 +53,28 @@ class BackUpOnboardingView: UIView {
             make.height.equalTo(48)
             make.leading.trailing.equalToSuperview().inset(16)
         }
+
+        onboardingImageView.snp.makeConstraints { make in
+            make.height.width.equalTo(150)
+            make.leading.equalToSuperview().offset(16)
+            make.top.equalTo(self.safeAreaLayoutGuide.snp.top).offset(35)
+        }
+
+        arrowImageView.snp.makeConstraints { make in
+            make.width.equalTo(95)
+            make.height.equalTo(58)
+            make.leading.equalTo(onboardingImageView.snp.trailing).offset(15)
+            make.centerY.equalTo(onboardingImageView.snp.centerY)
+        }
     }
 
     private func configure() {
-        titleLabel.text = type.title
-        descriptionLabel.text = type.description
-        button.setTitle(type.buttonTitle, for: .normal)
+        DispatchQueue.main.async {
+            self.titleLabel.text = self.type.title
+            self.descriptionLabel.text = self.type.description
+            self.button.setTitle(self.type.buttonTitle, for: .normal)
+            self.onboardingImageView.image = self.type.image
+        }
     }
 
     // MARK: - Functions
@@ -68,6 +85,20 @@ class BackUpOnboardingView: UIView {
     }
 
     // MARK: - UIElements
+
+    private lazy var onboardingImageView: UIImageView = {
+        let image = UIImageView()
+        image.image = R.image.onboardingBackUpFirstImage()
+        image.contentMode = .scaleAspectFit
+        return image
+    }()
+
+    private lazy var arrowImageView: UIImageView = {
+        let image = UIImageView()
+        image.image = R.image.arrowBackUpImage()
+        image.contentMode = .scaleAspectFit
+        return image
+    }()
 
     private lazy var titleLabel: UILabel = {
         let label = UILabel()

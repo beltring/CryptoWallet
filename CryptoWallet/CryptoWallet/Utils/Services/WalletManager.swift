@@ -10,15 +10,15 @@ import RxSwift
 import EvmKit
 import HdWalletKit
 
-class Manager {
-    static let shared = Manager()
+class WalletManager {
 
-    private let keyWords = "mnemonic_words"
-    private let keyAddress = "address"
+    static let shared = WalletManager()
 
     var evmKit: Kit!
     var signer: Signer!
     var adapter: EthereumAdapter!
+
+    private let ud = UserDefaultsService.shared
 
     init() {
         if let words = savedWords {
@@ -69,7 +69,9 @@ class Manager {
     }
 
     private var savedWords: [String]? {
-        guard let wordsString = UserDefaults.standard.value(forKey: keyWords) as? String else {
+        let wordsString = ud.getWords()
+
+        guard !wordsString.isEmpty else {
             return nil
         }
 
@@ -77,44 +79,33 @@ class Manager {
     }
 
     private var savedAddress: Address? {
-        guard let addressString = UserDefaults.standard.value(forKey: keyAddress) as? String else {
+        let addressString = ud.getAddress()
+
+        guard !addressString.isEmpty else {
             return nil
         }
 
         return try? Address(hex: addressString)
     }
 
-    private func save(words: [String]) {
-        UserDefaults.standard.set(words.joined(separator: " "), forKey: keyWords)
-        UserDefaults.standard.synchronize()
-    }
-
-    private func save(address: String) {
-        UserDefaults.standard.set(address, forKey: keyAddress)
-        UserDefaults.standard.synchronize()
-    }
-
     private func clearStorage() {
-        UserDefaults.standard.removeObject(forKey: keyWords)
-        UserDefaults.standard.removeObject(forKey: keyAddress)
-        UserDefaults.standard.synchronize()
+        ud.clearStorage()
     }
 
 }
 
-extension Manager {
+extension WalletManager {
 
     func login(words: [String]) throws {
         try Kit.clear(exceptFor: ["walletId"])
 
-        save(words: words)
         try initKit(words: words)
     }
 
     func watch(address: Address) throws {
         try Kit.clear(exceptFor: ["walletId"])
 
-        save(address: address.hex)
+        ud.setAddress(address: address.hex)
         try initKit(address: address)
     }
 
@@ -128,7 +119,7 @@ extension Manager {
 
 }
 
-extension Manager {
+extension WalletManager {
 
     enum LoginError: Error {
         case seedGenerationFailed

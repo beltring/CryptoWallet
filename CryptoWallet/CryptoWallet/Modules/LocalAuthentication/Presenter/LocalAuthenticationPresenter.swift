@@ -23,8 +23,12 @@ class LocalAuthenticationPresenter {
     }
 }
 
+// MARK: - LocalAuthenticationPresenterProtocol
+
 extension LocalAuthenticationPresenter: LocalAuthenticationPresenterProtocol {
+
     func closeButtonDidTapped() {
+        router.trigger(.close)
     }
 
     func createWalletButtonDidTapped() {

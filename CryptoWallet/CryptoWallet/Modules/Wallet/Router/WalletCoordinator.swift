@@ -14,6 +14,8 @@ enum WalletRoute: Route {
     case createWallet
     case settings
     case restore
+    case recieve
+    case alert(title: String, message: String)
     case close
 }
 
@@ -42,9 +44,17 @@ class WalletCoordinator: NavigationCoordinator<WalletRoute> {
         case .settings:
             rootViewController.tabBarController?.selectedIndex = 2
             return .none()
+        case .recieve:
+            let router = RecieveCoordinator()
+            return .present(router)
         case .restore:
             let router = WalletBackUpCoordinator()
             return .present(router)
+        case .alert(let title, let message):
+            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            alert.addAction(.init(title: "Ok", style: .default, handler: nil))
+            rootViewController.modalPresentationStyle = .fullScreen
+            return .present(alert)
         case .close:
             return .dismissToRoot()
         }

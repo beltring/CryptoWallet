@@ -50,6 +50,11 @@ class LocalAuthenticationViewController: UIViewController {
     private func setupUI() {
         view.backgroundColor = R.color.createWalletBackgroundColor()
         view.addSubview(localAuthView)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: R.image.arrowBackImage(),
+                                                           style: .plain,
+                                                           target: self,
+                                                           action: #selector(tappedCloseButton))
+        navigationItem.leftBarButtonItem?.tintColor = R.color.createWalletBackColor()
         configureConstraint()
         localAuthView.configure(biometricType: biometricType)
     }
@@ -58,6 +63,12 @@ class LocalAuthenticationViewController: UIViewController {
         localAuthView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
+    }
+
+    // MARK: - Functions
+
+    @objc private func tappedCloseButton() {
+        presenter.closeButtonDidTapped()
     }
 }
 

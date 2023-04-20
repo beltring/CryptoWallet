@@ -8,6 +8,7 @@
 import UIKit
 import XCoordinator
 import Firebase
+import HdWalletKit
 
 class WalletPresenter {
     // MARK: - Public Properties
@@ -15,6 +16,8 @@ class WalletPresenter {
 
     // MARK: - Private Properties
     private let router: UnownedRouter<WalletRoute>
+
+    private var words = UserDefaultsService.shared.getWords().components(separatedBy: .whitespaces)
 
     // MARK: - Init
     public init(router: UnownedRouter<WalletRoute>) {
@@ -34,5 +37,29 @@ extension WalletPresenter: WalletPresenterProtocol {
 
     func restoreButtonDidPressed() {
         router.trigger(.restore)
+    }
+
+    func recieveButtonDidPressed() {
+        router.trigger(.recieve)
+    }
+
+    func loginIfNeeded() {
+        do {
+            try Mnemonic.validate(words: words)
+
+            try WalletManager.shared.login(words: words)
+
+            view?.setupWallet()
+        } catch {
+            router.trigger(.alert(title: "Error", message: "Login Error"))
+        }
+    }
+
+    func getWords() -> String {
+        UserDefaultsService.shared.getWords()
+    }
+
+    func showErrorAlert(title: String, message: String) {
+        router.trigger(.alert(title: title, message: message))
     }
 }

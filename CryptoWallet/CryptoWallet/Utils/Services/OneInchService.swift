@@ -28,7 +28,7 @@ class OneInchService {
         do {
             try Mnemonic.validate(words: words)
 
-            try Manager.shared.login(words: words)
+            try WalletManager.shared.login(words: words)
         }
         catch {
             print("CREATE WALLET")

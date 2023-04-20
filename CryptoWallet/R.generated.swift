@@ -96,12 +96,24 @@ struct _R {
     var walletTitleColor: RswiftResources.ColorResource { .init(name: "walletTitleColor", path: [], bundle: bundle) }
   }
 
-  /// This `_R.image` struct is generated, and contains static references to 31 images.
+  /// This `_R.image` struct is generated, and contains static references to 38 images.
   struct image {
     let bundle: Foundation.Bundle
 
+    /// Image `ArrowBackUpImage`.
+    var arrowBackUpImage: RswiftResources.ImageResource { .init(name: "ArrowBackUpImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
     /// Image `Logo`.
     var logo: RswiftResources.ImageResource { .init(name: "Logo", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `OnboardingBackUpFirstImage`.
+    var onboardingBackUpFirstImage: RswiftResources.ImageResource { .init(name: "OnboardingBackUpFirstImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `OnboardingBackUpSecondImage`.
+    var onboardingBackUpSecondImage: RswiftResources.ImageResource { .init(name: "OnboardingBackUpSecondImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `accountCardImage`.
+    var accountCardImage: RswiftResources.ImageResource { .init(name: "accountCardImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `arrowBackImage`.
     var arrowBackImage: RswiftResources.ImageResource { .init(name: "arrowBackImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
@@ -151,6 +163,12 @@ struct _R {
     /// Image `noOperationShark`.
     var noOperationShark: RswiftResources.ImageResource { .init(name: "noOperationShark", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
+    /// Image `qrAccountImage`.
+    var qrAccountImage: RswiftResources.ImageResource { .init(name: "qrAccountImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `recieveButtonImage`.
+    var recieveButtonImage: RswiftResources.ImageResource { .init(name: "recieveButtonImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
     /// Image `refferalProgramImage`.
     var refferalProgramImage: RswiftResources.ImageResource { .init(name: "refferalProgramImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
@@ -171,6 +189,9 @@ struct _R {
 
     /// Image `settingsTab`.
     var settingsTab: RswiftResources.ImageResource { .init(name: "settingsTab", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `sharkAccountImage`.
+    var sharkAccountImage: RswiftResources.ImageResource { .init(name: "sharkAccountImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
     /// Image `sharkCreateImage`.
     var sharkCreateImage: RswiftResources.ImageResource { .init(name: "sharkCreateImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }

@@ -31,6 +31,7 @@ class CreateWalletSuccessView: UIView {
     // MARK: - SetupUI
 
     private func setupUI() {
+        backgroundColor = R.color.createWalletBackgroundColor()
         addSubviews([
             successImage,
             titleLabel,
@@ -43,7 +44,7 @@ class CreateWalletSuccessView: UIView {
     private func configureConstraints() {
         successImage.snp.makeConstraints { make in
             make.width.height.equalTo(150)
-            make.top.equalToSuperview()
+            make.top.equalTo(safeAreaLayoutGuide.snp.top).offset(95)
             make.leading.equalToSuperview().offset(16)
         }
 
@@ -81,6 +82,7 @@ class CreateWalletSuccessView: UIView {
 
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
+        label.numberOfLines = 0
         label.text = "Your wallet is now backed up!"
         label.font = R.font.notoSansSemiBold(size: 28)
         return label
@@ -88,6 +90,7 @@ class CreateWalletSuccessView: UIView {
 
     private lazy var descriptionLabel: UILabel = {
         let label = UILabel()
+        label.numberOfLines = 0
         label.text = "You can use your wallet right now"
         label.font = R.font.notoSansRegular(size: 16)
         return label

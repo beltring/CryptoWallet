@@ -14,6 +14,10 @@ class WalletViewController: UIViewController {
 
     public var presenter: WalletPresenterProtocol
 
+    // MARK: - Private Properties
+
+    private let adapter: EthereumAdapter = WalletManager.shared.adapter
+
     // MARK: - Init
 
     required init(presenter: WalletPresenterProtocol) {
@@ -29,6 +33,7 @@ class WalletViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.view = self
         setupUI()
     }
 
@@ -48,13 +53,20 @@ class WalletViewController: UIViewController {
         view.backgroundColor = R.color.backgroundColor()
         setupScrollView()
         configureConstraints()
+        walletCardView.isHidden = true
+        walletCardView.delegate = self
+        let words = UserDefaultsService.shared.getWords()
 
-        walletCardView.configure(viewModel: .init(title: "Create a free wallet",
+        if !words.isEmpty {
+            presenter.loginIfNeeded()
+        }
+
+        createWalletCardView.configure(viewModel: .init(title: "Create a free wallet",
                                                   subtitle: "You will need a wallet to buy some\ncryptocurrency and other value.",
                                                   backgroundImage: R.image.walletCardImage()))
         restoreWalletView.delegate = self
         moreThingsView.delegate = self
-        walletCardView.addTapAction { [weak self] in
+        createWalletCardView.addTapAction { [weak self] in
             self?.tappedAddAccountCard()
         }
         hideNavBarLine()
@@ -70,6 +82,7 @@ class WalletViewController: UIViewController {
             ethImageView,
             walletTitleLabel,
             portfolioView,
+            createWalletCardView,
             walletCardView,
             restoreWalletView,
             sharkImageView,
@@ -94,6 +107,10 @@ class WalletViewController: UIViewController {
         mainStackView.snp.makeConstraints { make in
             make.top.bottom.equalToSuperview().inset(5)
             make.leading.trailing.equalToSuperview().inset(16)
+        }
+
+        createWalletCardView.snp.makeConstraints { make in
+            make.height.equalTo(210)
         }
 
         walletCardView.snp.makeConstraints { make in
@@ -172,6 +189,7 @@ class WalletViewController: UIViewController {
     }()
 
     private lazy var portfolioView = PortfolioValueView()
+    private lazy var createWalletCardView = CreateWalletCardView()
     private lazy var walletCardView = WalletCardView()
     private lazy var restoreWalletView = RestoreWalletView()
     private lazy var moreThingsView = MoreThingsView()
@@ -180,7 +198,61 @@ class WalletViewController: UIViewController {
 // MARK: WalletViewProtocol
 
 extension WalletViewController: WalletViewProtocol {
+    func setupWallet() {
+        sync()
+    }
 
+    private func sync() {
+        let syncStateString: String
+        let txSyncStateString: String
+
+        var errorTexts = [String]()
+
+        switch adapter.syncState {
+        case .synced:
+            syncStateString = "Synced!"
+        case .syncing(let progress):
+            if let progress = progress {
+                syncStateString = "Syncing \(Int(progress * 100)) %"
+            } else {
+                syncStateString = "Syncing"
+            }
+        case .notSynced(let error):
+            syncStateString = "Not Synced"
+            errorTexts.append("Sync Error: \(error)")
+        }
+
+        switch adapter.transactionsSyncState {
+        case .synced:
+            txSyncStateString = "Synced!"
+        case .syncing(let progress):
+            if let progress = progress {
+                txSyncStateString = "Syncing \(Int(progress * 100)) %"
+            } else {
+                txSyncStateString = "Syncing"
+            }
+        case .notSynced(let error):
+            txSyncStateString = "Not Synced"
+            errorTexts.append("Tx Sync Error: \(error)")
+        }
+
+        let errorText = errorTexts.joined(separator: "\n\n")
+
+        if errorText.isEmpty {
+            createWalletCardView.isHidden = true
+            walletCardView.isHidden = false
+            walletCardView.configure(viewModel: .init(title: "My main account",
+                                                      backgroundImage: R.image.accountCardImage(),
+                                                      address: adapter.receiveAddress.hex,
+                                                      balance: "\(adapter.balance) \(adapter.coin)"))
+            sharkImageView.image = R.image.sharkAccountImage()
+            print("/n MYLOG: BALANCE: \(adapter.balance) COIN: \(adapter.coin)")
+            print("/n MYLOG: Last Block Height \(adapter.lastBlockHeight.map { "# \($0)" } ?? "n/a")")
+            portfolioView.configure(viewModel: .init(value: adapter.balance))
+        } else {
+            presenter.showErrorAlert(title: "Error", message: errorText)
+        }
+    }
 }
 
 // MARK: - RestoreWalletViewDelegate
@@ -205,5 +277,13 @@ extension WalletViewController: MoreThingsViewDelegate {
 
     func didTapSettingsButton() {
         presenter.settingsButtonDidPressed()
+    }
+}
+
+// MARK: - WalletCardViewProtocol
+
+extension WalletViewController: WalletCardViewProtocol {
+    func tappedRecieveButton() {
+        presenter.recieveButtonDidPressed()
     }
 }

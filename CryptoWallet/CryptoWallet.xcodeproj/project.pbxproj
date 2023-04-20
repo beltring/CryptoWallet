@@ -51,6 +51,7 @@
 		CE4CAFCC29D2D6710017467B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4CAFCB29D2D6710017467B /* UIViewControllerExtension.swift */; };
 		CE4CAFCF29D2F6C10017467B /* LocalAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4CAFCE29D2F6C10017467B /* LocalAuthenticationService.swift */; };
 		CE4CAFD229D300E50017467B /* LocalAuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4CAFD129D300E50017467B /* LocalAuthenticationView.swift */; };
+		CE5AA8C729F11A6500D6F73C /* WalletCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AA8C629F11A6500D6F73C /* WalletCardView.swift */; };
 		CE5CCD8929D14B2800F0C1DD /* CreatePinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5CCD8829D14B2800F0C1DD /* CreatePinView.swift */; };
 		CE61EDB829DC3FA1005ABAB7 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61EDB729DC3FA1005ABAB7 /* HistoryView.swift */; };
 		CE641AF629E56C13007B2122 /* CreateWalletSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE641AF529E56C13007B2122 /* CreateWalletSuccessView.swift */; };
@@ -94,6 +95,11 @@
 		CE87D6F929DFF42700677FE0 /* LocalAuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87D6F829DFF42700677FE0 /* LocalAuthenticationCoordinator.swift */; };
 		CE87D6FC29E02B7900677FE0 /* SeedPhraseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87D6FB29E02B7900677FE0 /* SeedPhraseView.swift */; };
 		CE87D6FE29E02F5400677FE0 /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87D6FD29E02F5400677FE0 /* WordView.swift */; };
+		CE95AB8929F164F30072C451 /* RecieveCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95AB8829F164F30072C451 /* RecieveCoordinator.swift */; };
+		CE95AB8B29F165FC0072C451 /* RecievePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95AB8A29F165FC0072C451 /* RecievePresenter.swift */; };
+		CE95AB8D29F1661C0072C451 /* RecievePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95AB8C29F1661C0072C451 /* RecievePresenterProtocol.swift */; };
+		CE95AB8F29F1671F0072C451 /* RecieveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95AB8E29F1671F0072C451 /* RecieveViewController.swift */; };
+		CE95AB9129F1672E0072C451 /* RecieveViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95AB9029F1672E0072C451 /* RecieveViewProtocol.swift */; };
 		CEB3879B29E6812700BEDF18 /* FAQPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3879A29E6812700BEDF18 /* FAQPresenter.swift */; };
 		CEB3879D29E6813400BEDF18 /* FAQPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3879C29E6813400BEDF18 /* FAQPresenterProtocol.swift */; };
 		CEB3879F29E6814000BEDF18 /* FAQCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB3879E29E6814000BEDF18 /* FAQCoordinator.swift */; };
@@ -147,7 +153,7 @@
 		CEC0FAC029C99C9E00ECB025 /* NotoSans-ExtraLightItalic.ttf in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FA9129C9897000ECB025 /* NotoSans-ExtraLightItalic.ttf */; };
 		CEC0FAC129C99C9E00ECB025 /* NotoSans-ExtraBold.ttf in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FA9229C9897000ECB025 /* NotoSans-ExtraBold.ttf */; };
 		CEC0FAC229C99C9E00ECB025 /* NotoSans-Italic.ttf in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FA9329C9897000ECB025 /* NotoSans-Italic.ttf */; };
-		CEC0FAC529C99EF100ECB025 /* WalletCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FAC429C99EF000ECB025 /* WalletCardView.swift */; };
+		CEC0FAC529C99EF100ECB025 /* CreateWalletCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FAC429C99EF000ECB025 /* CreateWalletCardView.swift */; };
 		CEC0FAC829C9C59D00ECB025 /* RestoreWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0FAC729C9C59D00ECB025 /* RestoreWalletView.swift */; };
 		CEC7210129D4030100D7BB81 /* BiometricType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7210029D4030100D7BB81 /* BiometricType.swift */; };
 		CEC7210429D41C4A00D7BB81 /* KeychainKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7210329D41C4A00D7BB81 /* KeychainKeys.swift */; };
@@ -214,6 +220,7 @@
 		CE4CAFCB29D2D6710017467B /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		CE4CAFCE29D2F6C10017467B /* LocalAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationService.swift; sourceTree = "<group>"; };
 		CE4CAFD129D300E50017467B /* LocalAuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationView.swift; sourceTree = "<group>"; };
+		CE5AA8C629F11A6500D6F73C /* WalletCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardView.swift; sourceTree = "<group>"; };
 		CE5CCD8829D14B2800F0C1DD /* CreatePinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePinView.swift; sourceTree = "<group>"; };
 		CE61EDB729DC3FA1005ABAB7 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistoryView.swift; path = CryptoWallet/Modules/WalletbackUp/Presenter/HistoryView.swift; sourceTree = SOURCE_ROOT; };
 		CE641AF529E56C13007B2122 /* CreateWalletSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletSuccessView.swift; sourceTree = "<group>"; };
@@ -257,6 +264,11 @@
 		CE87D6F829DFF42700677FE0 /* LocalAuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationCoordinator.swift; sourceTree = "<group>"; };
 		CE87D6FB29E02B7900677FE0 /* SeedPhraseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedPhraseView.swift; sourceTree = "<group>"; };
 		CE87D6FD29E02F5400677FE0 /* WordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordView.swift; sourceTree = "<group>"; };
+		CE95AB8829F164F30072C451 /* RecieveCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecieveCoordinator.swift; sourceTree = "<group>"; };
+		CE95AB8A29F165FC0072C451 /* RecievePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecievePresenter.swift; sourceTree = "<group>"; };
+		CE95AB8C29F1661C0072C451 /* RecievePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecievePresenterProtocol.swift; sourceTree = "<group>"; };
+		CE95AB8E29F1671F0072C451 /* RecieveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecieveViewController.swift; sourceTree = "<group>"; };
+		CE95AB9029F1672E0072C451 /* RecieveViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecieveViewProtocol.swift; sourceTree = "<group>"; };
 		CEB3879A29E6812700BEDF18 /* FAQPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQPresenter.swift; sourceTree = "<group>"; };
 		CEB3879C29E6813400BEDF18 /* FAQPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQPresenterProtocol.swift; sourceTree = "<group>"; };
 		CEB3879E29E6814000BEDF18 /* FAQCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQCoordinator.swift; sourceTree = "<group>"; };
@@ -292,7 +304,7 @@
 		CEC0FAA929C98BBB00ECB025 /* PortfolioValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioValueView.swift; sourceTree = "<group>"; };
 		CEC0FAAD29C98F6100ECB025 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		CEC0FAAF29C9925700ECB025 /* UIStackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
-		CEC0FAC429C99EF000ECB025 /* WalletCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardView.swift; sourceTree = "<group>"; };
+		CEC0FAC429C99EF000ECB025 /* CreateWalletCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletCardView.swift; sourceTree = "<group>"; };
 		CEC0FAC729C9C59D00ECB025 /* RestoreWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreWalletView.swift; sourceTree = "<group>"; };
 		CEC7210029D4030100D7BB81 /* BiometricType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricType.swift; sourceTree = "<group>"; };
 		CEC7210329D41C4A00D7BB81 /* KeychainKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainKeys.swift; sourceTree = "<group>"; };
@@ -432,6 +444,7 @@
 		CE280C9B29C475E6002B4DEC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CE95AB8429F164690072C451 /* Recieve */,
 				CEB3879629E6810500BEDF18 /* FAQ */,
 				CE641B0929E59A75007B2122 /* PrivacyPolicy */,
 				CE641AFB29E57E8F007B2122 /* CreateWalletResult */,
@@ -951,6 +964,42 @@
 			path = SeedPhraseView;
 			sourceTree = "<group>";
 		};
+		CE95AB8429F164690072C451 /* Recieve */ = {
+			isa = PBXGroup;
+			children = (
+				CE95AB8529F164CB0072C451 /* Presenter */,
+				CE95AB8729F164D60072C451 /* Router */,
+				CE95AB8629F164D10072C451 /* View */,
+			);
+			path = Recieve;
+			sourceTree = "<group>";
+		};
+		CE95AB8529F164CB0072C451 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CE95AB8A29F165FC0072C451 /* RecievePresenter.swift */,
+				CE95AB8C29F1661C0072C451 /* RecievePresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CE95AB8629F164D10072C451 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE95AB8E29F1671F0072C451 /* RecieveViewController.swift */,
+				CE95AB9029F1672E0072C451 /* RecieveViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE95AB8729F164D60072C451 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CE95AB8829F164F30072C451 /* RecieveCoordinator.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		CEB3879629E6810500BEDF18 /* FAQ */ = {
 			isa = PBXGroup;
 			children = (
@@ -1120,7 +1169,8 @@
 		CEC0FAC329C99EE000ECB025 /* WalletCard */ = {
 			isa = PBXGroup;
 			children = (
-				CEC0FAC429C99EF000ECB025 /* WalletCardView.swift */,
+				CEC0FAC429C99EF000ECB025 /* CreateWalletCardView.swift */,
+				CE5AA8C629F11A6500D6F73C /* WalletCardView.swift */,
 			);
 			path = WalletCard;
 			sourceTree = "<group>";
@@ -1364,6 +1414,7 @@
 				CE6A7ECF29E3FA24007AB103 /* RecoveryPhrasePresenterProtocol.swift in Sources */,
 				CEC0FABB29C99C9E00ECB025 /* NotoSans-BoldItalic.ttf in Sources */,
 				CE6A7ECD29E3FA0D007AB103 /* RecoveryPhrasePresenter.swift in Sources */,
+				CE95AB8F29F1671F0072C451 /* RecieveViewController.swift in Sources */,
 				CE66736529DD8BA500BF3AC8 /* UserDefaultsKeys.swift in Sources */,
 				CEC0FABC29C99C9E00ECB025 /* NotoSans-BlackItalic.ttf in Sources */,
 				CE87D6F529DFF36700677FE0 /* LocalAuthenticationPresenter.swift in Sources */,
@@ -1391,13 +1442,16 @@
 				CE280CAB29C4813A002B4DEC /* WalletViewProtocol.swift in Sources */,
 				CEB3879F29E6814000BEDF18 /* FAQCoordinator.swift in Sources */,
 				CE280C9F29C4772A002B4DEC /* AppCoordinator.swift in Sources */,
+				CE95AB8929F164F30072C451 /* RecieveCoordinator.swift in Sources */,
 				CEC0FAC829C9C59D00ECB025 /* RestoreWalletView.swift in Sources */,
 				CE79FAB229D5A8F900CC4A7F /* TransactionRecord.swift in Sources */,
 				CE40639029CB276C004664FE /* InstructionView.swift in Sources */,
 				CE280C8329C45167002B4DEC /* AppDelegate.swift in Sources */,
 				CE641B1229E59B37007B2122 /* PrivacyPolicyPresenter.swift in Sources */,
 				CE66736D29DD9E5F00BF3AC8 /* WalletBackUpCoordinator.swift in Sources */,
+				CE95AB9129F1672E0072C451 /* RecieveViewProtocol.swift in Sources */,
 				CE280CAD29C4850A002B4DEC /* WalletTabBarCoordinator.swift in Sources */,
+				CE95AB8D29F1661C0072C451 /* RecievePresenterProtocol.swift in Sources */,
 				CE41AC4F29CC2388009CE7C3 /* FooterInstructionView.swift in Sources */,
 				CE71C1BE29CD832E008D975E /* PinView.swift in Sources */,
 				CE280C8529C45167002B4DEC /* SceneDelegate.swift in Sources */,
@@ -1408,6 +1462,7 @@
 				CE641B1629E59CF0007B2122 /* PrivacyPolicyCoordinator.swift in Sources */,
 				CE66736929DD971400BF3AC8 /* WalletBackUpViewProtocol.swift in Sources */,
 				CE280CA229C47D74002B4DEC /* WalletViewController.swift in Sources */,
+				CE95AB8B29F165FC0072C451 /* RecievePresenter.swift in Sources */,
 				CE79FAB029D5A72C00CC4A7F /* EthereumAdapter.swift in Sources */,
 				CE280CA629C47EA6002B4DEC /* WalletPresenter.swift in Sources */,
 				14E4A0D029DB068C00E8D68F /* SwapViewController.swift in Sources */,
@@ -1426,6 +1481,7 @@
 				CE280CBA29C4919C002B4DEC /* SettingsViewController.swift in Sources */,
 				CE41AC5529CC408A009CE7C3 /* AddAccountViewController.swift in Sources */,
 				CEB387A829E6995D00BEDF18 /* FAQDescriptionView.swift in Sources */,
+				CE5AA8C729F11A6500D6F73C /* WalletCardView.swift in Sources */,
 				CE6F491429E3DDF500E5E220 /* WordCell.swift in Sources */,
 				CEB3879D29E6813400BEDF18 /* FAQPresenterProtocol.swift in Sources */,
 				CE87D6FC29E02B7900677FE0 /* SeedPhraseView.swift in Sources */,
@@ -1444,7 +1500,7 @@
 				CEB7CDCB29DAA8CE000181D5 /* OperationsHistoryPresenter.swift in Sources */,
 				CE641B0629E57F39007B2122 /* CreateWalletResultViewController.swift in Sources */,
 				CEB387A129E6814C00BEDF18 /* FAQViewController.swift in Sources */,
-				CEC0FAC529C99EF100ECB025 /* WalletCardView.swift in Sources */,
+				CEC0FAC529C99EF100ECB025 /* CreateWalletCardView.swift in Sources */,
 				CE280CB829C49057002B4DEC /* SettingsPresenter.swift in Sources */,
 				CE125ABF29DEEAE50033A429 /* FirebaseFirestoreManager.swift in Sources */,
 				CE79FAB429D5AA8D00CC4A7F /* Configuration.swift in Sources */,

@@ -10,4 +10,6 @@ import Foundation
 protocol WalletViewProtocol: AnyObject {
 
     var presenter: WalletPresenterProtocol { get }
+
+    func setupWallet()
 }

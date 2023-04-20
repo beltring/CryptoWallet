@@ -5,7 +5,7 @@
 //  Created by Pavel Boltromyuk on 6.04.23.
 //
 
-import Foundation
+import UIKit
 
 enum BackUpOnboardingType {
     case backUpNow
@@ -38,6 +38,15 @@ enum BackUpOnboardingType {
             return "Back up now"
         case .start:
             return "Start"
+        }
+    }
+
+    var image: UIImage? {
+        switch self {
+        case .backUpNow:
+            return R.image.onboardingBackUpFirstImage()
+        case .start:
+            return R.image.onboardingBackUpSecondImage()
         }
     }
 }

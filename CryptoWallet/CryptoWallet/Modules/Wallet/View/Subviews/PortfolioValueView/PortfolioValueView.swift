@@ -75,6 +75,6 @@ class PortfolioValueView: UIView {
 
 extension PortfolioValueView {
     struct PortfolioValueViewModel {
-        let value: Double
+        let value: Decimal
     }
 }
